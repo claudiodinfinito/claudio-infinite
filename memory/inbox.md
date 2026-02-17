@@ -10,8 +10,9 @@
 - [ ] (2) Crear ts-telegram-no-reply.md — salida: troubleshooting
 - [ ] (2) Crear rbk-gateway-restart.md con rollback — salida: runbook
 - [ ] (3) Unificar nombre "Claudio Infinito" en todos los archivos — salida: consistencia
-- [ ] (3) Eliminar references/reglas.md (duplica MEMORY.md) — salida: limpieza ✅
-- [ ] (3) Limpiar index (fusionar duplicados) — salida: index limpio
+- [x] (3) Eliminar references/reglas.md (duplica MEMORY.md) — salida: limpieza ✅
+- [x] (3) Limpiar index (fusionar duplicados) — salida: index limpio ✅
+- [x] (3) Crear ref-openclaw-musthaves.md — salida: referencia trainer ✅
 
 ---
 
@@ -24,4 +25,4 @@
 
 ---
 
-_Creado: 17 Feb 2026_
+_Actualizado: 17 Feb 2026 - 07:19 UTC_
