@@ -1,19 +1,24 @@
 ---
 name: vps-admin
-description: Administración del VPS RackNerd con CapRover y Docker. Incluye gestión de contenedores, apps CapRover, monitoreo de recursos, backups, y mantenimiento del servidor. Usar cuando Daniel pida ayuda con Docker, CapRover, SSH, firewall, actualizaciones del VPS, o troubleshooting de apps.
+description: Administración del VPS RackNerd con CapRover y Docker. Incluye gestión de contenedores, monitoreo, backups. Usar cuando Daniel pida ayuda con Docker, CapRover, SSH, firewall, o troubleshooting de apps.
 ---
 
 # VPS Admin - Administración del Servidor
 
 ## Contexto
 
-Este skill es para administrar el VPS RackNerd de Daniel:
-- **Hostname**: racknerd-8bf9cb7
-- **IP**: 192.227.249.251
-- **OS**: Ubuntu 22.04.5 LTS
-- **Stack**: CapRover + Docker + OpenClaw
+**Ver:** `VPS-MAP.md` para mapa completo del VPS.
 
-## CapRover
+- **Hostname:** racknerd-8bf9cb7
+- **IP:** 192.227.249.251
+- **OS:** Ubuntu 22.04.5 LTS
+- **Stack:** CapRover + Docker + OpenClaw
+
+---
+
+## CapRover (OFF-LIMITS para Claudio)
+
+**Administrado por Daniel desde:** captain.adwebcrm.com
 
 ### Apps desplegadas:
 - `a1-pocketbase` — Base de datos (puerto 8090)
@@ -21,26 +26,31 @@ Este skill es para administrar el VPS RackNerd de Daniel:
 - `a1-webui-ollama` — UI para Ollama (puerto 8080)
 - `n8n-mkt-a1` — Automatizaciones (puerto 5678)
 - `a1-ppc-dashboard` — Dashboard (puerto 3000)
-- `open-claudio-infinito` — OpenClaw en Docker
 
-### Comandos útiles:
+**Regla:** NO tocar containers con prefijo `srv-captain--`
+
+---
+
+## Docker - Comandos útiles
 
 ```bash
-# Ver estado de todos los contenedores
+# Estado de contenedores
 docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
 
-# Logs de app específica
-docker logs -f srv-captain--<app-name>.1.<id>
+# Logs
+docker logs -f <container-name>
 
-# Reiniciar app
-docker restart srv-captain--<app-name>.1.<id>
+# Reiniciar
+docker restart <container-name>
 
-# Ver uso de recursos
+# Recursos
 docker stats --no-stream
 
-# Entrar a contenedor
-docker exec -it <container-name> sh
+# Entrar
+docker exec -it <container> sh
 ```
+
+---
 
 ## Monitoreo
 
@@ -58,6 +68,8 @@ ps aux --sort=-%mem | head -10
 ss -tunap | head -20
 ```
 
+---
+
 ## Mantenimiento
 
 ```bash
@@ -74,18 +86,20 @@ docker image prune -a -f
 docker volume ls -qf dangling=true
 ```
 
+---
+
 ## Backups
 
-### Volúmenes importantes:
-- `captain--openclawdata` — Datos de OpenClaw
-- `captain--persistent` — Datos persistentes de PocketBase
-- `captain--memoria` — Memoria/datos varios
-
-### Backup manual:
+### Backup PocketBase:
 ```bash
-# Backup de volumen
-docker run --rm -v <volume-name>:/data -v $(pwd):/backup alpine tar czf /backup/<volume-name>-$(date +%Y%m%d).tar.gz /data
+tar -czf /root/respaldos_pocketbase/pb_$(date +%F).tar.gz /ruta/pb_data
 ```
+
+### Backup OpenClaw:
+- Automático via cron job `backup:workspace` (diario 06:00 UTC)
+- Git commit automático en `/root/.openclaw/workspace`
+
+---
 
 ## Troubleshooting
 
@@ -106,11 +120,21 @@ docker run --rm -v <volume-name>:/data -v $(pwd):/backup alpine tar czf /backup/
 3. `docker system prune -f` — limpiar
 4. `journalctl --vacuum-size=100M` — limpiar logs systemd
 
+---
+
+## OpenClaw
+
+**Runtime:** direct (sandbox.mode: off)
+**Gateway:** 127.0.0.1:18789 (loopback)
+**Ver:** `RUNBOOK.md` para debug de OpenClaw
+
+---
+
 ## Seguridad
 
-Ver skill `healthcheck` para hardening completo.
+**Ver:** skill `healthcheck` para hardening completo.
 
-### Quick fixes:
+### Quick checks:
 ```bash
 # Verificar SSH
 grep -E "^(PermitRootLogin|PasswordAuthentication)" /etc/ssh/sshd_config
@@ -122,8 +146,6 @@ ufw status
 last -n 20
 ```
 
-## Notas
+---
 
-- OpenClaw corre como servicio systemd (principal) Y en Docker (secundario)
-- El gateway principal está en 127.0.0.1:18789
-- CapRover maneja los dominios y SSL automáticamente
+_Actualizado: 17 Feb 2026_

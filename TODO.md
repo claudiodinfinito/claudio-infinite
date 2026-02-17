@@ -37,7 +37,7 @@
   - [x] `TODO.md`
   - [x] `memory/2026-02-16.md`
   - [x] `memory/2026-02-17.md`
-- [x] **Auditoría de fallas** - Documentada en `investigaciones/FALLAS-CRITICAS-CLAUSSIO.md`
+- [x] **Auditoría de fallas** - Documentada en `memory/ref-fallas-skills.md`
 - [x] **Ejecutar rutina AGENTS.md** - Leer SOUL.md, USER.md, MEMORY.md, memory al inicio
 
 ---

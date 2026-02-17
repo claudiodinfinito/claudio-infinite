@@ -1,3 +1,10 @@
+ID: REF-FALLAS-001
+Status: active
+Tags: #debug #skills #errors #audit
+Keys: skills, error, debug, fallas, auditoria
+Owner: main
+Last reviewed: 2026-02-17
+
 # FALLAS CRÍTICAS DE CLAUDIO INFINITO
 
 **Fecha:** 17 Feb 2026, 02:30 UTC

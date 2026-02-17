@@ -10,7 +10,7 @@
    - `TODO.md` - Acciones pendientes
    - `memory/2026-02-16.md` - Ayer
    - `memory/2026-02-17.md` - Hoy
-   - `investigaciones/FALLAS-CRITICAS-CLAUSSIO.md` - Auditoría completa
+   - `memory/ref-fallas-skills.md` - Auditoría completa
 
 2. **Rutina ejecutada:**
    - Leí SOUL.md, USER.md, MEMORY.md, memory al inicio ✅

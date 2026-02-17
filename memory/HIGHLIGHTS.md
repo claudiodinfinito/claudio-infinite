@@ -12,7 +12,7 @@
 
 ### 1 Anti-pattern (qué NO volver a hacer):
 
-**Quedar archivos en sandbox** - El sandbox se limpia. TODO archivo importante debe estar en `/root/.openclaw/workspace/` que es PERSISTENTE.
+**Quedar archivos en sandbox** - El sandbox se limpia. TODO archivo importante debe estar en `/root/.openclaw/workspace/` que es PERSISTENTE. También: **NO crear archivos con typos** como "claussio" en lugar de "claudio".
 
 ### 1 Comando clave:
 

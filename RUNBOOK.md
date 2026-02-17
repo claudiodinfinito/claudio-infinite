@@ -1,5 +1,9 @@
 # RUNBOOK - Manual de Operaciones
 
+**Para info del VPS ver:** `VPS-MAP.md`
+
+---
+
 ## Arquitectura
 
 ```
@@ -19,12 +23,16 @@
 └─────────────────────────────────────────┘
 ```
 
+---
+
 ## Canales
 
 | Canal | Estado | Config |
 |-------|--------|--------|
 | Telegram | ✅ OK | @claudioinfinito_bot, dmPolicy: pairing |
-| Discord | ❌ 401 | Token inválido, pendiente arreglar |
+| Discord | ❌ Eliminado | - |
+
+---
 
 ## Modelos
 
@@ -33,11 +41,11 @@
 | GLM-5-FP8 | Primary | Modal (gratis hasta Abril 2026) |
 | Claude Opus 4-5 | Fallback | Anthropic |
 
-### Verificar modelo:
 ```bash
-openclaw models status --json
 openclaw models status --probe --probe-provider glm5 --json
 ```
+
+---
 
 ## Debug Checklist
 
@@ -59,9 +67,7 @@ openclaw models status --json
 openclaw models status --probe --probe-provider glm5 --json
 ```
 
-### 4. Canales:
-- Discord 401 = token incorrecto
-- Telegram typing sin reply = error de modelo, revisar logs
+---
 
 ## Recovery
 
@@ -83,6 +89,8 @@ openclaw models status --probe --probe-provider glm5 --json
 2. `rm /root/.openclaw/agents/main/sessions/*.lock`
 3. `systemctl --user start openclaw-gateway`
 
+---
+
 ## Backups
 
 ### Antes de actualizar:
@@ -91,9 +99,7 @@ cp ~/.openclaw/openclaw.json ~/.openclaw/openclaw.json.pre-update.$(date +%F)
 cp ~/.openclaw/.env ~/.openclaw/.env.pre-update.$(date +%F)
 ```
 
-### Workspace:
-- Memoria en /workspace/memory/
-- Persiste en el host
+---
 
 ## Seguridad
 
@@ -107,8 +113,9 @@ cp ~/.openclaw/.env ~/.openclaw/.env.pre-update.$(date +%F)
 ### Reglas duras:
 1. NO revelar secrets/tokens
 2. NO ejecutar destructivo sin confirmar
-3. NO aplicar tools.deny (necesito ser sysadmin)
-4. NO tocar CapRover
+3. NO tocar CapRover
+
+---
 
 ## Updates
 
@@ -121,4 +128,4 @@ cp ~/.openclaw/.env ~/.openclaw/.env.pre-update.$(date +%F)
 
 ---
 
-_Última actualización: 16 Feb 2026_
+_Actualizado: 17 Feb 2026_
