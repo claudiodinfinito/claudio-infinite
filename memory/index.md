@@ -10,6 +10,7 @@
 - [REF-FALLAS-001](ref-fallas-skills.md) — skills fallidas, debugging — Keys: skills, error, debug
 - [REF-SEARCH-001](ref-search-hacks.md) — hacks de búsqueda sin embeddings — Keys: search, grep, rg, index
 - [REF-MUST-001](ref-openclaw-musthaves.md) — 7 must-haves OpenClaw del trainer — Keys: must-have, config, fallback, backup
+- [SPEC-MATH-001](spec-subagent-math.md) — subagente matemáticas exactas DB-first — Keys: math, sql, exact, db, decimal
 
 ---
 

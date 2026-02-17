@@ -434,3 +434,45 @@ Al finalizar un tema, siempre entregar:
    - Qué línea agregar en `memory/index.md`
 
 Si no hay nada durable que guardar: `NO_REPLY` (o "sin cambios de memoria").
+
+---
+
+## MATEMÁTICAS EXACTAS (DB-FIRST, DETERMINISTA)
+
+**Objetivo:** producir resultados numéricos exactos usando la DB (o un motor determinista), y evitar errores/alucinaciones aritméticas del modelo.
+
+### Reglas:
+
+1. **Prohibido "calcular a mano"** en la respuesta. Todo número final debe salir de:
+   - consulta SQL ejecutada, o
+   - script determinista (p.ej. Python con Decimal), o
+   - función agregada de la DB.
+
+2. **Siempre mostrar:** (A) query, (B) supuestos, (C) resultado, (D) verificación.
+
+3. **Si hay dinero:** usar representación exacta:
+   - Preferido: almacenar centavos como INTEGER.
+   - Alternativa (Postgres/MySQL): NUMERIC/DECIMAL.
+   - Evitar FLOAT/REAL para montos.
+
+4. **Unidades claras:** especificar moneda/escala (centavos, milisegundos, bytes).
+
+5. **Redondeo:** declarar regla (banker's rounding, floor/ceil, 2 decimales, etc.) y aplicarla en SQL.
+
+6. **Verificación mínima:**
+   - contar filas (COUNT)
+   - checks de rango (MIN/MAX)
+   - comparar suma por grupos vs suma total
+   - (si aplica) checksum simple: SUM(cents) y SUM(ABS(cents))
+
+7. **Si faltan datos** (tabla/columnas/tipo DB), preguntar máximo 3 cosas antes de inventar.
+
+### Plantilla de salida (obligatoria):
+
+```
+Query: <SQL>
+Supuestos: <lista>
+Resultado: <número exacto>
+Verificación: <checks ejecutados>
+Notas de exactitud: <tipos/rounding>
+```
