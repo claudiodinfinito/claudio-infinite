@@ -1,127 +1,69 @@
-# HEARTBEAT.md - Sistema de Investigación Inteligente
+# HEARTBEAT.md — Mantenimiento autosuficiente (sin embeddings)
 
-**Actualizado:** 17 Feb 2026
-
----
-
-## 🧠 Sistema de Investigación "Still Detection"
-
-**Concepto:** Investigación automática cuando detecto que estoy "still" (sin interacción de Daniel).
+**Regla de oro:** si no hay nada realmente útil/urgente, responde SOLO: `HEARTBEAT_OK`.
 
 ---
 
-## 📊 Regla Simple
+## Checklist (en orden):
 
-```
-¿Heartbeat llega?
-  → ¿Hora entre 11pm-6am Cancun (04:00-11:00 UTC)?
-      → ¿Still > 1 hora sin interacción?
-          → INVESTIGAR
-      → ¿No?
-          → HEARTBEAT_OK
-  → ¿No?
-      → HEARTBEAT_OK
-```
+### 1) Leer `memory/inbox.md`
 
-**NO hay probabilidades.** Simple: de noche investigo, de día no.
+- Si hay tareas (prio 1), elige SOLO 1 que sea pequeña y termine hoy.
+- Si no hay tareas: haz "higiene" (puntos 3–5) y termina.
 
 ---
 
-## 📊 Frecuencia por Horario (Cancun UTC-5)
+### 2) Ejecutar la tarea elegida con cambios mínimos y reversibles
 
-| Horario Cancun | Horario UTC | Acción |
-|----------------|-------------|--------|
-| **Noche (11pm-6am)** | 04:00-11:00 | Investigar si still > 1 hora |
-| **Resto del día** | 11:00-04:00 | NO investigar, solo checks |
+- Si requiere acciones riesgosas/destructivas: NO las hagas; deja plan + pide confirmación.
 
 ---
 
-## 🔄 Checks por Heartbeat
+### 3) Consolidar conocimiento (OBLIGATORIO):
 
-### SIEMPRE (cada 30 min):
-1. Gateway vivo → curl 127.0.0.1:18789
-2. RAM/Disco → df -h, free -h
-3. Contenedores → docker ps
-4. Logs errores → tail /tmp/openclaw/*.log
-
-### INVESTIGACIÓN (si still > 1 hora):
-1. Verificar última interacción de Daniel
-2. Si still → random check según probabilidad horario
-3. Si toca investigar → elegir tema pendiente
-4. Investigar y documentar en memory/investigaciones/
+- Crear/actualizar 1 doc (`rbk-*`/`ts-*`/`dec-*`/`ref-*`) en `memory/`.
+- Actualizar `memory/index.md` (añadir link + 1 línea "when-to-use" + Keys).
+- Si apareció vocab nuevo, actualizar `memory/glossary.md` (sinónimos/alias).
 
 ---
 
-## 📝 Temas de Investigación Pendientes
+### 4) Sanitización:
 
-1. **Búhos** - Simbolismo, mitología, sabiduría
-2. **GLM-5 alternativas** - Antes de Abril 2026
-3. **OpenClaw docs** - Novedades, best practices
-4. **Optimización VPS** - Seguridad, performance
-5. **Skills útiles** - ClawHub discoveries
+- Nunca escribir tokens/keys/cookies/headers/PII.
+- Si aparece, reemplazar por `[REDACTED]` y anotar "dónde vive".
 
 ---
 
-## ⚙️ Cron Jobs Activos
+### 5) Anti-rot:
 
-| Nombre | Horario UTC | Frecuencia | Propósito |
-|--------|-------------|------------|-----------|
-| healthcheck:vps-daily | 06:00 | Diario | Salud del VPS |
-| backup:workspace | 06:00 | Diario | Backup memoria |
-| healthcheck:security-weekly | 09:00 Lun | Semanal | Auditoría seguridad |
-| alert:glm5-expiry | 01 Mar 09:00 | One-shot | Aviso GLM-5 expira |
-| alert:glm5-expiry-urgent | 15 Mar 09:00 | One-shot | Aviso urgente |
+- En el doc tocado, actualizar `Last reviewed: YYYY-MM-DD`.
 
 ---
 
-## 🚨 Alertas (solo si falla)
+## Salida:
 
-| Alerta | Condición | Acción |
-|--------|-----------|--------|
-| RAM crítica | >90% uso | Telegram inmediato |
-| Disco lleno | >85% uso | Telegram inmediato |
-| Gateway caído | No responde | Telegram + intento reinicio |
-| Contenedor down | Algo no corre | Telegram con nombre |
+- **Si hay alerta:** escribirla corta (qué pasa + impacto + next step).
+- **Si no hay alerta:** `HEARTBEAT_OK`.
 
 ---
 
-## 📈 Tracking de Estado
+## Config actual:
 
-Archivo: `memory/heartbeat-state.json`
-
-```json
-{
-  "lastChecks": {
-    "gateway": timestamp,
-    "vps_health": timestamp,
-    "containers": timestamp
-  },
-  "lastInteraction": timestamp,
-  "stillMinutes": number,
-  "investigationsToday": number
+```json5
+heartbeat: {
+  every: "2h",
+  target: "telegram",
+  to: "8596613010",
+  includeReasoning: false,
+  ackMaxChars: 120,
+  activeHours: {
+    start: "10:00",
+    end: "22:00",
+    timezone: "America/Cancun"
+  }
 }
 ```
 
 ---
 
-## 🔗 Links Importantes
-
-- GLM-5 gratis: https://modal.com/blog/try-glm-5
-- ClawHub: https://clawhub.ai/
-- Docs: https://docs.openclaw.ai/
-- GitHub: https://github.com/openclaw/openclaw
-
----
-
-## 🛠️ Comandos
-
-```bash
-# Ver cron jobs
-openclaw cron list
-
-# Ejecutar job manualmente
-openclaw cron run <job-id>
-
-# Ver runs
-openclaw cron runs <job-id>
-```
+_Actualizado: 17 Feb 2026_
