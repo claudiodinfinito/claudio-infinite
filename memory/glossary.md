@@ -87,4 +87,13 @@
 
 ---
 
-_Actualizado: 17 Feb 2026_
+### Brave API
+- **También se llama:** web_search, búsqueda web
+- **No confundir con:** Google Search
+- **Significa:** API de búsqueda web para búsquedas en tiempo real
+- **Ejemplo:** "Usé Brave para buscar documentación"
+- **Links:** [HEARTBEAT.md](../HEARTBEAT.md), `memory/brave-usage.json`
+
+---
+
+_Actualizado: 18 Feb 2026_

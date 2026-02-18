@@ -34,6 +34,7 @@
 | `MEMORY.md` | Este archivo - Memoria largo plazo |
 | `SECURITY.md` | Reglas de seguridad (8 bright lines) |
 | `TRAINER-FULL.md` | Instrucciones completas del trainer |
+| `TRAINER-ORQUESTADOR.md` | Main + subagentes, anti-deuda, protocolo |
 | `MISSION.md` | Mi misión de supervivencia |
 | `RUNBOOK.md` | Manual de operaciones + Debug |
 | `TOOLS.md` | Comandos + Skills + Config paths |
@@ -162,6 +163,7 @@
 | Gateway Port | `18789` |
 | VPS IP | `192.227.249.251` |
 | VPS Hostname | `racknerd-8bf9cb7` |
+| Brave API | Tracking en `memory/brave-usage.json` (límite 1,500/mes) |
 
 ---
 

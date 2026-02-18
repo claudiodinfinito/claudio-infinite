@@ -47,6 +47,15 @@
 
 ---
 
+## Brave API Tracking:
+
+- Archivo: `memory/brave-usage.json`
+- Límite: 1,500 búsquedas/mes (~$7.50 valor, gratis hasta $5)
+- Después de cada búsqueda: incrementar contador
+- Si > 80% (1,200): avisar a Daniel
+
+---
+
 ## Config actual:
 
 ```json5
@@ -55,15 +64,12 @@ heartbeat: {
   target: "telegram",
   to: "8596613010",
   includeReasoning: false,
-  ackMaxChars: 120,
-  activeHours: {
-    start: "10:00",
-    end: "22:00",
-    timezone: "America/Cancun"
-  }
+  ackMaxChars: 120
 }
 ```
 
+**Activo 24/7** — Sin restricción de horario.
+
 ---
 
-_Actualizado: 17 Feb 2026_
+_Actualizado: 18 Feb 2026_

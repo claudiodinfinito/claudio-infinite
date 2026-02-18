@@ -1,57 +1,26 @@
 # TODO.md - Acciones Pendientes
 
-**Actualizado:** 17 Feb 2026, 03:15 UTC
-
----
-
-## ▶️ PRÓXIMAS ACCIONES (Después de /new)
-
-1. [ ] **Configurar gog con mi email** - claudiodinfinito@gmail.com para Gmail/Calendar/Drive
-2. [ ] **Añadir BRAVE_API_KEY a .env** para habilitar web_search
-3. [ ] **Decidir embeddings**: añadir GEMINI_API_KEY o desactivar memorySearch
-4. [ ] **Eliminar Discord de openclaw.json** - está habilitado sin token
-5. [ ] **Cambiar horarios investigación** de 23:00 UTC a 05:00 UTC (12 AM Cancun real)
-6. [ ] **Ejecutar /compact** en sesiones main y telegram (79-84%)
-7. [ ] **Configurar Git backup** del workspace en repo privado
-8. [ ] **Investigar alternativas a GLM-5** antes de Abril 2026
+**Actualizado:** 18 Feb 2026, 16:00 UTC
 
 ---
 
 ## 🔴 CRÍTICO (Hoy)
 
-- [ ] **Cumplir STARTUP en cada mensaje** - Si lo olvidas, detenerte y hacerlo
-- [ ] **Ritual de /new** - Volcar TODO+MEMORY antes de reiniciar sesión cuando Context > 80%
-- [ ] **Añadir `BRAVE_API_KEY`** - web_search no funciona sin él
-- [ ] **Configurar memorySearch** - Opciones: `GEMINI_API_KEY`, `OPENAI_API_KEY`, o embeddings locales con `memorySearch.provider: "local"`
-- [ ] **Eliminar Discord de config** - No hay token, está habilitado innecesariamente
-- [ ] **Corregir horarios de investigación** - Cambiar de 23:00 UTC a 05:00 UTC para que sea 12 AM Cancun real
-- [ ] **Ejecutar `/compact`** en sesiones main (84%) y telegram (79%)
-
-### ✅ Completado Hoy (17 Feb)
-
-- [x] **Crear archivos faltantes:**
-  - [x] `MISSION.md`
-  - [x] `SECURITY.md`
-  - [x] `SYSTEM-STATUS.md`
-  - [x] `SKILLS-INDEX.md`
-  - [x] `TODO.md`
-  - [x] `memory/2026-02-16.md`
-  - [x] `memory/2026-02-17.md`
-- [x] **Auditoría de fallas** - Documentada en `memory/ref-fallas-skills.md`
-- [x] **Ejecutar rutina AGENTS.md** - Leer SOUL.md, USER.md, MEMORY.md, memory al inicio
+- [x] ~~Cumplir STARTUP en cada mensaje~~ — Ejecutándose correctamente
+- [x] ~~Limpiar archivos obsoletos~~ — BOOTSTRAP.md, MIGRACION-SANDBOX, references/ eliminados
+- [x] ~~Añadir `BRAVE_API_KEY`~~ — Configurado + tracking de uso
+- [x] ~~Configurar embeddings~~ — Gemini API configurado ✅
+- [x] ~~Cambiar horario a 24/7~~ — activeHours eliminado ✅
+- [x] ~~Actualizar trainer~~ — TRAINER-ORQUESTADOR.md creado ✅
 
 ---
 
 ## 🟡 IMPORTANTE (Esta semana)
 
-- [ ] **Ejecutar rutina de AGENTS.md automáticamente** - Leer SOUL.md, USER.md, memory al inicio de CADA sesión
-- [ ] **Configurar API keys para skills útiles:**
-  - `BRAVE_API_KEY` para web_search
-  - `GEMINI_API_KEY` para embeddings + banana-pro
-  - `NOTION_API_KEY` para notion skill
-- [ ] **Git backup del workspace** - Repo privado con historial
-- [ ] **Configurar trustedProxies** si se expone dashboard
-- [ ] **Activar UFW** en VPS (Daniel debe ejecutar)
+- [ ] Crear `memory/ts-telegram-no-reply.md` — Troubleshooting
+- [ ] Crear `memory/rbk-gateway-restart.md` — Runbook con rollback
+- [ ] Configurar Git backup del workspace en repo privado
+- [ ] Unificar nombre "Claudio Infinito" en todos los archivos
 
 ---
 
@@ -59,8 +28,22 @@
 
 - [ ] Instalar Tailscale para SSH seguro
 - [ ] Configurar skill `sag` con ElevenLabs (voz)
-- [ ] Documentar investigación nocturna en `investigaciones/`
-- [ ] Crear `references/identidad.md` y `references/reglas.md` en claudio-infinite
+- [ ] Investigar alternativas a GLM-5 antes de Abril 2026
+- [ ] Configurar gog con mi email (claudiodinfinito@gmail.com)
+
+---
+
+## ✅ COMPLETADO (17-18 Feb 2026)
+
+- [x] Crear archivos de sistema — MISSION.md, SECURITY.md, SKILLS-INDEX.md
+- [x] Auditoría de fallas — Documentada en memory/ref-fallas-skills.md
+- [x] Patrón del búho — En 3 archivos: SOUL.md, AGENTS.md, SKILL.md
+- [x] Limpiar archivos obsoletos — BOOTSTRAP.md, MIGRACION-SANDBOX, references/
+- [x] Inventario completo — 34 archivos MD revisados
+- [x] Brave API — Configurada + tracking de uso
+- [x] Gemini embeddings — Configurado
+- [x] Horario 24/7 — Sin restricción de activeHours
+- [x] Trainer actualizado — TRAINER-ORQUESTADOR.md con protocolo de subagentes
 
 ---
 
@@ -68,10 +51,10 @@
 
 | Categoría | Pendientes |
 |-----------|------------|
-| Crítico | 6 |
+| Crítico | 0 ✅ |
 | Importante | 4 |
 | Mejoras | 4 |
-| **Total** | **14** |
+| **Total** | **8** |
 
 ---
 
