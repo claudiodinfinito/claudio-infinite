@@ -7,9 +7,9 @@
 ## 📥 Inbox
 
 - [x] (1) Limpiar skills claudio-infinite y vps-admin — salida: actualizar SKILL.md ✅
-- [ ] (2) Crear ts-telegram-no-reply.md — salida: troubleshooting
+- [x] (2) Crear ts-telegram-no-reply.md — salida: troubleshooting ✅
 - [x] (2) Crear rbk-gateway-restart.md con rollback — salida: runbook ✅
-- [ ] (3) Unificar nombre "Claudio Infinito" en todos los archivos — salida: consistencia
+- [x] (3) Unificar nombre "Claudio Infinito" en todos los archivos — salida: consistencia ✅
 - [x] (3) Eliminar references/reglas.md (duplica MEMORY.md) — salida: limpieza ✅
 - [x] (3) Limpiar index (fusionar duplicados) — salida: index limpio ✅
 - [x] (3) Crear ref-openclaw-musthaves.md — salida: referencia trainer ✅
@@ -25,4 +25,4 @@
 
 ---
 
-_Actualizado: 17 Feb 2026 - 07:19 UTC_
+_Actualizado: 18 Feb 2026 - 11:54 UTC_

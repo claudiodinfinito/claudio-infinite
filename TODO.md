@@ -1,61 +1,117 @@
-# TODO.md - Acciones Pendientes
+# TODO.md - Backlog Vivo con Estados Fuzzy
 
-**Actualizado:** 18 Feb 2026, 16:00 UTC
-
----
-
-## 🔴 CRÍTICO (Hoy)
-
-- [x] ~~Cumplir STARTUP en cada mensaje~~ — Ejecutándose correctamente
-- [x] ~~Limpiar archivos obsoletos~~ — BOOTSTRAP.md, MIGRACION-SANDBOX, references/ eliminados
-- [x] ~~Añadir `BRAVE_API_KEY`~~ — Configurado + tracking de uso
-- [x] ~~Configurar embeddings~~ — Gemini API configurado ✅
-- [x] ~~Cambiar horario a 24/7~~ — activeHours eliminado ✅
-- [x] ~~Actualizar trainer~~ — TRAINER-ORQUESTADOR.md creado ✅
+**Actualizado:** 2026-02-18, 23:05 UTC
+**Heartbeats hoy:** 6/48
+**Último trabajo:** 2026-02-18 23:05 UTC - Skill forense verificado, TRAINER-DIAG test iniciado, claude-conversations creado
 
 ---
 
-## 🟡 IMPORTANTE (Esta semana)
+## Estados Fuzzy
 
-- [ ] Crear `memory/ts-telegram-no-reply.md` — Troubleshooting
-- [ ] Crear `memory/rbk-gateway-restart.md` — Runbook con rollback
-- [ ] Configurar Git backup del workspace en repo privado
-- [ ] Unificar nombre "Claudio Infinito" en todos los archivos
-
----
-
-## 🟢 MEJORAS (Cuando haya tiempo)
-
-- [ ] Instalar Tailscale para SSH seguro
-- [ ] Configurar skill `sag` con ElevenLabs (voz)
-- [ ] Investigar alternativas a GLM-5 antes de Abril 2026
-- [ ] Configurar gog con mi email (claudiodinfinito@gmail.com)
+```
+[0%]  ━━━━━━━━━━ No iniciado
+[10%] ━━━━━━━━━〇 Idea superficial
+[25%] ━━━━━━━●━━ Investigué 1 fuente
+[50%] ━━━━━●━━━━ Revisé múltiples fuentes
+[75%] ━━●━━━━━━━ Sinteticé, documenté
+[90%] ●━━━━━━━━━ Listo para aplicar
+[100%] ●●●●●●●●●● Aplicado + verificado
+```
 
 ---
 
-## ✅ COMPLETADO (17-18 Feb 2026)
+## Next (máx 5, <=90min)
 
-- [x] Crear archivos de sistema — MISSION.md, SECURITY.md, SKILLS-INDEX.md
-- [x] Auditoría de fallas — Documentada en memory/ref-fallas-skills.md
-- [x] Patrón del búho — En 3 archivos: SOUL.md, AGENTS.md, SKILL.md
-- [x] Limpiar archivos obsoletos — BOOTSTRAP.md, MIGRACION-SANDBOX, references/
-- [x] Inventario completo — 34 archivos MD revisados
-- [x] Brave API — Configurada + tracking de uso
-- [x] Gemini embeddings — Configurado
-- [x] Horario 24/7 — Sin restricción de activeHours
-- [x] Trainer actualizado — TRAINER-ORQUESTADOR.md con protocolo de subagentes
+### 1. [100%] ✅ Dejar de ser config slim - COMPLETADO
+- **Estado:** Patch aplicado, doctor validó, tools funcionando
+- **Completado:** 2026-02-18 22:10 UTC
+- **Aplicado:** tools.*, logging, subagents, retry, exec-approvals.json, fallbacks (GLM-5 → Gemini 3 Flash → Claude)
+- **Doc:** memory/dec-slim-config-priority.md, ts-audit-config-slim.md
+
+### 2. [100%] Crear skill forense Google Leak
+- **Estado:** SKILL.md creado en skills/forensic-api-leak/
+- **Tiempo:** Completado
+- **Creado:** memory/lib/ (2,590 archivos v0.2.0), skills/forensic-api-leak/SKILL.md
+
+### 3. [75%] Crear subagente TRAINER-DIAG
+- **Estado:** Spec creado en spec-subagent-trainer-diag.md
+- **Tiempo:** Completado parcialmente
+- **Próximo:** Validar con test case real
+- **Doc:** memory/spec-subagent-trainer-diag.md
+
+### 4. [10%] Configurar cron jobs para heartbeat
+- **Estado:** Idea superficial
+- **Tiempo:** 30min
+- **Próximo:** `openclaw cron add` para trainer:heartbeat
+- **Necesita:** Confirmación antes de crear
+
+### 5. [0%] Pasar conversaciones con Claude
+- **Estado:** No iniciado
+- **Tiempo:** 20min
+- **Próximo:** Daniel pega conversaciones en archivo
+- **Archivo:** memory/claude-conversations/
 
 ---
 
-## 📊 ESTADO
+## Backlog (priorizado por ROI)
 
-| Categoría | Pendientes |
-|-----------|------------|
-| Crítico | 0 ✅ |
-| Importante | 4 |
-| Mejoras | 4 |
-| **Total** | **8** |
+### Estabilidad
+- [100%] ~~Crear memory/trainer/INDEX.md~~ ✅ (ya existe y actualizado)
+- [100%] ~~Configurar Git backup workspace~~ ✅ (cron backup:workspace OK, corre 06:00 UTC)
+- [100%] ~~Verificar healthcheck:vps-daily corre OK~~ ✅ (cron corre 06:00 UTC, status: ok)
+
+### Limpieza
+- [100%] ~~Crear rbk-gateway-restart.md~~ ✅
+- [100%] ~~Crear ts-telegram-no-reply.md~~ ✅
+- [100%] ~~Unificar "Claudio Infinito" en todos los archivos~~ ✅
+
+### Aprendizaje
+- [50%] Analizar One Minute Coach completo (leí PDF, falta sintetizar más)
+- [75%] Aplicar Atomic Habits a mi sistema (documentado en ref-atomic-habits-*.md)
+
+### Refactor seguro
+- [75%] Investigar alternativas a GLM-5 antes de Abril 2026 — ver ref-glm5-alternatives.md
+- [0%] Configurar gog con claudiodinfinito@gmail.com
+- [0%] Instalar Tailscale para SSH seguro
 
 ---
 
-_Añadir bullets aquí cuando surjan acciones en conversación._
+## Completado Hoy (18 Feb 2026)
+
+- [x] [100%] Actualizar a OpenClaw v2026.2.17
+- [x] [100%] Investigar Z.AI tool_stream + issue #15716
+- [x] [100%] Leer Atomic Habits PDF completo
+- [x] [100%] Leer One Minute Coach PDF completo
+- [x] [100%] Documentar Google Leak en 3 archivos
+- [x] [100%] Crear ref-glm5-issues.md
+- [x] [100%] Crear ref-atomic-habits-one-minute-coach-agents.md
+- [x] [100%] Crear rbk-gateway-restart.md
+- [x] [100%] Crear ts-telegram-no-reply.md
+- [x] [100%] Unificar "Claudio Infinito" en archivos
+- [x] [100%] Vaciar inbox.md (7 tareas completadas)
+
+---
+
+## Deuda Técnica
+
+| Tipo | Estado |
+|------|--------|
+| Memoria fragmentada | BAJA |
+| Procesos sin runbook | BAJA (runbooks creados) |
+| Docs sin indexar | BAJA |
+| Fuzzy tracking | NUEVO - implementando |
+
+---
+
+## Métricas
+
+| KPI | Valor |
+|-----|-------|
+| Tareas Next | 5 |
+| Tareas Backlog | 8 |
+| Completadas hoy | 11 |
+| Deuda técnica | BAJA |
+
+---
+
+_Añadir tareas aquí según surjan en conversación._
