@@ -24,9 +24,9 @@ Last reviewed: 2026-02-19
 
 **7.** GLM-5 expira Abril 2026 — 2 meses gratis, ¿después qué? Acción: Plan migración.
 
-**8.** Puter.js investigación — promete gratis, ¿es real? Acción: Testear con app propia.
+**8.** GLM-5 alternativas post-Abril 2026 — ¿DeepSeek? ¿Ollama local? Acción: Investigar opciones reales.
 
-**9.** MiniMax M2.5 — 10x más barato que Claude, ¿integrar? Acción: Evaluar para coding.
+**9.** Claude Haiku como backup barato — $1/M, usar con cuidado. Acción: Definir cuándo usar.
 
 **10.** Backup workspace — cronjob falló (sin remote). Acción: Arreglar cuando tenga URL.
 
@@ -88,15 +88,15 @@ Last reviewed: 2026-02-19
 
 **33.** Gemini gratis 20/día — maximizar cada petición. Acción: No desperdiciar en micro-tasks.
 
-**34.** DeepSeek V3.2 gratis — vía Puter.js. Acción: Testear como alternativa.
+**34.** DeepSeek V3.2 — alternativa a considerar. Acción: Investigar pricing real.
 
-**35.** MiniMax M2.5 $0.30/M — coding excelente. Acción: Comparar con Claude para código.
+**35.** Ollama local — modelos en VPS sin API. Acción: ¿Tengo RAM suficiente?
 
 **36.** OpenRouter — acceso multi-modelo. Acción: Evaluar vs APIs directas.
 
 **37.** Ollama local — modelos en VPS. Acción: ¿Tengo RAM suficiente?
 
-**38.** Self-host Puter.js — versión alpha existe. Acción: ¿Vale la pena?
+**38.** OpenRouter — acceso multi-modelo con una API. Acción: Evaluar vs APIs directas.
 
 **39.** API credits tracking — no sé cuánto gasto. Acción: Crear tracking real.
 
