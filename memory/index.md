@@ -8,6 +8,7 @@
 
 - [RBK-STARTUP-001](rbk-startup.md) — procedimiento de arranque obligatorio — Keys: startup, arranque, identity
 - [RBK-ORCH-001](rbk-subagent-orchestrator.md) — cómo spawnear, esperar, integrar subagentes — Keys: subagentes, orchestrator, prompts, gemini
+- [REF-CRONJOBS-001](ref-cronjobs-active.md) — recordatorios y automatizaciones activas — Keys: cron, automation, alerts
 - [RBK-TRIAGE-001](rbk-triage.md) — loop de triage y debugging gateway — Keys: triage, debug, gateway, logs
 - [RBK-SES-001](rbk-session-locked.md) — sesión bloqueada, eliminar locks — Keys: session, locked, gateway
 - [REF-DEBUG-001](ref-debugging.md) — comandos y tablas de troubleshooting — Keys: debug, commands, channels, config
