@@ -137,3 +137,17 @@
 ---
 
 _Actualizado: 19 Feb 2026 - Añadido Heartbeat_
+
+---
+
+### Cronjob
+- **También se llama:** Job, automatización programada
+- **No confundir con:** Heartbeat (es un tipo de cronjob)
+- **Significa:** Tarea programada que se ejecuta automáticamente
+- **Tipos:** reminders (mensajes), healthchecks (verificaciones), alerts (alertas)
+- **Ejemplo:** "El cronjob de backup corre cada día a las 06:00"
+- **Links:** [REF-CRONJOBS-001](ref-cronjobs-active.md)
+
+---
+
+_Actualizado: 19 Feb 2026 - Añadido Cronjob_
