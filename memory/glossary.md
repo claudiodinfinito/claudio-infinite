@@ -151,3 +151,17 @@ _Actualizado: 19 Feb 2026 - Añadido Heartbeat_
 ---
 
 _Actualizado: 19 Feb 2026 - Añadido Cronjob_
+
+---
+
+### Departamento
+- **También se llama:** Dept, área especializada
+- **No confundir con:** Subagente (un dept puede spawnear subagentes)
+- **Significa:** Área especializada del sistema multiagente con focus específico
+- **Los 6:** MARKETING, FRONTEND, BACKEND, SEO, COPY, EMPRENDIMIENTO
+- **Ejemplo:** "El departamento de SEO analizó el Google Leak"
+- **Links:** [REF-DEPT-001](ref-departments.md)
+
+---
+
+_Actualizado: 19 Feb 2026 - Añadido Departamento_
