@@ -57,6 +57,7 @@
 - [REF-DEPT-001](ref-departments.md) — 6 departamentos multiagente: marketing, frontend, backend, seo, copy, emprendimiento + temperaturas + handover — Keys: departments, multiagent, temperature, handover
 - [REF-CLI-001](ref-openclaw-cli.md) — Comandos OpenClaw CLI: gateway, cron, modelos, diagnóstico, rutas — Keys: openclaw, cli, commands, gateway
 - [REF-LIMITS-001](ref-model-limits.md) — Límites modelos AI free tier: GLM-5 (1 concurrente), Gemini (20/día), alternativas — Keys: models, limits, api, free, rate-limit
+- [REF-DAILY-001](ref-daily-checklist.md) — Checklist diario 22:00 UTC: actualizar log, revisar TODO, verificar APIs, health check — Keys: daily, checklist, routine, maintenance
 - [REF-SUBAGENTS-001](ref-subagents-parallel.md) — subagentes y paralelismo: maxSpawnDepth, maxConcurrent, patrones de fan-out — Keys: subagents, parallel, spawn, performance
 - [TS-HEARTBEAT-001](ts-heartbeat-no-funciona.md) — diagnóstico: rate limit GLM-5 + Claude billing, heartbeats ejecutan pero sin respuesta — Keys: heartbeat, rate-limit, billing, debug
 - [TS-GLM5-RATE-001](ts-glm5-rate-limit.md) — GLM-5 rate limit: límites, reset, diagnóstico, tests — Keys: glm5, rate-limit, modal, reset
