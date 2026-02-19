@@ -9,6 +9,7 @@
 - [RBK-GW-001](rbk-gateway-restart.md) — reiniciar gateway con rollback — Keys: gateway, restart, systemctl, debug
 - [RBK-SES-001](rbk-session-locked.md) — sesión bloqueada, eliminar locks — Keys: session, locked, gateway
 - [TS-TEL-001](ts-telegram-no-reply.md) — Telegram no responde, diagnóstico — Keys: telegram, no-reply, typing, channel
+- [TS-CRON-001](ts-cron-delivery-failed.md) — cron job delivery failed, diagnóstico — Keys: cron, delivery, telegram, announce, failed
 - [REF-FALLAS-001](ref-fallas-skills.md) — skills fallidas, debugging — Keys: skills, error, debug
 - [REF-SEARCH-001](ref-search-hacks.md) — hacks de búsqueda sin embeddings — Keys: search, grep, rg, index
 - [REF-MUST-001](ref-openclaw-musthaves.md) — 7 must-haves OpenClaw del trainer — Keys: must-have, config, fallback, backup

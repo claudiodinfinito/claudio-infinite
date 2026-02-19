@@ -24,6 +24,8 @@
 | 2026-02-18 22:59 | Higiene TODO.md | ✅ Completado | Corregido fuzzy state trainer INDEX (ya existía), gateway OK, Brave API 0.13% usado |
 | 2026-02-19 01:35 | Commit diario + crear log 19 Feb | ✅ Completado | Git commit, diario 2026-02-19.md creado, todo estable |
 | 2026-02-19 05:13 | Actualizar MEMORY.md | ✅ Completado | Fallback chain actualizado (GLM-5 → Gemini 3 Flash → Claude), lección config manual añadida |
+| 2026-02-19 09:39 | Verificar cron jobs | ✅ Completado | healthcheck:vps-daily tiene delivery error (no crítico), job ejecuta OK, ts-cron-delivery-failed.md creado |
+| 2026-02-19 09:34 | Verificar cron healthcheck | ⚠️ Menor | Healthcheck OK pero "cron announce delivery failed" - no crítico, notificación no entregada |
 | 2026-02-19 07:04 | Higiene TODO.md | ✅ Completado | Separadas tareas 18 Feb vs 19 Feb, métricas actualizadas, gateway OK |
 | 2026-02-19 06:01 | Cron healthcheck VPS | ✅ OK | RAM 22%, Disco 33%, 8 containers, Gateway OK — sin anomalías |
 | 2026-02-19 05:45 | Verificar cron jobs | ✅ Completado | healthcheck:security-weekly OK, alert:glm5-expiry programado para Mar 1 |
