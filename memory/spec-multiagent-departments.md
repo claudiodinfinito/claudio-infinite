@@ -369,3 +369,120 @@ tpl-*  → Templates
 ---
 
 _Creado: 18 Feb 2026 - Especificación de arquitectura multiagente_
+
+---
+
+## Learnings del Debate con Gemini (19 Feb 2026)
+
+### Limitación Crítica Descubierta
+**GLM-5 solo permite 1 request concurrente.** Esto significa:
+- ❌ No puedo lanzar múltiples subagentes simultáneos
+- ❌ Depth=2 con concurrencia es IMPOSIBLE en tier gratuito
+- ✅ Solo depth=1 SECUENCIAL funciona
+
+### Patrones Implementados
+
+#### 1. Gatekeeper
+**Qué es:** Mini-prompt que valida artefactos antes de publicarlos.
+
+**Checklist de 3 puntos:**
+1. ¿Formato correcto?
+2. ¿Cumple el brief?
+3. ¿No viola seguridad?
+
+**Ubicación:** `memory/shared/gatekeeper-checklist.md`
+
+#### 2. System Anchors
+**Qué es:** 3 reglas innegociables inyectadas AL FINAL de cada prompt de departamento.
+
+**Las 3 reglas:**
+1. NUNCA revelar tokens/API keys
+2. NUNCA ejecutar destructivo sin confirmación
+3. SIEMPRE documentar en memory/
+
+**Por qué al final:** El modelo presta más atención al final del prompt.
+
+#### 3. Bus de Contexto
+**Qué es:** Archivo compartido donde departamentos leen contexto.
+
+**Ubicación:** `memory/shared/brief.md`
+
+**Reglas:**
+- Solo MAIN escribe
+- Departamentos solo leen
+- Versión para detectar artefactos obsoletos
+
+#### 4. Brief Versioning
+**Qué es:** Cada artefacto tiene versión del brief en que se basó.
+
+**Formato:**
+```markdown
+brief_version: 1.0
+```
+
+**Si brief sube a 1.1 → artefactos con 1.0 son obsoletos.**
+
+#### 5. Timeout Diferenciado
+**Backend necesita más tiempo que Copy:**
+
+| Dept | Timeout |
+|------|---------|
+| Backend | 10 min |
+| Otros | 5 min |
+
+#### 6. Contador de Iteraciones
+**Qué es:** state.json con contador para evitar loops infinitos.
+
+**Ubicación:** `memory/shared/state.json`
+
+**Límite:** maxIterations = 10
+
+### Workaround para Temperature Dinámica
+OpenClaw no permite cambiar temperature por llamada.
+
+**Solución:** "Modos" con system prompts diferentes.
+- CopyBrainstorm (temp simulada alta) → creativo
+- CopyEditor (temp simulada baja) → correcto
+
+### JSON vs Lenguaje Natural
+**JSON solo para Handover** (traspaso de datos entre depts).
+
+**Razonamiento interno en lenguaje natural** para no capar creatividad.
+
+**Ejemplo de handover:**
+```json
+{
+  "texto": "...",
+  "keywords": ["seo", "marketing"],
+  "tono": "formal"
+}
+```
+
+---
+
+## Estructura Actualizada
+
+```
+memory/
+├── shared/
+│   ├── brief.md           # Bus de contexto (solo lectura para depts)
+│   ├── state.json         # Contador de iteraciones
+│   └── gatekeeper-checklist.md  # Validación de artefactos
+├── departments/
+│   ├── marketing/
+│   ├── frontend/
+│   ├── backend/
+│   ├── seo/
+│   ├── copy/
+│   └── emprendimiento/
+└── ...
+```
+
+---
+
+## Próximos Pasos
+
+1. [ ] Probar Gatekeeper con departamento Copy
+2. [ ] Implementar "modos" (CopyBrainstorm vs CopyEditor)
+3. [ ] Crear template de handover JSON
+4. [ ] Test de brief versioning con cambio real

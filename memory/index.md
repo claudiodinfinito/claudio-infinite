@@ -17,6 +17,12 @@
 - [SPEC-TRAINER-DIAG-001](spec-subagent-trainer-diag.md) — subagente diagnóstico: 3 hipótesis + tests + conclusión — Keys: subagent, diag, trainer, troubleshooting
 - [SPEC-QA-ORCH-001](spec-qa-orchestrator.md) — Q&A orquestador con depth=2, GLM+Gemini, síntesis — Keys: subagent, qa, orchestrator, depth, synthesis
 
+## Shared (bus de contexto)
+
+- [shared/brief.md](shared/brief.md) — contexto compartido entre departamentos — Keys: brief, shared, context
+- [shared/gatekeeper-checklist.md](shared/gatekeeper-checklist.md) — validación de artefactos (3 puntos) — Keys: gatekeeper, validation, checklist
+- [shared/state.json](shared/state.json) — contador de iteraciones, max 10 — Keys: state, iterations, counter
+
 ## Core (reglas de operación)
 
 - [TRAINER-ORQUESTADOR.md](../TRAINER-ORQUESTADOR.md) — main + subagentes, anti-deuda, protocolo — Keys: subagentes, main, artefactos, orquestación
