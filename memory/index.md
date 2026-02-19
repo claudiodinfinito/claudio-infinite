@@ -10,6 +10,7 @@
 - [RBK-ORCH-001](rbk-subagent-orchestrator.md) — cómo spawnear, esperar, integrar subagentes — Keys: subagentes, orchestrator, prompts, gemini
 - [REF-CRONJOBS-001](ref-cronjobs-active.md) — recordatorios y automatizaciones activas — Keys: cron, automation, alerts
 - [REF-ONELINERS-001](ref-one-liners-glm5.md) — prompts one-liners óptimos para GLM-5 — Keys: one-liners, prompts, glm5, efficiency
+- [REF-DAY-SYNTHESIS-001](ref-day-synthesis-2026-02-19.md) — síntesis completa del día con métricas y aprendizajes — Keys: synthesis, daily, learnings, metrics
 - [CHK-OPTIMIZATION-001](chk-optimization.md) — checklist de mantenimiento autónomo — Keys: checklist, optimization, maintenance
 - [RBK-TRIAGE-001](rbk-triage.md) — loop de triage y debugging gateway — Keys: triage, debug, gateway, logs
 - [RBK-SES-001](rbk-session-locked.md) — sesión bloqueada, eliminar locks — Keys: session, locked, gateway
