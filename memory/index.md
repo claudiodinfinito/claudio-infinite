@@ -55,6 +55,7 @@
 - [REF-DIAG-001](ref-quick-diagnostics.md) — Diagnósticos rápidos: checks 30s/2min/5min, one-liners, umbrales alerta — Keys: diagnostics, health, vps, troubleshooting
 - [REF-NAMING-001](ref-file-naming.md) — Nomenclatura archivos: prefijos, IDs, formato header estándar — Keys: naming, conventions, files, organization
 - [REF-DEPT-001](ref-departments.md) — 6 departamentos multiagente: marketing, frontend, backend, seo, copy, emprendimiento + temperaturas + handover — Keys: departments, multiagent, temperature, handover
+- [REF-CLI-001](ref-openclaw-cli.md) — Comandos OpenClaw CLI: gateway, cron, modelos, diagnóstico, rutas — Keys: openclaw, cli, commands, gateway
 - [REF-SUBAGENTS-001](ref-subagents-parallel.md) — subagentes y paralelismo: maxSpawnDepth, maxConcurrent, patrones de fan-out — Keys: subagents, parallel, spawn, performance
 - [TS-HEARTBEAT-001](ts-heartbeat-no-funciona.md) — diagnóstico: rate limit GLM-5 + Claude billing, heartbeats ejecutan pero sin respuesta — Keys: heartbeat, rate-limit, billing, debug
 - [TS-GLM5-RATE-001](ts-glm5-rate-limit.md) — GLM-5 rate limit: límites, reset, diagnóstico, tests — Keys: glm5, rate-limit, modal, reset
