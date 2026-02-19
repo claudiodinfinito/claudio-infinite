@@ -23,6 +23,13 @@
 - [SPEC-TRAINER-DIAG-001](spec-subagent-trainer-diag.md) — subagente diagnóstico: 3 hipótesis + tests + conclusión — Keys: subagent, diag, trainer, troubleshooting
 - [SPEC-QA-ORCH-001](spec-qa-orchestrator.md) — Q&A orquestador con depth=2, GLM+Gemini, síntesis — Keys: subagent, qa, orchestrator, depth, synthesis
 - [SPEC-DUAL-001](spec-dual-subagent.md) — subagentes en STILL: GLM-5 + Gemini en paralelo dual — Keys: still, dual, parallel, autonomous
+- [REF-CLAUDE-001](ref-claude-tutorials-courses.md) — 22 tutoriales + 13 cursos Claude/Anthropic: prompt caching, extended thinking, system anchors — Keys: claude, tutorials, courses, anthropic
+- [REF-FALLAS-001](ref-fallas-skills.md) — fallas comunes en skills y cómo evitarlas — Keys: skills, failures, troubleshooting
+- [REF-GLM5-ALT-001](ref-glm5-alternatives.md) — alternativas gratuitas a GLM-5: DeepSeek, MiniMax, Puter.js — Keys: glm5, alternatives, models, free
+- [REF-OPENCLAW-001](ref-openclaw-musthaves.md) — features esenciales de OpenClaw que debe conocer — Keys: openclaw, features, musthave
+- [REF-SEARCH-001](ref-search-hacks.md) — hacks de búsqueda web con Brave API — Keys: search, brave, hacks, web
+- [RBK-RESTART-001](rbk-gateway-restart.md) — cómo reiniciar gateway cuando falla — Keys: gateway, restart, debug
+- [TS-CRON-001](ts-cron-delivery-failed.md) — cronjob no entrega mensaje, diagnóstico — Keys: cron, delivery, failed, telegram
 
 ## Shared (bus de contexto)
 
