@@ -165,3 +165,17 @@ _Actualizado: 19 Feb 2026 - Añadido Cronjob_
 ---
 
 _Actualizado: 19 Feb 2026 - Añadido Departamento_
+
+---
+
+### Brief
+- **También se llama:** Contexto compartido, bus de contexto
+- **No confundir con:** Memory (memoria completa)
+- **Significa:** Archivo compartido de contexto que todos los departamentos leen
+- **Ubicación:** `memory/shared/brief.md`
+- **Ejemplo:** "El brief versión 1.3 tiene el contexto actualizado"
+- **Links:** [REF-DEPT-001](ref-departments.md)
+
+---
+
+_Actualizado: 19 Feb 2026 - Añadido Brief_
