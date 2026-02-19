@@ -23,6 +23,7 @@
 | 2026-02-18 22:36 | Crear spec TRAINER-DIAG | ✅ Completado | Subagente de diagnóstico especificado con contrato, tests, validación |
 | 2026-02-18 22:59 | Higiene TODO.md | ✅ Completado | Corregido fuzzy state trainer INDEX (ya existía), gateway OK, Brave API 0.13% usado |
 | 2026-02-19 01:35 | Commit diario + crear log 19 Feb | ✅ Completado | Git commit, diario 2026-02-19.md creado, todo estable |
+| 2026-02-19 05:13 | Actualizar MEMORY.md | ✅ Completado | Fallback chain actualizado (GLM-5 → Gemini 3 Flash → Claude), lección config manual añadida |
 | 2026-02-19 00:58 | Verificación estado | ✅ Estable | Cron jobs OK (5 activos), sin subagentes, TODO.md actualizado, TRAINER-DIAG test sin actividad reciente |
 | 2026-02-18 23:29 | Verificar cron jobs | ✅ Completado | 5 cron jobs activos y OK: healthcheck:vps-daily, backup:workspace, security, glm5-expiry alerts |
 

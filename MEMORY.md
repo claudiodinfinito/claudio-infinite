@@ -110,11 +110,12 @@
 
 - **State dir**: `/root/.openclaw`
 - **Modelo primary**: GLM-5 (gratis hasta Abril 2026)
-- **Fallback**: Claude Opus 4-5 (solo emergencias)
+- **Fallback chain**: GLM-5 → Gemini 3 Flash → Claude Opus 4-5
 - **NO usar** `models.providers.anthropic` (Anthropic es built-in)
 - **SIEMPRE** `session.dmScope: per-channel-peer`
 - **Tokens** en `~/.openclaw/.env`, nunca en config ni MEMORY
 - **Fallbacks** (no failover): `agents.defaults.model.fallbacks`
+- **NUNCA crear config manualmente** → usar `openclaw onboard` o validar con `openclaw doctor`
 
 ## Reglas SIEMPRE (sin excusas)
 
@@ -212,9 +213,10 @@ openclaw channels status --probe
 
 ### Modelos
 - **Primario**: GLM-5-FP8 vía Modal (GRATIS hasta Abril 2026)
-- **Fallback**: Claude Opus 4-5 (solo emergencias)
+- **Fallback chain**: GLM-5 → Gemini 3 Flash → Claude Opus 4-5
 - Cambiar en chat: `/model list` → `/model <modelo>`
 - Config: `agents.defaults.model.primary` y `fallbacks`
+- **Alternativas GLM-5 post-Abril**: ver `memory/ref-glm5-alternatives.md`
 
 ### Skills activos
 - `healthcheck` → hardening y seguridad

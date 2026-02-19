@@ -96,4 +96,15 @@
 
 ---
 
-_Actualizado: 18 Feb 2026_
+### Subagente
+- **También se llama:** sessions_spawn, sub-agent, worker
+- **No confundir con:** Main session (yo), Q&A chat
+- **Significa:** Agente temporal para tareas específicas con output estructurado
+- **Uso correcto:** UN spawn → contrato claro → output estructurado → integrar
+- **Anti-pattern:** Spawn múltiples para Q&A iterativo → pierde rastreo → usuario sin updates
+- **Ejemplo:** "Lancé TRAINER-DIAG para diagnosticar gog OAuth, entregó 3 hipótesis"
+- **Links:** [SPEC-TRAINER-DIAG-001](spec-subagent-trainer-diag.md)
+
+---
+
+_Actualizado: 19 Feb 2026_

@@ -253,6 +253,20 @@ Actualizado: memory/index.md
 DIAG + FIX (2 subagentes, 5 min timeout) → SÍ
 ```
 
+### ❌ Q&A iterativo con subagentes (ERROR REAL 19 Feb):
+```
+Spawn subagente → recibe respuesta → spawn otro → recibe respuesta → ...
+Problema: IDs imposibles de rastrear, usuario sin updates, main "desaparece"
+```
+
+### ✅ Q&A estructurado:
+```
+1. Main hace la pregunta DIRECTAMENTE (no spawnea)
+2. Si necesita investigación → UN subagente con contrato completo
+3. Output estructurado: tabla/checklist/pasos
+4. Main integra y muestra progreso al usuario
+```
+
 ---
 
 ## 7) CHECKLIST DE CIERRE (OBLIGATORIO)

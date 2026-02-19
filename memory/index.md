@@ -14,6 +14,7 @@
 - [REF-MUST-001](ref-openclaw-musthaves.md) — 7 must-haves OpenClaw del trainer — Keys: must-have, config, fallback, backup
 - [SPEC-MATH-001](spec-subagent-math.md) — subagente matemáticas exactas DB-first — Keys: math, sql, exact, db, decimal
 - [SPEC-TRAINER-DIAG-001](spec-subagent-trainer-diag.md) — subagente diagnóstico: 3 hipótesis + tests + conclusión — Keys: subagent, diag, trainer, troubleshooting
+- [SPEC-QA-ORCH-001](spec-qa-orchestrator.md) — Q&A orquestador con depth=2, GLM+Gemini, síntesis — Keys: subagent, qa, orchestrator, depth, synthesis
 
 ## Core (reglas de operación)
 
