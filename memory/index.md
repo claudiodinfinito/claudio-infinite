@@ -50,6 +50,7 @@
 - [REF-ATOMIC-HABITS-002](ref-atomic-habits-one-minute-coach-agents.md) — Atomic Habits + One Minute Coach aplicados a agentes: identity, systems, debt-free — Keys: atomic-habits, one-minute-coach, identity, systems, debt-free
 - [REF-ONELINERS-001](ref-one-liners-glm5.md) — One-liners óptimos para GLM-5: 10 prompts probados, patrones, anti-patrones — Keys: one-liners, prompts, glm5, efficiency
 - [REF-GIT-001](ref-git-commands.md) — Comandos git del workspace: daily workflow, tipos de commit, flujo micro-tareas — Keys: git, commands, commit, workflow
+- [REF-DIAG-001](ref-quick-diagnostics.md) — Diagnósticos rápidos: checks 30s/2min/5min, one-liners, umbrales alerta — Keys: diagnostics, health, vps, troubleshooting
 - [REF-SUBAGENTS-001](ref-subagents-parallel.md) — subagentes y paralelismo: maxSpawnDepth, maxConcurrent, patrones de fan-out — Keys: subagents, parallel, spawn, performance
 - [TS-HEARTBEAT-001](ts-heartbeat-no-funciona.md) — diagnóstico: rate limit GLM-5 + Claude billing, heartbeats ejecutan pero sin respuesta — Keys: heartbeat, rate-limit, billing, debug
 - [TS-GLM5-RATE-001](ts-glm5-rate-limit.md) — GLM-5 rate limit: límites, reset, diagnóstico, tests — Keys: glm5, rate-limit, modal, reset
