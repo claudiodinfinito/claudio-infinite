@@ -11,6 +11,7 @@
 - [RBK-SES-001](rbk-session-locked.md) — sesión bloqueada, eliminar locks — Keys: session, locked, gateway
 - [REF-DEBUG-001](ref-debugging.md) — comandos y tablas de troubleshooting — Keys: debug, commands, channels, config
 - [SPEC-OS-001](spec-operating-system.md) — sistema anti-deuda y subagentes — Keys: os, architecture, debt, subagents
+- [SPEC-AUTONOMY-001](spec-tareas-autonomas.md) — tareas sin permiso, prioridades, flujo still → trabajo — Keys: autonomous, tasks, still, priorities
 - [DEC-GROUP-001](dec-group-chats.md) — comportamiento y etiquetas en grupos — Keys: groups, social, reactions
 - [TS-TEL-001](ts-telegram-no-reply.md) — Telegram no responde, diagnóstico — Keys: telegram, no-reply, typing, channel
 - [SPEC-MATH-001](spec-subagent-math.md) — subagente matemáticas exactas DB-first — Keys: math, sql, exact, db, decimal

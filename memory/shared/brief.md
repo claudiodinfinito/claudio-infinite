@@ -11,7 +11,7 @@
 
 ## Versión del Brief
 
-**Versión:** 1.0
+**Versión:** 1.1
 **Última actualización:** 2026-02-19
 **Estado:** Activo
 
@@ -22,8 +22,26 @@
 ### Proyecto Principal
 - **Usuario:** Daniel
 - **Stack:** RackNerd VPS + CapRover + Docker + OpenClaw
-- **Modelo:** GLM-5-FP8 (gratis hasta Abril 2026)
+- **Modelo Principal:** GLM-5-FP8 (gratis hasta Abril 2026)
+- **Subagente:** Gemini 3 Flash (20 req/día gratis)
+- **Emergencia:** Claude Sonnet 4.6 ($25 presupuesto)
 - **Canal:** Telegram DM
+
+### Arquitectura de Orquestación
+```
+GLM-5 (Claudio, main, orquestador)
+    ↓ spawn cuando necesita ayuda
+Gemini 3 Flash (subagente, worker)
+    ↓ devuelve
+Artefacto (MD, análisis, código)
+    ↓
+GLM-5 integra y actualiza memoria
+```
+
+### Limitación Clave
+**GLM-5 = 1 request concurrente máximo**
+- Si spawneo subagente GLM-5 → CHOQUE (429 error)
+- Solución: Subagentes con Gemini, yo espero
 
 ### Prioridades de Daniel
 1. Autosuficiencia del bot
