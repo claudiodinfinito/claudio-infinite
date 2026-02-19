@@ -12,12 +12,12 @@ Last reviewed: 2026-02-19
 
 | Modelo | Provider | Input | Output | Límites | Calidad |
 |--------|----------|-------|--------|---------|---------|
-| **GLM-5-FP8** | Modal (zai-org) | **$0** | **$0** | 1 request concurrente | ⭐⭐⭐⭐ |
-| **GLM-4 32B** | Free proxy | **$0** | **$0** | Rate limit desconocido | ⭐⭐⭐ |
-| **Gemini 2 Flash Lite** | Google AI Studio | **$0** | **$0** | 15 RPM, 1M tokens/día | ⭐⭐⭐ |
-| **Gemini 3 Flash** | Google AI Studio | **$0** | **$0** | 20 req/día, 150K tokens/día | ⭐⭐⭐⭐ |
-| **DeepSeek V3.2** | Free proxy | **$0** | **$0** | Rate limit desconocido | ⭐⭐⭐⭐⭐ |
-| **Claude Haiku** | Puter.js | **$0** | **$0** | Sin API key requerida | ⭐⭐⭐ |
+| **GLM-5-FP8** | Modal (zai-org) | **$0** | **$0** | 1 request concurrente | Alto |
+| **GLM-4 32B** | Free proxy | **$0** | **$0** | Rate limit desconocido | Medio |
+| **Gemini 2 Flash Lite** | Google AI Studio | **$0** | **$0** | 15 RPM, 1M tokens/día | Medio |
+| **Gemini 3 Flash** | Google AI Studio | **$0** | **$0** | 20 req/día, 150K tokens/día | Alto |
+| **DeepSeek V3.2** | Free proxy | **$0** | **$0** | Rate limit desconocido | Alto |
+| **Claude Haiku** | Puter.js | **$0** | **$0** | Sin API key requerida | Medio |
 
 ### Recomendación GRATIS:
 ```
@@ -34,18 +34,18 @@ Last reviewed: 2026-02-19
 
 | Modelo | Input | Output | Contexto | Razonamiento | Código |
 |--------|-------|--------|----------|--------------|--------|
-| **DeepSeek R1 Distill Llama 70B** | $0.03 | $0.14 | 128K | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| **DeepSeek V3.2** | $0.14 | $0.28 | 128K | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **DeepSeek R1** | $0.55 | $2.19 | 128K | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| **MiniMax M2.5 Lightning** | $0.20 | $0.80 | 200K | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| **MiniMax M2.5** | $0.30 | $1.20 | 1M | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| **Gemini 2.5 Flash Lite** | $0.10 | $0.40 | 1M | ⭐⭐⭐ | ⭐⭐⭐ |
-| **Gemini 3 Flash** | $0.50 | $3.00 | 1M | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| **Gemini 2.5 Pro** | $1.25 | $10.00 | 2M | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **Gemini 3 Pro** | $2.00 | $12.00 | 200K | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **Claude Haiku 4.5** | $1.00 | $5.00 | 200K | ⭐⭐⭐ | ⭐⭐⭐ |
-| **Claude Sonnet 4.6** | $3.00 | $15.00 | 1M | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| **Claude Opus 4.6** | $5.00 | $25.00 | 1M | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| **DeepSeek R1 Distill Llama 70B** | $0.03 | $0.14 | 128K | Alto | Bueno |
+| **DeepSeek V3.2** | $0.14 | $0.28 | 128K | Alto | Alto |
+| **DeepSeek R1** | $0.55 | $2.19 | 128K | Alto | Bueno |
+| **MiniMax M2.5 Lightning** | $0.20 | $0.80 | 200K | Bueno | Bueno |
+| **MiniMax M2.5** | $0.30 | $1.20 | 1M | Alto | Bueno |
+| **Gemini 2.5 Flash Lite** | $0.10 | $0.40 | 1M | Medio | Medio |
+| **Gemini 3 Flash** | $0.50 | $3.00 | 1M | Bueno | Bueno |
+| **Gemini 2.5 Pro** | $1.25 | $10.00 | 2M | Alto | Alto |
+| **Gemini 3 Pro** | $2.00 | $12.00 | 200K | Alto | Alto |
+| **Claude Haiku 4.5** | $1.00 | $5.00 | 200K | Medio | Medio |
+| **Claude Sonnet 4.6** | $3.00 | $15.00 | 1M | Alto | Alto |
+| **Claude Opus 4.6** | $5.00 | $25.00 | 1M | Alto | Alto |
 
 ---
 
