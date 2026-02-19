@@ -7,9 +7,11 @@
 ## Top (lo que uso siempre)
 
 - [RBK-STARTUP-001](rbk-startup.md) — procedimiento de arranque obligatorio — Keys: startup, arranque, identity
+- [RBK-ORCH-001](rbk-subagent-orchestrator.md) — cómo spawnear, esperar, integrar subagentes — Keys: subagentes, orchestrator, prompts, gemini
 - [RBK-TRIAGE-001](rbk-triage.md) — loop de triage y debugging gateway — Keys: triage, debug, gateway, logs
 - [RBK-SES-001](rbk-session-locked.md) — sesión bloqueada, eliminar locks — Keys: session, locked, gateway
 - [REF-DEBUG-001](ref-debugging.md) — comandos y tablas de troubleshooting — Keys: debug, commands, channels, config
+- [REF-MODEL-001](ref-model-comparison-pricing.md) — precios y rendimiento de modelos AI — Keys: models, pricing, performance, free
 - [SPEC-OS-001](spec-operating-system.md) — sistema anti-deuda y subagentes — Keys: os, architecture, debt, subagents
 - [SPEC-AUTONOMY-001](spec-tareas-autonomas.md) — tareas sin permiso, prioridades, flujo still → trabajo — Keys: autonomous, tasks, still, priorities
 - [DEC-GROUP-001](dec-group-chats.md) — comportamiento y etiquetas en grupos — Keys: groups, social, reactions
