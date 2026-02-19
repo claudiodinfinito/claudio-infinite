@@ -107,4 +107,14 @@
 
 ---
 
-_Actualizado: 19 Feb 2026_
+### Still
+- **También se llama:** Idle, inactivo, sin interacción
+- **No confundir con:** Offline (gateway apagado)
+- **Significa:** Estado donde no hay interacción reciente de Daniel (30+ min)
+- **Comportamiento:** Detectar still → leer TODO.md → ejecutar tarea autónoma → reportar
+- **Ejemplo:** "Detecté still, refactoricé AGENTS.md y reporté cuando volvió"
+- **Links:** [SPEC-AUTONOMY-001](spec-tareas-autonomas.md)
+
+---
+
+_Actualizado: 19 Feb 2026 - Añadido Still_
