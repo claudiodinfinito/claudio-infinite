@@ -88,4 +88,18 @@ Volver a still
 
 ---
 
-_Creado: 2026-02-19 - Sistema de autonomía_
+## Micro-Tareas (Cronjob 5 min)
+
+**Cronjob:** `reminder:micro-task-5min`
+**Objetivo:** 1 mejora pequeña cada 5 min = efecto compound.
+
+| Opción | Acción |
+|--------|--------|
+| 1 | Mejorar 1 archivo `memory/` |
+| 2 | Añadir 1 línea a daily log |
+| 3 | Actualizar `index.md` si falta algo |
+| 4 | Git commit pendiente |
+
+---
+
+_Actualizado: 2026-02-19 21:00 UTC - Añadido micro-tareas_
