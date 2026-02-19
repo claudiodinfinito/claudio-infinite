@@ -20,6 +20,7 @@
 - [SPEC-MATH-001](spec-subagent-math.md) — subagente matemáticas exactas DB-first — Keys: math, sql, exact, db, decimal
 - [SPEC-TRAINER-DIAG-001](spec-subagent-trainer-diag.md) — subagente diagnóstico: 3 hipótesis + tests + conclusión — Keys: subagent, diag, trainer, troubleshooting
 - [SPEC-QA-ORCH-001](spec-qa-orchestrator.md) — Q&A orquestador con depth=2, GLM+Gemini, síntesis — Keys: subagent, qa, orchestrator, depth, synthesis
+- [SPEC-DUAL-001](spec-dual-subagent.md) — subagentes en STILL: GLM-5 + Gemini en paralelo dual — Keys: still, dual, parallel, autonomous
 
 ## Shared (bus de contexto)
 
