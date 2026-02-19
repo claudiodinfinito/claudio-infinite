@@ -126,4 +126,14 @@
 
 ---
 
-_Actualizado: 19 Feb 2026 - Añadido Still_
+### Heartbeat
+- **También se llama:** Check periódico, still-check
+- **No confundir con:** Cronjob (es un tipo de cronjob)
+- **Significa:** Check automático cada 30 min para detectar inactividad y disparar tareas autónomas
+- **Comportamiento:** Si no hay interacción → STILL → ejecutar tarea de TODO.md
+- **Ejemplo:** "El heartbeat detectó still y refactoricé AGENTS.md"
+- **Links:** [HEARTBEAT.md](../HEARTBEAT.md), [SPEC-AUTONOMY-001](spec-tareas-autonomas.md)
+
+---
+
+_Actualizado: 19 Feb 2026 - Añadido Heartbeat_
