@@ -12,6 +12,7 @@ Last reviewed: 2026-02-19
 
 | ID | Nombre | Horario | Propósito |
 |----|--------|---------|-----------|
+| `fede06ad...` | reminder:micro-task-5min | Cada 5 min | Micro-tarea autónoma (Atomic Habits) |
 | `3228f35b...` | reminder:daily-log-update | Diario 22:00 UTC | Actualizar daily log + TODO |
 | `6fbad97d...` | reminder:weekly-consolidation | Domingo 12:00 UTC | Consolidar memoria semanal |
 | `0c238999...` | reminder:api-usage-check | Diario 18:00 UTC | Verificar uso de APIs |
