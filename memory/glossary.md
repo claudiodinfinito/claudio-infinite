@@ -179,3 +179,18 @@ _Actualizado: 19 Feb 2026 - Añadido Departamento_
 ---
 
 _Actualizado: 19 Feb 2026 - Añadido Brief_
+
+---
+
+### Micro-tarea
+- **También se llama:** Tarea atómica, one-minute task
+- **No confundir con:** Tarea grande (que se divide en micro-tareas)
+- **Significa:** Tarea de 1-2 minutos que mejora el sistema incrementalmente
+- **Frecuencia:** Cada 5 minutos (cronjob `micro-task-5min`)
+- **Efecto:** Compound = 37x mejora en 1 año
+- **Ejemplo:** "Añadí una entrada al glosario como micro-tarea"
+- **Links:** [REF-ONELINERS-001](ref-one-liners-glm5.md), [SPEC-AUTONOMY-001](spec-tareas-autonomas.md)
+
+---
+
+_Actualizado: 19 Feb 2026 - Añadido Micro-tarea_
