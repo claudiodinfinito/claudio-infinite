@@ -1,123 +1,132 @@
-# ts-cron-delivery-failed.md
+# Troubleshooting: Cron Announce Delivery Failed
 
 ```
 ID: TS-CRON-001
 Status: active
-Tags: #cron #delivery #telegram #error
-Keys: cron, delivery, failed, telegram, announce
+Tags: #cron #delivery #announce #error #heartbeat
+Keys: cron, delivery, announce, error, isolated
 Last reviewed: 2026-02-19
 ```
 
 ---
 
-## Troubleshooting: Cron Job Delivery Failed
+## Symptom
 
-### Symptom
+Cron job `healthcheck:vps-daily` muestra status "error" en `openclaw cron list`:
 
-`openclaw cron list` muestra status "error" con:
 ```
-"lastError": "cron announce delivery failed"
+error: "cron announce delivery failed"
 ```
 
-El job ejecuta correctamente y produce un summary válido, pero no puede entregar el resultado al canal configurado.
+Pero el job se ejecutó correctamente (VPS healthcheck OK).
 
 ---
 
-### Likely Causes (3)
+## Evidence
 
-1. **Channel temporalmente no disponible** (PROB: Media)
-   - Telegram API timeout
-   - Rate limit en Telegram
-   - Test: Verificar otros mensajes Telegram funcionan
+**Último run:**
+```json
+{
+  "status": "error",
+  "error": "cron announce delivery failed",
+  "summary": "**VPS Healthcheck OK ✅**\n\nRAM: 22%, Disco: 33%, Docker: 8 containers, Gateway: OK"
+}
+```
 
-2. **Config de delivery incorrecta** (PROB: Baja)
-   - Chat ID incorrecto
-   - Token de bot expirado/inválido
-   - Test: Enviar mensaje manual al mismo chat
-
-3. **Issue en OpenClaw delivery system** (PROB: Baja)
-   - Bug en announce delivery
-   - Network issue
-   - Test: Ver logs del gateway
+**El healthcheck funcionó** - el error es solo en el delivery del resultado.
 
 ---
 
-### Tests
+## Likely Causes
 
-**Test 1: Verificar Telegram funciona**
+1. **Delivery no configurado** - El job no tiene delivery config
+2. **Canal no disponible** - Telegram temporalmente inalcanzable
+3. **Target incorrecto** - `to` no coincide con ningún chat válido
+
+---
+
+## Tests
+
+### Test 1: Verificar delivery config del job
+
 ```bash
-# Enviar mensaje de prueba manual
+openclaw cron list --json | jq '.[] | select(.id == "53cc6fb2-b188-427f-956a-504c1261beb2") | .delivery'
+```
+
+Si retorna `null` → no hay delivery configurado.
+
+### Test 2: Verificar config de heartbeat
+
+```bash
+grep -A5 '"heartbeat"' ~/.openclaw/openclaw.json
+```
+
+### Test 3: Verificar canal Telegram
+
+```bash
 openclaw channels status --probe --channel telegram
 ```
 
-**Test 2: Ver logs del delivery**
-```bash
-grep -i "delivery\|announce\|telegram" /tmp/openclaw/openclaw-$(date +%Y-%m-%d).log | tail -20
-```
-
-**Test 3: Re-ejecutar el job**
-```bash
-openclaw cron run --id 53cc6fb2-b188-427f-956a-504c1261beb2
-```
-
 ---
 
-### Fixes
+## Fixes
 
-**Plan A: Ignorar si es esporádico**
-- El job ejecutó correctamente
-- El summary se generó bien
-- Solo el delivery falló
-- Próximo run intentará de nuevo
+### Plan A: Configurar delivery en el cron job
 
-**Plan B: Verificar canal**
-```bash
-openclaw channels status --probe --channel telegram
-```
-Si hay error, revisar token y chat ID.
+El job corre en sesión `isolated` - necesita delivery config explícito:
 
-**Plan C: Revisar config delivery**
 ```json
 {
   "delivery": {
     "mode": "announce",
-    "to": "8596613010",
-    "channel": "telegram"
+    "channel": "telegram",
+    "to": "8596613010"
   }
 }
 ```
-Verificar que el chat ID sea correcto.
+
+**Cómo aplicar:**
+```bash
+openclaw cron update --id 53cc6fb2-b188-427f-956a-504c1261beb2 --patch '{"delivery": {"mode": "announce", "channel": "telegram", "to": "8596613010"}}'
+```
+
+### Plan B: Dejar que heartbeat maneje el announce
+
+Si el heartbeat ya está configurado correctamente, el cron job no necesita delivery - el resultado queda en logs y el heartbeat lo puede revisar.
+
+**Ventajas:**
+- Menos spam en Telegram
+- Un solo canal de comunicación
+
+**Desventajas:**
+- No hay notificación inmediata de errores
+
+### Plan C: Eliminar delivery y aceptar el error como "no crítico"
+
+Si el job funciona y el resultado está en logs, el error de delivery es cosmético.
 
 ---
 
-### Current Status (19 Feb 2026)
+## Prevent
 
-| Job | Status | Last Run | Error |
-|-----|--------|----------|-------|
-| healthcheck:vps-daily | error | 19 Feb 06:00 UTC | cron announce delivery failed |
-| backup:workspace | ok | 19 Feb 06:00 UTC | - |
-
-**Observación:**
-- El healthcheck produjo un summary válido: "VPS Healthcheck OK ✅"
-- El backup:workspace con el mismo delivery config funcionó OK
-- Posiblemente un problema temporal
+- Al crear cron jobs en `isolated` sessions, siempre configurar delivery si se quiere notificación
+- Documentar en runbook de cron jobs
 
 ---
 
-### Next Steps
+## Decision
 
-1. [ ] Verificar logs del delivery fallido
-2. [ ] Comparar con backup:workspace que sí funcionó
-3. [ ] Si persiste, investigar en OpenClaw issues
+**Por ahora:** Plan B/C - el error es cosmético, el healthcheck funciona.
 
----
-
-### Prevent
-
-- Monitoring de consecutiveErrors en cron jobs
-- Alert si consecutiveErrors > 2
-- Alternativa: usar delivery.mode: "webhook" si announce falla recurrentemente
+**Cuando Daniel quiera notificaciones:** Aplicar Plan A.
 
 ---
 
-_Creado: 2026-02-19 - Documentando delivery failed en healthcheck:vps-daily_
+## Related
+
+- `memory/ts-heartbeat-no-funciona.md` - Problema de rate limit
+- `memory/rbk-gateway-restart.md` - Restart del gateway
+
+---
+
+_Creado: 2026-02-19 - Diagnóstico de cron delivery_

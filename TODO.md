@@ -1,8 +1,8 @@
 # TODO.md - Backlog Vivo con Estados Fuzzy
 
-**Actualizado:** 2026-02-19, 13:11 UTC
-**Heartbeats hoy:** 7/48
-**Último trabajo:** 2026-02-19 13:11 UTC - Gateway OK, cron jobs verificados (healthcheck:vps-daily con error no crítico)
+**Actualizado:** 2026-02-19, 14:43 UTC
+**Heartbeats hoy:** 8/48
+**Último trabajo:** 2026-02-19 14:43 UTC - Diagnóstico cron delivery failed (TS-CRON-001 creado)
 
 ---
 
