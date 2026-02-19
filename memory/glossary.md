@@ -117,4 +117,13 @@
 
 ---
 
+### One-liner
+- **También se llama:** Prompt corto, micro-prompt
+- **No confundir con:** Prompt largo, instrucciones detalladas
+- **Significa:** Prompt de 1 línea con estructura: [ROL] + [TAREA] + [FORMATO]
+- **Ejemplo:** "Lee memory/index.md y lista las 5 tareas más urgentes"
+- **Links:** [REF-ONELINERS-001](ref-one-liners-glm5.md)
+
+---
+
 _Actualizado: 19 Feb 2026 - Añadido Still_
