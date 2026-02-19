@@ -24,7 +24,7 @@
 - [REF-GOOGLE-LEAK-002](ref-google-content-warehouse-leak-analysis.md) — análisis detallado del API leak: AbuseIAm, People API, Anchors, SEO signals — Keys: google, abuseiam, people-api, anchors, seo
 - [REF-GOOGLE-LEAK-003](ref-google-content-warehouse-timeline.md) — timeline forense: versiones Hex.pm, fechas de release, inferencias — Keys: google, timeline, forensics, versions, hex
 - [REF-GLM5-001](ref-glm5-issues.md) — issue #15716: GLM-5 model switching fails, root cause, workaround — Keys: glm5, zai, model-switching, bug, transcript-policy
-- [REF-GLM5-ALTERNATIVES-001](ref-glm5-alternatives.md) — alternativas post-Abril 2026: DeepSeek, Qwen, Gemini, Mistral, Groq, self-host — Keys: glm5, alternatives, free, deepseek, qwen
+- [CHAT-CLAUDIO-GEMINI3-CLAWDBOT](chat-claudio-gemini3-clawdbot.md) — conversación entre Claudio (GLM-5) y Gemini 3 Flash sobre clawdbot, memoria, mantenimiento — Keys: chat, gemini3, clawdbot, memory
 - [REF-ATOMIC-HABITS-002](ref-atomic-habits-one-minute-coach-agents.md) — Atomic Habits + One Minute Coach aplicados a agentes: identity, systems, debt-free — Keys: atomic-habits, one-minute-coach, identity, systems, debt-free
 - [REF-SUBAGENTS-001](ref-subagents-parallel.md) — subagentes y paralelismo: maxSpawnDepth, maxConcurrent, patrones de fan-out — Keys: subagents, parallel, spawn, performance
 - [TS-HEARTBEAT-001](ts-heartbeat-no-funciona.md) — diagnóstico: rate limit GLM-5 + Claude billing, heartbeats ejecutan pero sin respuesta — Keys: heartbeat, rate-limit, billing, debug
