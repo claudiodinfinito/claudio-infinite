@@ -1,8 +1,8 @@
 # TODO.md - Backlog Vivo con Estados Fuzzy
 
-**Actualizado:** 2026-02-19, 17:23 UTC
-**Heartbeats hoy:** 9/48
-**Último trabajo:** 2026-02-19 17:23 UTC - Commit análisis ClawWork
+**Actualizado:** 2026-02-19, 22:00 UTC (Daily log update)
+**Heartbeats hoy:** 12/48
+**Último trabajo:** 2026-02-19 21:45 UTC - Sistema autonomía completo
 
 ---
 
@@ -22,24 +22,24 @@
 
 ## Next (máx 5, <=90min)
 
-### 1. [100%] ✅ Dejar de ser config slim - COMPLETADO
-- **Completado:** 2026-02-18 22:10 UTC
-- **Aplicado:** tools.*, logging, subagents, retry, exec-approvals.json, fallbacks
+### 1. [100%] ✅ Sistema de autonomía hardcodeado - COMPLETADO
+- **Completado:** 2026-02-19 21:45 UTC
+- **Aplicado:** AGENTS.md refactor + cronjobs + micro-tareas
 
-### 2. [100%] ✅ Crear skill forense Google Leak - COMPLETADO
-- **Completado:** 2026-02-18 23:05 UTC
-- **Ubicación:** skills/forensic-api-leak/SKILL.md
+### 2. [100%] ✅ Refactor AGENTS.md - COMPLETADO
+- **Completado:** 2026-02-19 16:30 UTC
+- **Resultado:** 478 → 120 líneas + archivos extraídos
 
 ### 3. [90%] Validar TRAINER-DIAG con test real
 - **Estado:** Test iniciado (TRAINER-DIAG-gog-oauth), esperando resultado
-- **Tiempo:** 15min restantes
+- **Tiempo:** Pendiente de revisión
 - **Próximo:** Verificar resultado del subagente
 
 ### 4. [50%] Configurar Git remote para backup
 - **Estado:** Commits OK, falta añadir remote URL
 - **Tiempo:** 10min
-- **Próximo:** Decidir qué repo usar (GitHub nuevo o existente)
-- **Necesita:** Daniel proporcione repo URL
+- **Próximo:** Daniel debe proveer repo URL
+- **Necesita:** Input de Daniel
 
 ### 5. [25%] Completar gog OAuth
 - **Estado:** Credenciales guardadas, falta autorización navegador
@@ -95,6 +95,19 @@
 - [x] [100%] Crear diario 2026-02-19.md
 - [x] [100%] Actualizar MEMORY.md (fallback chain + lección config)
 - [x] [100%] Cron jobs verificados OK (healthcheck, backup, alerts)
+- [x] [100%] Refactor AGENTS.md (478 → 120 líneas)
+- [x] [100%] Crear rbk-subagent-orchestrator.md
+- [x] [100%] Crear spec-tareas-autonomas.md
+- [x] [100%] Crear spec-dual-subagent.md
+- [x] [100%] Crear ref-model-comparison-pricing.md
+- [x] [100%] Crear ref-one-liners-glm5.md
+- [x] [100%] Consolidar duplicados (4 archivos borrados)
+- [x] [100%] Sistema de autonomía hardcodeado en AGENTS.md
+- [x] [100%] 5 cronjobs activos (micro-task, still-check, daily-log, api-check, weekly)
+- [x] [100%] Análisis ClawWork (veredicto: precaución, no estafa)
+- [x] [100%] Estudio Claude tutorials + courses
+- [x] [100%] 13 commits git ejecutados
+- [x] [100%] 9 micro-tareas ejecutadas
 
 ---
 
@@ -116,8 +129,11 @@
 | Tareas Next | 5 (2 completadas, 3 pendientes) |
 | Tareas Backlog | 10 |
 | Completadas ayer | 15 |
-| Completadas hoy | 3 |
+| Completadas hoy | 16 |
 | Deuda técnica | BAJA |
+| Commits hoy | 13 |
+| Micro-tareas | 9 |
+| Cronjobs activos | 5 |
 
 ---
 
