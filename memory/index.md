@@ -6,14 +6,13 @@
 
 ## Top (lo que uso siempre)
 
-- [RBK-GW-001](rbk-gateway-restart.md) — reiniciar gateway con rollback — Keys: gateway, restart, systemctl, debug
+- [RBK-STARTUP-001](rbk-startup.md) — procedimiento de arranque obligatorio — Keys: startup, arranque, identity
+- [RBK-TRIAGE-001](rbk-triage.md) — loop de triage y debugging gateway — Keys: triage, debug, gateway, logs
 - [RBK-SES-001](rbk-session-locked.md) — sesión bloqueada, eliminar locks — Keys: session, locked, gateway
+- [REF-DEBUG-001](ref-debugging.md) — comandos y tablas de troubleshooting — Keys: debug, commands, channels, config
+- [SPEC-OS-001](spec-operating-system.md) — sistema anti-deuda y subagentes — Keys: os, architecture, debt, subagents
+- [DEC-GROUP-001](dec-group-chats.md) — comportamiento y etiquetas en grupos — Keys: groups, social, reactions
 - [TS-TEL-001](ts-telegram-no-reply.md) — Telegram no responde, diagnóstico — Keys: telegram, no-reply, typing, channel
-- [TS-CRON-001](ts-cron-delivery-failed.md) — Cron announce delivery failed, job OK pero sin notificación — Keys: cron, delivery, announce, error, isolated
-- [TS-CRON-001](ts-cron-delivery-failed.md) — cron job delivery failed, diagnóstico — Keys: cron, delivery, telegram, announce, failed
-- [REF-FALLAS-001](ref-fallas-skills.md) — skills fallidas, debugging — Keys: skills, error, debug
-- [REF-SEARCH-001](ref-search-hacks.md) — hacks de búsqueda sin embeddings — Keys: search, grep, rg, index
-- [REF-MUST-001](ref-openclaw-musthaves.md) — 7 must-haves OpenClaw del trainer — Keys: must-have, config, fallback, backup
 - [SPEC-MATH-001](spec-subagent-math.md) — subagente matemáticas exactas DB-first — Keys: math, sql, exact, db, decimal
 - [SPEC-TRAINER-DIAG-001](spec-subagent-trainer-diag.md) — subagente diagnóstico: 3 hipótesis + tests + conclusión — Keys: subagent, diag, trainer, troubleshooting
 - [SPEC-QA-ORCH-001](spec-qa-orchestrator.md) — Q&A orquestador con depth=2, GLM+Gemini, síntesis — Keys: subagent, qa, orchestrator, depth, synthesis
@@ -95,4 +94,4 @@
 
 ---
 
-_Actualizado: 18 Feb 2026 - 06:00 UTC (Pre-update)_
+_Actualizado: 19 Feb 2026 - 16:15 UTC (Refactor AGENTS.md)_
