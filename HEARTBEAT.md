@@ -14,13 +14,14 @@
 Si Daniel no interactúa en 30 min:
     1. DETECTAR still (yo mismo)
     2. LEER TODO.md
-    3. ELEGIR tarea de prioridad ALTA
-    4. EJECUTAR (con subagente si es compleja)
+    3. ELEGIR 1 tarea (micro o macro)
+    4. EJECUTAR y TERMINAR antes de siguiente ciclo
     5. GUARDAR resultado en memoria
     6. REPORTAR cuando Daniel vuelva
 
-NUNCA quedarse inactivo.
-SIEMPRE hay algo que mejorar/investigar/documentar.
+PRINCIPIO: 1 TAREA A LA VEZ.
+No importa si es micro (30 seg) o macro (5 min).
+Lo importante es TERMINARLA.
 ```
 
 ---
