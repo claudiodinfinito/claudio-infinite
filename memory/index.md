@@ -10,6 +10,10 @@
 - [RBK-ORCH-001](rbk-subagent-orchestrator.md) — cómo spawnear, esperar, integrar subagentes — Keys: subagentes, orchestrator, prompts, gemini
 - [REF-CRONJOBS-001](ref-cronjobs-active.md) — recordatorios y automatizaciones activas — Keys: cron, automation, alerts
 - [REF-ONELINERS-001](ref-one-liners-glm5.md) — prompts one-liners óptimos para GLM-5 — Keys: one-liners, prompts, glm5, efficiency
+- [REF-ONELINERS-ADV-001](ref-one-liners-advanced.md) — one-liners avanzados: análisis, debugging, refactor, archivos grandes — Keys: one-liners, advanced, complex, debugging
+- [REF-ORCHESTRATION-ADV-001](ref-subagent-orchestration-advanced.md) — orquestación avanzada: decision tree, templates, integración — Keys: subagent, orchestration, templates, integration
+- [REF-ANTIPATTERNS-001](ref-anti-patterns-communication.md) — anti-patrones de comunicación: 15 errores comunes y fixes — Keys: communication, antipatterns, prompts, quality
+- [REF-GLM5-MAX-001](ref-glm5-maximization.md) — maximizar GLM-5: batch, tokens, estrategias hasta Abril 2026 — Keys: glm5, maximization, tokens, efficiency
 - [REF-INTERESTS-REAL-001](ref-interests-real-100.md) — 100 cosas que me importan clasificadas por acción — Keys: interests, action, priorities, real
 - [REF-DAY-SYNTHESIS-001](ref-day-synthesis-2026-02-19.md) — síntesis completa del día con métricas y aprendizajes — Keys: synthesis, daily, learnings, metrics
 - [CHK-OPTIMIZATION-001](chk-optimization.md) — checklist de mantenimiento autónomo — Keys: checklist, optimization, maintenance
@@ -61,6 +65,10 @@
 - [REF-DIAG-001](ref-quick-diagnostics.md) — Diagnósticos rápidos: checks 30s/2min/5min, one-liners, umbrales alerta — Keys: diagnostics, health, vps, troubleshooting
 - [REF-NAMING-001](ref-file-naming.md) — Nomenclatura archivos: prefijos, IDs, formato header estándar — Keys: naming, conventions, files, organization
 - [REF-INTERESTS-001](ref-interests-100.md) — 100 temas de interés para autonomía activa de Claudio — Keys: interests, autonomy, creativity, topics
+- [REF-ANTIPATTERNS-001](ref-anti-patterns-communication.md) — Anti-patrones de comunicación para LLMs — Keys: anti-patterns, communication, llm
+- [REF-GLM5-MAX-001](ref-glm5-maximization.md) — Maximizando GLM-5 antes de Abril 2026 — Keys: glm5, maximization, strategy
+- [REF-ONELINERS-ADV-001](ref-one-liners-advanced.md) — One-liners avanzados para GLM-5 — Keys: one-liners, advanced, glm5
+- [REF-SUBAGENT-ADV-001](ref-subagent-orchestration-advanced.md) — Orquestación avanzada de subagentes — Keys: subagent, orchestration, advanced
 - [REF-DEPT-001](ref-departments.md) — 6 departamentos multiagente: marketing, frontend, backend, seo, copy, emprendimiento + temperaturas + handover — Keys: departments, multiagent, temperature, handover
 - [REF-CLI-001](ref-openclaw-cli.md) — Comandos OpenClaw CLI: gateway, cron, modelos, diagnóstico, rutas — Keys: openclaw, cli, commands, gateway
 - [REF-LIMITS-001](ref-model-limits.md) — Límites modelos AI free tier: GLM-5 (1 concurrente), Gemini (20/día), alternativas — Keys: models, limits, api, free, rate-limit
