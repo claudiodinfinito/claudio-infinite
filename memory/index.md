@@ -35,7 +35,8 @@
 - [REF-OPENCLAW-001](ref-openclaw-musthaves.md) — features esenciales de OpenClaw que debe conocer — Keys: openclaw, features, musthave
 - [REF-SEARCH-001](ref-search-hacks.md) — hacks de búsqueda web con Brave API — Keys: search, brave, hacks, web
 - [RBK-RESTART-001](rbk-gateway-restart.md) — cómo reiniciar gateway cuando falla — Keys: gateway, restart, debug
-- [TS-CRON-001](ts-cron-delivery-fixed.md) — cronjob delivery failed, RESUELTO: rate limit GLM-5 + fix aplicado — Keys: cron, delivery, fixed, rate-limit
+- [TS-CRON-001](ts-cron-delivery-failed.md) — cronjob delivery failed: diagnóstico inicial — Keys: cron, delivery, failed, telegram
+- [TS-CRON-002](ts-cron-delivery-fixed.md) — cronjob delivery RESUELTO: rate limit GLM-5 + fix aplicado — Keys: cron, delivery, fixed, rate-limit
 
 ## Shared (bus de contexto)
 
