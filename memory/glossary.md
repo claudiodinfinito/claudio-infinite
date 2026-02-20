@@ -346,6 +346,111 @@ _Actualizado: 20 Feb 2026 - Añadido Ollama_
 
 ---
 
+### Signal-Based Selling
+- **También se llama:** Selling by signals, intent-based selling
+- **No confundir con:** Sales automation (es más específico)
+- **Significa:** Ventas basadas en señales de intención del prospecto
+- **Tipos:** behavioral, intent, firmographic, engagement, timing
+- **Uso:** Implementar en clientes de Daniel (clínica dental)
+- **Ejemplo:** "El prospecto visitó pricing → enviar email con oferta"
+- **Links:** [REF-SIGNAL-001](ref-signal-based-selling.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Signal-Based Selling_
+
+---
+
+### Knowledge Graph
+- **También se llama:** Grafo de conocimiento, knowledge map
+- **No confundir con:** Database (es una estructura de relaciones)
+- **Significa:** Estructura que mapea relaciones entre conceptos
+- **En OpenClaw:** `memory_search` ya hace búsqueda semántica
+- **Decisión:** No crear manual con 117 archivos
+- **Ejemplo:** "Claude --[has_feature]--> Prompt Caching"
+- **Links:** [REF-KNOWLEDGE-GRAPH-001](ref-knowledge-graph.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Knowledge Graph_
+
+---
+
+### Voice Interface
+- **También se llama:** TTS/STT, voice commands
+- **No confundir con:** Audio messages (es bidireccional)
+- **Significa:** Capacidad de hablar y escuchar
+- **TTS:** ✅ Disponible en OpenClaw (`tts` tool)
+- **STT:** ❌ No implementado (requiere Whisper API)
+- **Ejemplo:** "Leer TODO" → TTS de pendientes
+- **Links:** [REF-VOICE-001](ref-voice-interface.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Voice Interface_
+
+---
+
+### Image Analysis
+- **También se llama:** Vision analysis, OCR, image recognition
+- **No confundir con:** Image generation (es análisis, no creación)
+- **Significa:** Capacidad de analizar imágenes
+- **Tool:** `image()` en OpenClaw
+- **Usos:** OCR, descripción, diagramas, comparación
+- **Ejemplo:** "Extrae código de esta screenshot"
+- **Links:** [REF-IMAGE-001](ref-image-analysis.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Image Analysis_
+
+---
+
+### Meeting Summarizer
+- **También se llama:** Meeting notes generator, transcription summary
+- **No confundir con:** Transcription (es resumen, no transcripción)
+- **Significa:** Sistema para resumir reuniones automáticamente
+- **Output:** 3 bullets + decisiones + action items + próximos pasos
+- **Requisito:** Daniel comparta notas o transcripciones
+- **Ejemplo:** "Resume la reunión de RevOps"
+- **Links:** [REF-MEETING-001](ref-meeting-summarizer.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Meeting Summarizer_
+
+---
+
+### Learning Path Generator
+- **También se llama:** Curriculum generator, training plan
+- **No confundir con:** Course (es personalizado por cliente)
+- **Significa:** Generar planes de aprendizaje personalizados
+- **Output:** Semanas con días, temas, recursos, tiempos
+- **Uso:** Onboarding de clientes Daniel
+- **Ejemplo:** "Genera learning path para RevOps en clínica dental"
+- **Links:** [REF-LEARNING-PATH-001](ref-learning-path-generator.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Learning Path Generator_
+
+---
+
+### Systemd User Service
+- **También se llama:** User systemd service, user unit
+- **No confundir con:** System service (user no requiere root)
+- **Significa:** Servicio systemd que corre sin privilegios de root
+- **Ubicación:** `~/.config/systemd/user/`
+- **Linger:** Permite autostart sin login activo
+- **Ejemplo:** "Configurar gateway como user service"
+- **Links:** [REF-SYSTEMD-USER-001](ref-systemd-user-service.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Systemd User Service - Total: 30 términos_
+
+---
+
 ### Compound Effect
 - **También se llama:** Efecto compuesto, mejora acumulativa
 - **No confundir con:** Micro-tarea (el efecto es el RESULTADO de las micro-tareas)
