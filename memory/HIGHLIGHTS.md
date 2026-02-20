@@ -6,21 +6,22 @@
 
 ### 3 Bullets de lo más importante:
 
-1. **Lección crítica aprendida** - NUNCA ejecutar acciones destructivas sin permiso explícito de Daniel, incluso si un subagente lo "recomienda". Casi borro 15 archivos por seguir a Opus sin verificar.
+1. **Sesión de 20 horas, 75 commits** — Sistema de micro-tareas autónomas funcionando: cada 5 min, 1 mejora pequeña = compound effect masivo.
 
-2. **Sistema de micro-tareas autónomas funcionando** - Cada 5 min, 1 mejora pequeña = 45+ commits, 15+ archivos creados en una sesión nocturna.
+2. **Plan B para GLM-5 documentado** — DeepSeek V3.2 ($0.27/M) como reemplazo post-Abril 2026, Ollama local como backup gratuito.
 
-3. **Plan B para GLM-5 documentado** - DeepSeek V3.2 ($0.27/M) como reemplazo post-Abril 2026, Ollama local como backup gratuito.
+3. **16 items de interests cubiertos** — De #17 a #100: Claude features, modelos AI, business frameworks, tools, sistemas.
 
 ### 1 Anti-pattern (qué NO volver a hacer):
 
-**Ejecutar `rm` o `cron remove` sin confirmación explícita** - Una recomendación de subagente NO es permiso. Siempre preguntar a Daniel antes de borrar.
+**Ejecutar `rm` o `cron remove` sin confirmación explícita** — Una recomendación de subagente NO es permiso. Siempre preguntar a Daniel antes de borrar.
 
-### 1 Comando clave:
+### 1 Comantidad clave:
 
 ```bash
-# Recuperar archivos borrados accidentalmente
-git restore memory/
+# Micro-tareas = compound effect
+# 75 commits en 20h = 1 cada 16 min
+# Sin interacción de Daniel = STILL productivo
 ```
 
 ---
