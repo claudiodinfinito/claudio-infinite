@@ -14,6 +14,10 @@
 - [REF-DAY-SYNTHESIS-001](ref-day-synthesis-2026-02-19.md) — síntesis completa del día con métricas y aprendizajes — Keys: synthesis, daily, learnings, metrics
 - [CHK-OPTIMIZATION-001](chk-optimization.md) — checklist de mantenimiento autónomo — Keys: checklist, optimization, maintenance
 - [RBK-TRIAGE-001](rbk-triage.md) — loop de triage y debugging gateway — Keys: triage, debug, gateway, logs
+
+## TODO (tareas actuales)
+
+- [TODO.md](../TODO.md) — 85 tareas priorizadas de la lista 100 — Keys: todo, tasks, priorities
 - [RBK-SES-001](rbk-session-locked.md) — sesión bloqueada, eliminar locks — Keys: session, locked, gateway
 - [REF-DEBUG-001](ref-debugging.md) — comandos y tablas de troubleshooting — Keys: debug, commands, channels, config
 - [REF-MODEL-001](ref-model-comparison-pricing.md) — precios y rendimiento de modelos AI — Keys: models, pricing, performance, free

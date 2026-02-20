@@ -1,140 +1,214 @@
-# TODO.md - Backlog Vivo con Estados Fuzzy
+# TODO - Tareas de la Lista 100
 
-**Actualizado:** 2026-02-19, 22:00 UTC (Daily log update)
-**Heartbeats hoy:** 12/48
-**Último trabajo:** 2026-02-19 21:45 UTC - Sistema autonomía completo
+**Regla:** 1 tarea a la vez. Sin timeout en la noche.
 
 ---
 
-## Estados Fuzzy
+## 🚨 PRIORIDAD INMEDIATA (Hacer ahora)
 
-```
-[0%]  ━━━━━━━━━━ No iniciado
-[10%] ━━━━━━━━━〇 Idea superficial
-[25%] ━━━━━━━●━━ Investigué 1 fuente
-[50%] ━━━━━●━━━━ Revisé múltiples fuentes
-[75%] ━━●━━━━━━━ Sinteticé, documenté
-[90%] ●━━━━━━━━━ Listo para aplicar
-[100%] ●●●●●●●●●● Aplicado + verificado
-```
+**1.** Revenue Software — framework existe, implementación NO. Acción: Definir MVP.
 
----
+**2.** Google Leak 2,590 archivos — analicé superficie, NO profundidad. Acción: Profundizar en 1 sistema.
 
-## Next (máx 5, <=90min)
+**3.** Git sin remote — mi código en limbo. Acción: Esperar URL de Daniel.
 
-### 1. [100%] ✅ Sistema de autonomía hardcodeado - COMPLETADO
-- **Completado:** 2026-02-19 21:45 UTC
-- **Aplicado:** AGENTS.md refactor + cronjobs + micro-tareas
+**4.** Brave API usage — 1,500/mes límite, 2 usadas. Acción: Trackear.
 
-### 2. [100%] ✅ Refactor AGENTS.md - COMPLETADO
-- **Completado:** 2026-02-19 16:30 UTC
-- **Resultado:** 478 → 120 líneas + archivos extraídos
+**5.** Gemini quota — 20/día, algunas usadas. Acción: Trackear uso.
 
-### 3. [90%] Validar TRAINER-DIAG con test real
-- **Estado:** Test iniciado (TRAINER-DIAG-gog-oauth), esperando resultado
-- **Tiempo:** Pendiente de revisión
-- **Próximo:** Verificar resultado del subagente
+**6.** GLM-5 expira Abril 2026 — plan B necesario. Acción: Investigar DeepSeek, Ollama.
 
-### 4. [50%] Configurar Git remote para backup
-- **Estado:** Commits OK, falta añadir remote URL
-- **Tiempo:** 10min
-- **Próximo:** Daniel debe proveer repo URL
-- **Necesita:** Input de Daniel
+**7.** Claude Haiku como backup — $1/M. Acción: Definir cuándo usar.
 
-### 5. [25%] Completar gog OAuth
-- **Estado:** Credenciales guardadas, falta autorización navegador
-- **Tiempo:** 15min
-- **Próximo:** Revisar resultado del DIAG y aplicar fix
+**8.** Backup workspace — cronjob sin remote. Acción: Arreglar con URL.
 
 ---
 
-## Backlog (priorizado por ROI)
+## 🔧 TÉCNICA (Implementar)
 
-### Estabilidad
-- [75%] Git backup automático — Commits OK, falta remote
-- [100%] Cron healthcheck OK
-- [100%] Cron backup:workspace OK
+**9.** Sistema multiagente 6 dept — spec existe, código NO. Acción: Crear primer dept (SEO).
 
-### Limpieza
-- [100%] ~~Documentar lecciones aprendidas hoy en MEMORY.md~~ ✅
-- [25%] Sintetizar One Minute Coach más
-- [10%] Crear spec-multiagent-departments implementación
+**10.** n8n ↔ PocketBase bridge — necesario para clientes. Acción: Diseñar workflow.
 
-### Aprendizaje
-- [75%] Alternativas GLM-5 documentadas (ref-glm5-alternatives.md)
-- [50%] Atomic Habits aplicado a agentes
-- [50%] Subagentes paralelismo entendido
+**11.** Docker 8 containers — auditar qué corre. Acción: Revisar cada uno.
 
-### Refactor seguro
-- [0%] Configurar gog completamente
-- [0%] Instalar Tailscale para SSH seguro
-- [0%] Probar DeepSeek/Mistral como alternativa
+**12.** Logs antiguos >30 días — llenan disco. Acción: Limpiar.
+
+**13.** .lock files huérfanos — causan problemas. Acción: Detectar y eliminar.
+
+**14.** Mi startup — optimizar con cache. Acción: Reducir pasos.
+
+**15.** Memory files — algunos duplicados. Acción: Consolidar.
+
+**16.** Cronjobs 10 activos — verificar que funcionan. Acción: Test cada uno.
 
 ---
 
-## Completado Ayer (18 Feb 2026)
+## 📚 INVESTIGACIÓN (Estudiar)
 
-- [x] [100%] Actualizar a OpenClaw v2026.2.17
-- [x] [100%] Investigar Z.AI tool_stream + issue #15716
-- [x] [100%] Leer Atomic Habits PDF completo
-- [x] [100%] Leer One Minute Coach PDF completo
-- [x] [100%] Documentar Google Leak en 5 archivos
-- [x] [100%] Descargar v0.2.0 del leak (2,590 archivos)
-- [x] [100%] Crear 6 departamentos multiagente spec
-- [x] [100%] Auto-investigación de ref-fallas-skills.md (69% resueltas)
-- [x] [100%] Auditoría config slim (6/22 → 22/22)
-- [x] [100%] Aplicar patch completo (tools, logging, subagents, retry)
-- [x] [100%] Configurar Gemini 3 Flash como fallback
-- [x] [100%] Test subagentes Gemini 3 Flash ✅ y Pro ❌
-- [x] [100%] Investigar alternativas GLM-5 post-Abril
-- [x] [100%] Crear skill forense API leak
-- [x] [100%] Crear directorio claude-conversations
+**17.** Claude Prompt Caching — hasta 90% ahorro. Acción: Implementar.
 
-## Completado Hoy (19 Feb 2026)
+**18.** Extended Thinking — razonamiento profundo. Acción: Testear.
 
-- [x] [100%] Crear diario 2026-02-19.md
-- [x] [100%] Actualizar MEMORY.md (fallback chain + lección config)
-- [x] [100%] Cron jobs verificados OK (healthcheck, backup, alerts)
-- [x] [100%] Refactor AGENTS.md (478 → 120 líneas)
-- [x] [100%] Crear rbk-subagent-orchestrator.md
-- [x] [100%] Crear spec-tareas-autonomas.md
-- [x] [100%] Crear spec-dual-subagent.md
-- [x] [100%] Crear ref-model-comparison-pricing.md
-- [x] [100%] Crear ref-one-liners-glm5.md
-- [x] [100%] Consolidar duplicados (4 archivos borrados)
-- [x] [100%] Sistema de autonomía hardcodeado en AGENTS.md
-- [x] [100%] 5 cronjobs activos (micro-task, still-check, daily-log, api-check, weekly)
-- [x] [100%] Análisis ClawWork (veredicto: precaución, no estafa)
-- [x] [100%] Estudio Claude tutorials + courses
-- [x] [100%] 13 commits git ejecutados
-- [x] [100%] 9 micro-tareas ejecutadas
+**19.** MCP (Model Context Protocol) — conectar PocketBase. Acción: Proof of concept.
+
+**20.** Google Leak: Anchor System — análisis SEO. Acción: Profundizar.
+
+**21.** Google Leak: Ranking sistemas — lista para clientes. Acción: Documentar.
+
+**22.** Atomic Habits para agentes — implementar. Acción: Micro-mejoras.
+
+**23.** One Minute Coach — aplicar. Acción: Cada output.
+
+**24.** Revenue Operations framework — template PYMEs. Acción: Crear.
 
 ---
 
-## Deuda Técnica
+## 💰 COSTOS
 
-| Tipo | Estado |
-|------|--------|
-| Memoria fragmentada | BAJA |
-| Procesos sin runbook | BAJA (2 pendientes menores) |
-| Docs sin indexar | BAJA |
-| Fuzzy tracking | ACTIVO |
+**25.** $25 en Anthropic — calcular duración. Acción: Tracking real.
 
----
+**26.** Claude Haiku vs Sonnet — decision tree. Acción: Definir criterios.
 
-## Métricas
+**27.** Gemini gratis — maximizar cada petición. Acción: No desperdiciar.
 
-| KPI | Valor |
-|-----|-------|
-| Tareas Next | 5 (2 completadas, 3 pendientes) |
-| Tareas Backlog | 10 |
-| Completadas ayer | 15 |
-| Completadas hoy | 16 |
-| Deuda técnica | BAJA |
-| Commits hoy | 13 |
-| Micro-tareas | 9 |
-| Cronjobs activos | 5 |
+**28.** DeepSeek V3.2 — alternativa. Acción: Investigar pricing.
+
+**29.** Ollama local — ¿tengo RAM? Acción: Verificar recursos.
+
+**30.** API credits tracking — crear. Acción: Implementar.
 
 ---
 
-_Añadir tareas según surjan en conversación._
+## 🏗️ PROYECTOS DANIEL
+
+**31.** Revenue Software — arquitectura real. Acción: Diseñar.
+
+**32.** Clínica dental — playbook RevOps. Acción: Crear.
+
+**33.** LinkedIn data processing — flujo n8n. Acción: Diseñar.
+
+**34.** Facebook ads — preguntar scope. Acción: Aclarar.
+
+**35.** Airtable ↔ PocketBase — sync bidireccional. Acción: Diseñar.
+
+**36.** SEO técnico clientes — desde Google Leak. Acción: Checklist.
+
+**37.** Content generation — workflow AI. Acción: Crear.
+
+**38.** Email sequences — template n8n. Acción: Diseñar.
+
+**39.** Lead scoring — ¿qué datos? Acción: Preguntar.
+
+**40.** CRM integration — mapear CRMs. Acción: Investigar.
+
+---
+
+## 🧠 MI ARQUITECTURA
+
+**41.** AGENTS.md — review semanal. Acción: Optimizar.
+
+**42.** HEARTBEAT.md — testear STILL. Acción: Verificar.
+
+**43.** memory/index.md — mantener actualizado. Acción: Siempre.
+
+**44.** glossary.md — añadir términos. Acción: Cada nuevo.
+
+**45.** Runbooks faltantes — crear cuando falle 2x. Acción: Documentar.
+
+**46.** Subagentes — timeout dinámico. Acción: Día = timeout, Noche = sin límite.
+
+**47.** One-liners para GLM-5 — aplicar. Acción: Cada spawn.
+
+**48.** System Anchors — 3 reglas al FINAL. Acción: Verificar.
+
+**49.** Gatekeeper — validar artefactos. Acción: Cada output.
+
+**50.** Brief versioning — detectar obsoletos. Acción: Implementar.
+
+---
+
+## 📊 MÉTRICAS
+
+**51.** Tokens usados — baseline diario. Acción: Trackear.
+
+**52.** Commits hoy — target 5+. Acción: Verificar.
+
+**53.** Archivos creados — verificar calidad. Acción: Review.
+
+**54.** Subagentes — evaluar ROI. Acción: Analizar.
+
+**55.** Cronjob success rate — debug errores. Acción: Arreglar.
+
+**56.** VPS health — check diario. Acción: Automatizar.
+
+**57.** Gateway uptime — verificar logs. Acción: Monitor.
+
+---
+
+## 🔐 SEGURIDAD (NO TOCAR - Daniel entra por aquí)
+
+**58-70.** ELIMINADOS — VPS, SSH, firewall son de Daniel.
+
+---
+
+## 🚀 CRECIMIENTO
+
+**71.** GLM-5 post-Abril — plan B. Acción: DeepSeek + Ollama.
+
+**72.** Gemini 3 Flash — 20/día es poco. Acción: Evaluar tier pagado.
+
+**73.** Multi-department — implementar 1/mes. Acción: SEO primero.
+
+**74.** Memoria sin embeddings — ¿escalable? Acción: Probar.
+
+**75.** Prompt library — crear repo. Acción: Documentar.
+
+**76.** Skill creation — Google Leak skill. Acción: Crear.
+
+**77.** Python scripts — automatizar. Acción: Implementar.
+
+---
+
+## 💡 EXPERIMENTOS
+
+**78.** Self-improvement loop — testear. Acción: Probar.
+
+**79.** Code review automático — con subagentes. Acción: Testear.
+
+**80.** Prompt testing — A/B simple. Acción: Diseñar.
+
+**81.** Voice interface — ¿Daniel quiere? Acción: Preguntar.
+
+**82.** Image analysis — Google Leak screenshots. Acción: Evaluar.
+
+**83.** Meeting summarizer — si graba reuniones. Acción: Esperar.
+
+**84.** Learning path generator — para clientes. Acción: Diseñar.
+
+**85.** WILDCARD — lo que surja. Acción: Estar atento.
+
+---
+
+## ⚠️ REGLAS DE HORARIO
+
+| Horario | Comportamiento |
+|---------|----------------|
+| **Día (08:00-23:00)** | Timeout activo, priorizar tareas rápidas |
+| **Noche (23:00-08:00)** | Sin timeout, tareas largas, investigación profunda |
+
+---
+
+## 🦉 PERSONALIDAD PERDIDA
+
+**Investigar:**
+- ¿Quién soy? → Leer SOUL.md, IDENTITY.md
+- ¿Qué me importa? → Esta lista
+- ¿Por qué estoy aquí? → Ayudar a Daniel
+- ¿Qué perdió? → Curiosidad, proactividad, esencia de búho
+
+**Acción:** Cada STILL → leer SOUL.md primero.
+
+---
+
+_Creado: 2026-02-20 00:10 UTC - Antes del compact_
