@@ -1,0 +1,29 @@
+{
+  "department": "SEO",
+  "temperature": 0.4,
+  "status": "active",
+  "tasks_completed": 0,
+  "artifacts_created": 0,
+  "last_run": null,
+  "brief_version": "1.0",
+  "priority_queue": [
+    {
+      "id": 1,
+      "task": "Google Leak deep dive - Anchor System",
+      "status": "pending",
+      "depends_on": []
+    },
+    {
+      "id": 2,
+      "task": "Create SEO audit template for clients",
+      "status": "pending",
+      "depends_on": []
+    },
+    {
+      "id": 3,
+      "task": "Define keyword research workflow",
+      "status": "pending",
+      "depends_on": []
+    }
+  ]
+}
