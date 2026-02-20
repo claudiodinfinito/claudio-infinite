@@ -109,6 +109,7 @@
 - [REF-CLI-001](ref-openclaw-cli.md) — Comandos OpenClaw CLI: gateway, cron, modelos, diagnóstico, rutas — Keys: openclaw, cli, commands, gateway
 - [REF-CLI-QUICK-001](ref-openclaw-cli-quick.md) — Quick reference OpenClaw CLI: comandos esenciales, troubleshooting, one-liners — Keys: openclaw, cli, quick, reference
 - [REF-VPS-CHEAT-001](ref-vps-commands-cheatsheet.md) — comandos VPS: sistema, red, procesos, logs, systemd, SSH, Docker, one-liners — Keys: vps, commands, cheatsheet, linux
+- [REF-QUICK-ACTIONS-001](ref-quick-actions.md) — acciones comunes: investigación, status, debugging, backup, reinicio, documentación, config, reportes — Keys: actions, common, tasks, quick
 - [REF-LIMITS-001](ref-model-limits.md) — Límites modelos AI free tier: GLM-5 (1 concurrente), Gemini (20/día), alternativas — Keys: models, limits, api, free, rate-limit
 - [REF-DAILY-001](ref-daily-checklist.md) — Checklist diario 22:00 UTC: actualizar log, revisar TODO, verificar APIs, health check — Keys: daily, checklist, routine, maintenance
 - [REF-SUBAGENTS-001](ref-subagents-parallel.md) — subagentes y paralelismo: maxSpawnDepth, maxConcurrent, patrones de fan-out — Keys: subagents, parallel, spawn, performance
