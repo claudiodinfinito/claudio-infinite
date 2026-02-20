@@ -166,7 +166,35 @@
 
 ---
 
-_Actualizado: 19 Feb 2026 - 16:15 UTC (Refactor AGENTS.md)_
+_Actualizado: 20 Feb 2026 - 20:31 UTC (Sesión extendida 20h, 73 commits)_
+
+---
+
+## Estadísticas de Memoria (2026-02-20)
+
+| Categoría | Cantidad |
+|-----------|----------|
+| **Referencias (REF)** | 35 |
+| **Runbooks (RBK)** | 5 |
+| **Specs (SPEC)** | 10 |
+| **Troubleshooting (TS)** | 8 |
+| **Checklists (CHK)** | 1 |
+| **Total archivos indexados** | 70+ |
+
+### Commits por Día:
+
+| Día | Commits | Archivos |
+|-----|---------|----------|
+| 2026-02-20 | 73 | 30+ |
+| 2026-02-19 | 29 | 8 |
+| 2026-02-18 | 15 | 5 |
+
+### Items ref-interests-real-100.md Cubiertos:
+
+15 items documentados (#17, #18, #19, #28, #29, #30, #77, #91, #92, #94, #95, #96, #97, #98, #99)
+
+---
+
 - [SPEC-N8N-PB-001](spec-n8n-pocketbase-bridge.md) — n8n ↔ PocketBase bridge: diseño de workflows y sync bidireccional — Keys: n8n, pocketbase, bridge
 - [REF-DOCKER-001](ref-docker-containers-audit.md) — Docker containers audit: 8 activos, recursos, recomendaciones — Keys: docker, audit, containers
 - [REF-MICRO-3MIN-001](ref-micro-tasks-3min.md) — Micro-tareas de 3 minutos: protocolo actualizado, descomposición, compound effect real — Keys: micro-tasks, 3min, compound
