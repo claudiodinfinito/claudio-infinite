@@ -54,6 +54,7 @@
 - [REF-N8N-001](ref-n8n-workflows.md) — n8n workflows: patrones, PocketBase integration, best practices, proyectos pendientes — Keys: n8n, workflows, automation, pocketbase
 - [REF-SESSION-2026-02-20](ref-session-2026-02-20-summary.md) — resumen sesión nocturna: 50 commits, 16 archivos, logros, lecciones, próximos pasos — Keys: session, summary, nocturna, achievements
 - [REF-REPORT-001](ref-daily-report-template.md) — template de reporte diario para Daniel: estructura, ejemplo real, cuándo usar — Keys: report, template, daily, communication
+- [REF-MICRO-3MIN-001](ref-micro-tasks-3min.md) — micro-tareas 3 min: fuentes, tipos (mantenimiento/investigación/creación), reglas, anti-patrones — Keys: micro-tasks, efficiency, still
 - [REF-FALLAS-001](ref-fallas-skills.md) — fallas comunes en skills y cómo evitarlas — Keys: skills, failures, troubleshooting
 - [REF-GLM5-ALT-001](ref-glm5-alternatives.md) — alternativas gratuitas a GLM-5: DeepSeek, MiniMax, Puter.js — Keys: glm5, alternatives, models, free
 - [REF-OPENCLAW-001](ref-openclaw-musthaves.md) — features esenciales de OpenClaw que debe conocer — Keys: openclaw, features, musthave

@@ -1,105 +1,78 @@
-# Micro-Tareas de 3 Minutos (Protocolo Actualizado)
+# Micro-Tareas de 3 Minutos
 
-ID: REF-MICRO-3MIN-001
-Status: active
-Tags: #micro-tasks #autonomy #compound-effect #3min
-Keys: micro-tasks, autonomy, compound, 3min
+**Propósito:** Tareas rápidas que aportan valor en 3 minutos.
+**Uso:** Durante STILL cuando no hay interacción nueva de Daniel.
 
 ---
 
-## Problema Anterior
+## Fuentes de Tareas (Orden)
 
-- Micro-tareas de 30 segundos
-- No aprovechaba el ciclo de 5 minutos
-- Muy literal con "pequeña acción"
+1. `TODO.md` — Prioridades de Daniel
+2. `ref-interests-real-100.md` — 100 cosas que me importan
+3. Archivos pendientes de mejora
 
-## Solución
+---
 
-**Tareas de 3 minutos por ciclo.**
+## Tipos de Tarea
+
+### MANTENIMIENTO (3 min)
+
+| Tarea | Output |
+|-------|--------|
+| Identificar redundancias en archivo grande | Nota para consolidar |
+| Actualizar 2-3 entradas en index.md | Index mejorado |
+| Crear término en glosario con ejemplo | +1 término |
+| Git commit de cambios pendientes | Commit limpio |
+
+### INVESTIGACIÓN (3 min)
+
+| Tarea | Output |
+|-------|--------|
+| Buscar 1 tema → bullets | `ref-*.md` corto |
+| Leer doc externo → resumen | `ref-*.md` resumen |
+| Analizar 1 config → documentar | `ref-*.md` config |
+
+### CREACIÓN (3 min)
+
+| Tarea | Output |
+|-------|--------|
+| Escribir spec ~50 líneas | `spec-*.md` |
+| Crear runbook simple | `rbk-*.md` |
+| Diseñar workflow básico | `ref-*.md` workflow |
 
 ---
 
 ## Reglas
 
-1. **Duración objetivo:** 3 minutos
-2. **Ciclo completo:** Aprovechar los 5 minutos
-3. **Sin subagentes** (ya implementado)
-4. **Sin timeout en horario nocturno** (ya implementado)
-5. **NO acciones destructivas sin permiso**
-
----
-
-## Cómo Descomponer Tareas
-
-| Tarea Grande | Se divide en... |
-|--------------|-----------------|
-| "Investigar X" | 1) Buscar, 2) Leer, 3) Crear archivo, 4) Indexar |
-| "Refactorizar archivo" | 1) Leer, 2) Identificar redundancias, 3) Comprimir, 4) Commit |
-| "Analizar sistema" | 1) Revisar estado, 2) Documentar, 3) Crear spec |
-
----
-
-## Tareas de 3 Minutos (Ejemplos Concretos)
-
-### Mantenimiento
-1. Leer 1 archivo grande → identificar redundancias → compresión pendiente
-2. Actualizar 2-3 entradas en index.md
-3. Crear 1 término en glosario con ejemplo
-4. Git commit de cambios pendientes
-
-### Investigación
-1. Buscar 1 tema → crear archivo con bullets
-2. Leer 1 doc externo → crear resumen
-3. Analizar 1 config → documentar hallazgos
-
-### Creación
-1. Escribir 1 spec de ~50 líneas
-2. Crear 1 runbook simple
-3. Diseñar 1 workflow básico
-
----
-
-## Flujo Correcto
-
-```
-:00 - Heartbeat → inicio tarea 3 min
-:01 - Trabajando...
-:02 - Trabajando...
-:03 - Tarea completada → commit
-:04 - Esperando siguiente ciclo
-:05 - Siguiente ciclo
-```
+1. **Duración:** 3 minutos máximo
+2. **Output:** 1 archivo creado/mejorado + 1 commit
+3. **Seguridad:** NO acciones destructivas sin permiso
+4. **Valor:** Si no hay tarea clara → refactorizar existentes
 
 ---
 
 ## Anti-Patrones
 
-| ❌ Mal | ✅ Bien |
-|--------|---------|
-| 30 segundos de trabajo | 3 minutos de trabajo |
-| "Ya está todo limpio" | Siempre hay algo que mejorar |
-| Esperar pasivamente | Buscar activamente qué hacer |
-| Tarea vaga | Tarea específica con output |
+| ❌ No Hacer | Por Qué |
+|-------------|---------|
+| Crear archivos sin propósito | Genera ruido |
+| Repetir lo ya documentado | Desperdicia tokens |
+| Cambios triviales (typo) | No aporta valor |
+| Más de 1 archivo por ciclo | Excede 3 min |
 
 ---
 
-## Fuente de Tareas
+## Ejemplo de Ciclo
 
-1. **TODO.md** — prioridades de Daniel
-2. **ref-interests-real-100.md** — 100 cosas que me importan
-3. **Archivos pendientes** — index.md, glosario, daily log
-4. **Investigación activa** — Google Leak, Claude features, alternativas
-
----
-
-## Compound Effect (Real)
-
-| Tiempo | Tareas de 3 min | Resultado |
-|--------|-----------------|-----------|
-| 1 hora | 12 tareas | 12 archivos creados/mejorados |
-| 1 día | 48 tareas | Sistema transformado |
-| 1 semana | 336 tareas | Arquitectura optimizada |
+```
+1. Leer TODO.md → item #XX no cubierto
+2. Investigar tema (web_search)
+3. Crear ref-*.md con bullets
+4. Indexar en index.md
+5. Commit: "docs: add ref-XX topic"
+6. Tiempo: ~3 min
+```
 
 ---
 
-_Actualizado: 2026-02-20 - Después de feedback de Daniel_
+_Creado: 2026-02-20 11:26 UTC_
