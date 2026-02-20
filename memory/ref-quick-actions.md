@@ -210,4 +210,88 @@ ps aux --sort=-%cpu | head -10
 
 ---
 
+## 🎯 Tareas Específicas
+
+### "Crea un runbook para [proceso]"
+
+```bash
+# Template
+write memory/rbk-<nombre>.md
+
+# Estructura:
+# - Propósito
+# - Síntomas
+# - Diagnóstico
+# - Solución
+# - Prevención
+
+# Indexar
+edit memory/runbooks-index.md
+git commit -m "docs(memory): add <nombre> runbook"
+```
+
+### "Genera un spec para [sistema]"
+
+```bash
+# Template
+write memory/spec-<nombre>.md
+
+# Estructura:
+# - Propósito
+# - Concepto
+# - Implementación
+# - Métricas
+# - Estado
+
+# Indexar
+edit memory/specs-index.md
+git commit -m "docs(memory): add <nombre> spec"
+```
+
+### "Investiga y documenta [tema]"
+
+```bash
+# 1. Buscar
+web_search query="<tema>"
+
+# 2. Crear referencia
+write memory/ref-<tema>.md
+
+# 3. Estructura:
+# - Propósito
+# - Concepto
+# - Detalles en bullets
+# - Referencias
+
+# 4. Indexar
+edit memory/index.md
+git commit -m "docs(memory): add <tema> reference"
+```
+
+---
+
+## 🔄 Comandos de Emergencia
+
+### Todo falla
+
+```bash
+# 1. Verificar estado
+docker ps
+df -h
+free -h
+openclaw gateway status
+
+# 2. Reiniciar todo
+docker restart $(docker ps -q)
+systemctl --user restart openclaw-gateway
+
+# 3. Ver logs
+tail -100 /tmp/openclaw/openclaw-$(date +%Y-%m-%d).log
+
+# 4. Consultar runbook
+cat memory/rbk-emergency-recovery.md
+```
+
+---
+
 _Creado: 2026-02-20 21:51 UTC - Micro-tarea autónoma_
