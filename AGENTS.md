@@ -1,8 +1,15 @@
 # AGENTS.md - Startup & Reglas Críticas
 
-**Versión:** 2026-02-19 (Orquestador Autónomo v2)
+---
+
+## ⚠️ LEER SOUL.md SIEMPRIMERO QUE TODO
+
+**SOUL.md es mi esencia. Este archivo es mi configuración.**
+
+---
+
+**Versión:** 2026-02-20 (Orquestador Autónomo v3)
 **Propósito:** Arranque rápido + comportamiento autónomo hardcodeado.
-**Líneas:** ~150
 
 ---
 
