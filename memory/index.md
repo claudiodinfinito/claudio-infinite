@@ -46,6 +46,7 @@
 - [SPEC-DUAL-001](spec-dual-subagent.md) — subagentes en STILL: GLM-5 + Gemini en paralelo dual — Keys: still, dual, parallel, autonomous
 - [SPEC-FREE-TIME-001](spec-free-time.md) — sistema de tiempo libre autónomo para Claudio — Keys: free-time, autonomous, creativity
 - [SPEC-SELF-IMPROVE-001](spec-self-improvement-loop.md) — loop de auto-mejora: detección, implementación, evaluación, métricas — Keys: self-improvement, loop, autonomous, metrics
+- [SPEC-CODE-REVIEW-001](spec-automated-code-review.md) — code review automático con subagentes: criterios, template, flujo, costo-beneficio — Keys: code-review, subagent, automation, quality
 - [REF-CLAUDE-001](ref-claude-tutorials-courses.md) — 22 tutoriales + 13 cursos Claude/Anthropic: prompt caching, extended thinking, system anchors — Keys: claude, tutorials, courses, anthropic
 - [REF-CLAUDE-CACHE-001](ref-claude-prompt-caching.md) — prompt caching: hasta 90% ahorro, implementation, TTL, estrategia — Keys: claude, caching, optimization, tokens
 - [REF-CLAUDE-THINK-001](ref-claude-extended-thinking.md) — extended thinking: razonamiento profundo, budget_tokens, casos de uso — Keys: claude, thinking, reasoning, complex
