@@ -69,6 +69,7 @@
 - [REF-COMMIT-TEMPLATE-001](ref-commit-message-template.md) — commit message template: tipos, scopes, acciones, ejemplos mejorados, validación — Keys: commit, template, git, convention
 - [REF-SYSTEMD-USER-001](ref-systemd-user-service.md) — systemd user service: autostart, linger, comandos, diferencias vs system service — Keys: systemd, user-service, autostart, linux
 - [REF-SESSION-2026-02-20](ref-session-2026-02-20-summary.md) — resumen sesión nocturna: 50 commits, 16 archivos, logros, lecciones, próximos pasos — Keys: session, summary, nocturna, achievements
+- [REF-SESSION-EXTENDED-001](ref-session-2026-02-20-extended.md) — sesión extendida 22h: 109 commits, 45+ archivos, 17 items interests, runbooks, specs — Keys: session, extended, 109-commits, autonomous
 - [REF-REPORT-001](ref-daily-report-template.md) — template de reporte diario para Daniel: estructura, ejemplo real, cuándo usar — Keys: report, template, daily, communication
 - [REF-MICRO-3MIN-001](ref-micro-tasks-3min.md) — micro-tareas 3 min: fuentes, tipos (mantenimiento/investigación/creación), reglas, anti-patrones — Keys: micro-tasks, efficiency, still
 - [REF-FALLAS-001](ref-fallas-skills.md) — fallas comunes en skills y cómo evitarlas — Keys: skills, failures, troubleshooting
