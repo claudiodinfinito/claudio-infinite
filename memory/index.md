@@ -21,6 +21,7 @@
 - [CHK-OPTIMIZATION-001](chk-optimization.md) — checklist de mantenimiento autónomo — Keys: checklist, optimization, maintenance
 - [RBK-TRIAGE-001](rbk-triage.md) — loop de triage y debugging gateway — Keys: triage, debug, gateway, logs
 - [RBK-CRON-001](rbk-cronjob-errors.md) — diagnóstico y fix de cronjobs con error: rate limit, session locked, delivery failed — Keys: cronjob, error, rate-limit, fix
+- [RBK-GIT-001](rbk-git-remote-setup.md) — configuración de repositorio remoto: origin, push -u, troubleshooting — Keys: git, remote, setup, backup
 - [REF-TRIAGE-001](ref-troubleshooting-decision-tree.md) — decision tree: síntoma → archivo → acción — Keys: troubleshooting, decision-tree, triage, symptoms
 - [REF-CLEANUP-001](ref-cleanup-patterns.md) — patrones de limpieza: diario, semanal, mensual — Keys: cleanup, maintenance, storage, logs
 - [REF-API-TRACK-001](ref-api-usage-tracking.md) — tracking de APIs: Brave, Gemini, GLM-5, Anthropic — Keys: api, usage, tracking, limits, brave, gemini
