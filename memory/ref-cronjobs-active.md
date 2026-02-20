@@ -10,17 +10,19 @@ Last reviewed: 2026-02-20
 
 ## Cronjobs Configurados (9 activos)
 
-| ID | Nombre | Horario | Modelo | Propósito |
-|----|--------|---------|--------|-----------|
-| `fede06ad` | micro-task-5min | Cada 5 min | **Gemini** | Micro-mejoras autónomas |
-| `3228f35b` | daily-log-update | 22:00 UTC | GLM-5 | Actualizar daily log |
-| `6fbad97d` | weekly-consolidation | Dom 12:00 | GLM-5 | Consolidar memoria |
-| `0c238999` | api-usage-check | 18:00 UTC | GLM-5 | Verificar APIs |
-| `53cc6fb2` | healthcheck:vps-daily | 06:00 UTC | GLM-5 | Health VPS |
-| `f73f89dc` | backup:workspace | 06:00 UTC | GLM-5 | Backup git |
-| `ae1dc9d8` | healthcheck:security-weekly | Lun 09:00 | GLM-5 | Security audit |
-| `379a4cdf` | alert:glm5-expiry | 2026-03-01 | — | Alerta 30 días |
-| `43701593` | alert:glm5-expiry-urgent | 2026-03-15 | — | Alerta urgente |
+**Timezone:** `America/Cancun` (UTC-5)
+
+| ID | Nombre | Horario (Cancún) | Modelo | Propósito |
+|----|--------|------------------|--------|-----------|
+| `e54cc71f` | micro-task-5min | Cada 5 min | **Gemini** | Micro-mejoras autónomas |
+| `53cc6fb2` | healthcheck:vps-daily | 01:00 | GLM-5 | Health VPS |
+| `f73f89dc` | backup:workspace | 01:00 | GLM-5 | Backup git |
+| `0c238999` | api-usage-check | 13:00 | GLM-5 | Verificar APIs |
+| `3228f35b` | daily-log-update | 17:00 | GLM-5 | Actualizar daily log |
+| `6fbad97d` | weekly-consolidation | Dom 07:00 | GLM-5 | Consolidar memoria |
+| `ae1dc9d8` | healthcheck:security-weekly | Lun 04:00 | GLM-5 | Security audit |
+| `379a4cdf` | alert:glm5-expiry | 2026-03-01 04:00 | — | Alerta 30 días |
+| `43701593` | alert:glm5-expiry-urgent | 2026-03-15 04:00 | — | Alerta urgente |
 
 ---
 
@@ -30,6 +32,7 @@ Last reviewed: 2026-02-20
 |--------|-------|
 | ❌ Eliminado `reminder:still-check` | Redundante con heartbeat cada 30 min |
 | ✅ `micro-task-5min` ahora usa Gemini | Evitar rate limit GLM-5 |
+| ✅ Timezone cambiado a `America/Cancun` | Horario local de Daniel (UTC-5) |
 
 ---
 
@@ -71,6 +74,7 @@ REPORTO cuando Daniel vuelva
 ## Notas Técnicas
 
 - `sessionTarget: isolated` = ejecuta en sesión aislada
+- `tz: America/Cancun` = horario local UTC-5
 - GLM-5 = 1 request concurrente máximo
 - Gemini = 20 requests/día
 - Micro-tarea usa Gemini para evitar conflicto con main (GLM-5)
@@ -83,4 +87,4 @@ Ver: `memory/ts-cron-delivery-fixed.md`
 
 ---
 
-_Actualizado: 2026-02-20 00:55 UTC - Cronjobs corregidos_
+_Actualizado: 2026-02-20 14:40 Cancún (19:40 UTC) - Timezone cambiado a Cancún_
