@@ -152,6 +152,7 @@
 ## Checklists
 
 - [HIGHLIGHTS.md](HIGHLIGHTS.md) — 3 bullets + anti-pattern + comando por día
+- [template-daily-synthesis.md](template-daily-synthesis.md) — template síntesis diaria: métricas, completado, lecciones, prioridades — Keys: template, daily, synthesis, automation
 
 ---
 
