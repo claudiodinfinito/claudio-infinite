@@ -72,7 +72,6 @@
 - [REF-GIT-001](ref-git-commands.md) — Comandos git del workspace: daily workflow, tipos de commit, flujo micro-tareas — Keys: git, commands, commit, workflow
 - [REF-DIAG-001](ref-quick-diagnostics.md) — Diagnósticos rápidos: checks 30s/2min/5min, one-liners, umbrales alerta — Keys: diagnostics, health, vps, troubleshooting
 - [REF-NAMING-001](ref-file-naming.md) — Nomenclatura archivos: prefijos, IDs, formato header estándar — Keys: naming, conventions, files, organization
-- [REF-INTERESTS-001](ref-interests-100.md) — 100 temas de interés para autonomía activa de Claudio — Keys: interests, autonomy, creativity, topics
 - [REF-ANTIPATTERNS-001](ref-anti-patterns-communication.md) — Anti-patrones de comunicación para LLMs — Keys: anti-patterns, communication, llm
 - [REF-GLM5-MAX-001](ref-glm5-maximization.md) — Maximizando GLM-5 antes de Abril 2026 — Keys: glm5, maximization, strategy
 - [REF-ONELINERS-ADV-001](ref-one-liners-advanced.md) — One-liners avanzados para GLM-5 — Keys: one-liners, advanced, glm5
