@@ -25,6 +25,7 @@
 - [RBK-PB-BACKUP-001](rbk-pocketbase-backup.md) — backup PocketBase: manual, automático, restauración, retención — Keys: pocketbase, backup, cronjob, restore
 - [RBK-DOCKER-001](rbk-docker-container-management.md) — Docker containers: comandos, monitoreo, limpieza, troubleshooting, CapRover — Keys: docker, containers, management, troubleshooting
 - [RBK-EMERGENCY-001](rbk-emergency-recovery.md) — procedimientos emergencia: gateway caído, disco lleno, container crítico, sesión bloqueada, API keys — Keys: emergency, recovery, critical, troubleshooting
+- [RUNBOOKS-INDEX](runbooks-index.md) — índice de runbooks por categoría + flujo diagnóstico + acceso rápido — Keys: runbooks, index, quick-access
 - [REF-TRIAGE-001](ref-troubleshooting-decision-tree.md) — decision tree: síntoma → archivo → acción — Keys: troubleshooting, decision-tree, triage, symptoms
 - [REF-CLEANUP-001](ref-cleanup-patterns.md) — patrones de limpieza: diario, semanal, mensual — Keys: cleanup, maintenance, storage, logs
 - [REF-API-TRACK-001](ref-api-usage-tracking.md) — tracking de APIs: Brave, Gemini, GLM-5, Anthropic — Keys: api, usage, tracking, limits, brave, gemini
