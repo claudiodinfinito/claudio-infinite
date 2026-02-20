@@ -49,6 +49,7 @@
 - [REF-REVOPS-001](ref-revenue-operations-framework.md) — RevOps framework para PYMEs: 3 pilares, KPIs, implementación, template clínica dental — Keys: revops, revenue, pyme, framework
 - [REF-MODEL-SELECT-001](ref-model-selection-decision-tree.md) — decision tree para elegir modelo: por tarea, por costo, límites, plan B GLM-5 — Keys: models, decision-tree, selection, cost
 - [REF-DEEPSEEK-001](ref-deepseek-alternative.md) — DeepSeek V3.2: alternativa GLM-5, pricing $0.27/M, plan migración Abril 2026 — Keys: deepseek, alternative, pricing, migration
+- [REF-OLLAMA-001](ref-ollama-local.md) — Ollama local: gratuito, requisitos RAM, modelos 3B-7B, estado VPS actual — Keys: ollama, local, free, hardware
 - [REF-FALLAS-001](ref-fallas-skills.md) — fallas comunes en skills y cómo evitarlas — Keys: skills, failures, troubleshooting
 - [REF-GLM5-ALT-001](ref-glm5-alternatives.md) — alternativas gratuitas a GLM-5: DeepSeek, MiniMax, Puter.js — Keys: glm5, alternatives, models, free
 - [REF-OPENCLAW-001](ref-openclaw-musthaves.md) — features esenciales de OpenClaw que debe conocer — Keys: openclaw, features, musthave
