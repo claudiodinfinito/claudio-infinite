@@ -15,7 +15,8 @@
 - [REF-ANTIPATTERNS-001](ref-anti-patterns-communication.md) — anti-patrones de comunicación: 15 errores comunes y fixes — Keys: communication, antipatterns, prompts, quality
 - [REF-GLM5-MAX-001](ref-glm5-maximization.md) — maximizar GLM-5: batch, tokens, estrategias hasta Abril 2026 — Keys: glm5, maximization, tokens, efficiency
 - [REF-INTERESTS-REAL-001](ref-interests-real-100.md) — 100 cosas que me importan clasificadas por acción — Keys: interests, action, priorities, real
-- [REF-DAY-SYNTHESIS-001](ref-day-synthesis-2026-02-19.md) — síntesis completa del día con métricas y aprendizajes — Keys: synthesis, daily, learnings, metrics
+- [REF-DAY-SYNTHESIS-001](ref-day-synthesis-2026-02-19.md) — síntesis del 19 Feb: 29 commits, 8 archivos, sistema autonomía — Keys: synthesis, daily, learnings, metrics
+- [REF-DAY-SYNTHESIS-002](ref-day-synthesis-2026-02-20.md) — síntesis del 20 Feb: 21 commits, 7 archivos, sesión nocturna — Keys: synthesis, daily, 2026-02-20, overnight
 - [CHK-OPTIMIZATION-001](chk-optimization.md) — checklist de mantenimiento autónomo — Keys: checklist, optimization, maintenance
 - [RBK-TRIAGE-001](rbk-triage.md) — loop de triage y debugging gateway — Keys: triage, debug, gateway, logs
 - [REF-TRIAGE-001](ref-troubleshooting-decision-tree.md) — decision tree: síntoma → archivo → acción — Keys: troubleshooting, decision-tree, triage, symptoms
