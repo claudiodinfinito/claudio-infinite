@@ -46,6 +46,7 @@
 - [REF-CLAUDE-CACHE-001](ref-claude-prompt-caching.md) — prompt caching: hasta 90% ahorro, implementation, TTL, estrategia — Keys: claude, caching, optimization, tokens
 - [REF-CLAUDE-THINK-001](ref-claude-extended-thinking.md) — extended thinking: razonamiento profundo, budget_tokens, casos de uso — Keys: claude, thinking, reasoning, complex
 - [REF-MCP-001](ref-mcp-model-context-protocol.md) — MCP: conectar Claude con PocketBase, APIs, DBs en tiempo real — Keys: mcp, protocol, pocketbase, connection
+- [REF-REVOPS-001](ref-revenue-operations-framework.md) — RevOps framework para PYMEs: 3 pilares, KPIs, implementación, template clínica dental — Keys: revops, revenue, pyme, framework
 - [REF-FALLAS-001](ref-fallas-skills.md) — fallas comunes en skills y cómo evitarlas — Keys: skills, failures, troubleshooting
 - [REF-GLM5-ALT-001](ref-glm5-alternatives.md) — alternativas gratuitas a GLM-5: DeepSeek, MiniMax, Puter.js — Keys: glm5, alternatives, models, free
 - [REF-OPENCLAW-001](ref-openclaw-musthaves.md) — features esenciales de OpenClaw que debe conocer — Keys: openclaw, features, musthave
