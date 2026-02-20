@@ -252,3 +252,94 @@ _Actualizado: 20 Feb 2026 - Añadido Modal_
 ---
 
 _Actualizado: 20 Feb 2026 - Añadido Gemini 3 Flash_
+
+---
+
+### Prompt Caching
+- **También se llama:** Cache de prompts, cached tokens
+- **No confundir con:** Extended Thinking (es otra feature)
+- **Significa:** Feature de Claude que cachea tokens para reducir costo 90%
+- **Beneficio:** $3/M → $0.30/M para tokens cacheados
+- **TTL:** 5 minutos sin uso
+- **Ejemplo:** "Activé prompt caching para el system prompt largo"
+- **Links:** [REF-CLAUDE-CACHE-001](ref-claude-prompt-caching.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Prompt Caching_
+
+---
+
+### Extended Thinking
+- **También se llama:** Razonamiento profundo, thinking mode
+- **No confundir con:** Prompt caching (es otra feature)
+- **Significa:** Feature de Claude que genera razonamiento interno antes de responder
+- **Parámetro:** `budget_tokens` (1,024 - 160,000)
+- **Uso:** Análisis complejo, debugging difícil, decisiones arquitectónicas
+- **Ejemplo:** "Usé extended thinking para analizar el bug complejo"
+- **Links:** [REF-CLAUDE-THINK-001](ref-claude-extended-thinking.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Extended Thinking_
+
+---
+
+### MCP
+- **También se llama:** Model Context Protocol, protocolo de contexto
+- **No confundir con:** API (es un protocolo, no una API)
+- **Significa:** Protocolo de Anthropic para conectar LLMs con fuentes de datos externas
+- **Arquitectura:** Client → MCP Server → Data Source
+- **Tipos:** Resources (datos), Prompts (templates), Tools (funciones)
+- **Ejemplo:** "Usé MCP para conectar Claude con PocketBase"
+- **Links:** [REF-MCP-001](ref-mcp-model-context-protocol.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido MCP_
+
+---
+
+### RevOps
+- **También se llama:** Revenue Operations, Revenue Ops
+- **No confundir con:** Marketing (es más amplio)
+- **Significa:** Unificación de Marketing, Sales y Customer Success en un sistema de revenue
+- **3 Pilares:** Marketing Ops, Sales Ops, Customer Success Ops
+- **Uso:** Framework para PYMEs de Daniel
+- **Ejemplo:** "Implementé RevOps en la clínica dental"
+- **Links:** [REF-REVOPS-001](ref-revenue-operations-framework.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido RevOps_
+
+---
+
+### DeepSeek
+- **También se llama:** DeepSeek V3.2, alternativa GLM-5
+- **No confundir con:** Ollama (es API, no local)
+- **Significa:** Modelo AI chino con pricing competitivo como reemplazo de GLM-5
+- **Pricing:** $0.27/M input, $1.10/M output
+- **Status:** Plan B post-Abril 2026
+- **Ejemplo:** "Migraré a DeepSeek cuando GLM-5 expire"
+- **Links:** [REF-DEEPSEEK-001](ref-deepseek-alternative.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido DeepSeek_
+
+---
+
+### Ollama
+- **También se llama:** LLM local, inference local
+- **No confundir con:** API (es local, no remoto)
+- **Significa:** Runtime para correr LLMs localmente sin API costs
+- **Costo:** Gratis (solo recursos del VPS)
+- **Requisito:** RAM suficiente (8GB+ para modelos 7B)
+- **Estado en VPS:** Container activo, puede correr modelos 3B-7B
+- **Ejemplo:** "Uso Ollama para tareas sin urgencia"
+- **Links:** [REF-OLLAMA-001](ref-ollama-local.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Ollama_
