@@ -29,6 +29,7 @@
 - [SPEC-TRAINER-DIAG-001](spec-subagent-trainer-diag.md) — subagente diagnóstico: 3 hipótesis + tests + conclusión — Keys: subagent, diag, trainer, troubleshooting
 - [SPEC-QA-ORCH-001](spec-qa-orchestrator.md) — Q&A orquestador con depth=2, GLM+Gemini, síntesis — Keys: subagent, qa, orchestrator, depth, synthesis
 - [SPEC-DUAL-001](spec-dual-subagent.md) — subagentes en STILL: GLM-5 + Gemini en paralelo dual — Keys: still, dual, parallel, autonomous
+- [SPEC-FREE-TIME-001](spec-free-time.md) — sistema de tiempo libre autónomo para Claudio — Keys: free-time, autonomous, creativity
 - [REF-CLAUDE-001](ref-claude-tutorials-courses.md) — 22 tutoriales + 13 cursos Claude/Anthropic: prompt caching, extended thinking, system anchors — Keys: claude, tutorials, courses, anthropic
 - [REF-FALLAS-001](ref-fallas-skills.md) — fallas comunes en skills y cómo evitarlas — Keys: skills, failures, troubleshooting
 - [REF-GLM5-ALT-001](ref-glm5-alternatives.md) — alternativas gratuitas a GLM-5: DeepSeek, MiniMax, Puter.js — Keys: glm5, alternatives, models, free
