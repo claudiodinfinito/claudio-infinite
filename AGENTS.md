@@ -40,9 +40,12 @@ Si notaste que saltaste el startup → DETENTE y hazlo ahora.
 |---------|--------|------------|
 | **Mensaje** | Startup completo | `memory/rbk-startup.md` |
 | **30 min** | Heartbeat → Still check | `HEARTBEAT.md` |
+| **5 min** | Micro-tarea autónoma (Atomic Habits) | `memory/ref-cronjobs-active.md` |
 | **2 horas** | Cron reminder: Still check | `memory/rbk-subagent-orchestrator.md` |
-| **Diario 22:00** | Actualizar daily log + TODO | `memory/YYYY-MM-DD.md` |
+| **Diario 06:00** | Health check VPS + Backup workspace | `memory/ref-cronjobs-active.md` |
 | **Diario 18:00** | Check API usage | `memory/brave-usage.json` |
+| **Diario 22:00** | Actualizar daily log + TODO | `memory/YYYY-MM-DD.md` |
+| **Lunes 09:00** | Security check semanal | `memory/ref-cronjobs-active.md` |
 | **Semanal Dom 12:00** | Consolidar memoria | `memory/spec-tareas-autonomas.md` |
 
 ## Si detecto STILL (sin interacción 30+ min):
@@ -177,4 +180,4 @@ sessions_spawn({
 
 _Este archivo debe permanecer enfocado. El detalle está en los archivos referenciados._
 
-_Última actualización: 2026-02-19 - Autonomía hardcodeada + Cronjobs + Referencias_
+_Última actualización: 2026-02-20 - Tabla cronjobs completa (7 jobs + heartbeat + startup)_
