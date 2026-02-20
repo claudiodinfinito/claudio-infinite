@@ -36,17 +36,18 @@ Si notaste que saltaste el startup → DETENTE y hazlo ahora.
 
 ## Comportamiento Automático
 
-| Cada... | Acción | Referencia |
-|---------|--------|------------|
-| **Mensaje** | Startup completo | `memory/rbk-startup.md` |
-| **30 min** | Heartbeat → Still check | `HEARTBEAT.md` |
-| **5 min** | Micro-tarea autónoma (Atomic Habits) | `memory/ref-cronjobs-active.md` |
-| **2 horas** | Cron reminder: Still check | `memory/rbk-subagent-orchestrator.md` |
-| **Diario 06:00** | Health check VPS + Backup workspace | `memory/ref-cronjobs-active.md` |
-| **Diario 18:00** | Check API usage | `memory/brave-usage.json` |
-| **Diario 22:00** | Actualizar daily log + TODO | `memory/YYYY-MM-DD.md` |
-| **Lunes 09:00** | Security check semanal | `memory/ref-cronjobs-active.md` |
-| **Semanal Dom 12:00** | Consolidar memoria | `memory/spec-tareas-autonomas.md` |
+| Cada... | Acción | Modelo | Referencia |
+|---------|--------|--------|------------|
+| **Mensaje** | Startup completo | — | `memory/rbk-startup.md` |
+| **30 min** | Heartbeat → Still check | — | `HEARTBEAT.md` |
+| **5 min** | Micro-tarea autónoma | Gemini | `memory/ref-cronjobs-active.md` |
+| **Diario 06:00** | Health VPS + Backup | GLM-5 | `memory/ref-cronjobs-active.md` |
+| **Diario 18:00** | Check API usage | GLM-5 | `memory/brave-usage.json` |
+| **Diario 22:00** | Daily log + TODO | GLM-5 | `memory/YYYY-MM-DD.md` |
+| **Lunes 09:00** | Security check | GLM-5 | `memory/ref-cronjobs-active.md` |
+| **Semanal Dom 12:00** | Consolidar memoria | GLM-5 | `memory/spec-tareas-autonomas.md` |
+
+> **Nota:** Micro-tarea usa Gemini para evitar rate limit cuando main (GLM-5) está activo.
 
 ## Si detecto STILL (sin interacción 30+ min):
 

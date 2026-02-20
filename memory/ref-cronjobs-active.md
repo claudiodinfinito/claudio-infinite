@@ -4,24 +4,32 @@ ID: REF-CRONJOBS-001
 Status: active
 Tags: #cronjobs #reminders #automation
 Keys: cronjobs, reminders, automation, alerts
-Last reviewed: 2026-02-19
+Last reviewed: 2026-02-20
 
 ---
 
-## Cronjobs Configurados
+## Cronjobs Configurados (9 activos)
 
-| ID | Nombre | Horario | Propósito |
-|----|--------|---------|-----------|
-| `fede06ad...` | reminder:micro-task-5min | Cada 5 min | Micro-tarea autónoma (Atomic Habits) |
-| `3228f35b...` | reminder:daily-log-update | Diario 22:00 UTC | Actualizar daily log + TODO |
-| `6fbad97d...` | reminder:weekly-consolidation | Domingo 12:00 UTC | Consolidar memoria semanal |
-| `0c238999...` | reminder:api-usage-check | Diario 18:00 UTC | Verificar uso de APIs |
-| `0f6fae18...` | reminder:still-check | Cada 2 horas | Check si estoy en STILL |
-| `53cc6fb2...` | healthcheck:vps-daily | Diario 06:00 UTC | Health check del VPS |
-| `f73f89dc...` | backup:workspace | Diario 06:00 UTC | Backup del workspace |
-| `ae1dc9d8...` | healthcheck:security-weekly | Lunes 09:00 UTC | Security check semanal |
-| `379a4cdf...` | alert:glm5-expiry | 2026-03-01 09:00 UTC | Alerta GLM-5 expiry |
-| `43701593...` | alert:glm5-expiry-urgent | 2026-03-15 09:00 UTC | Alerta urgente GLM-5 |
+| ID | Nombre | Horario | Modelo | Propósito |
+|----|--------|---------|--------|-----------|
+| `fede06ad` | micro-task-5min | Cada 5 min | **Gemini** | Micro-mejoras autónomas |
+| `3228f35b` | daily-log-update | 22:00 UTC | GLM-5 | Actualizar daily log |
+| `6fbad97d` | weekly-consolidation | Dom 12:00 | GLM-5 | Consolidar memoria |
+| `0c238999` | api-usage-check | 18:00 UTC | GLM-5 | Verificar APIs |
+| `53cc6fb2` | healthcheck:vps-daily | 06:00 UTC | GLM-5 | Health VPS |
+| `f73f89dc` | backup:workspace | 06:00 UTC | GLM-5 | Backup git |
+| `ae1dc9d8` | healthcheck:security-weekly | Lun 09:00 | GLM-5 | Security audit |
+| `379a4cdf` | alert:glm5-expiry | 2026-03-01 | — | Alerta 30 días |
+| `43701593` | alert:glm5-expiry-urgent | 2026-03-15 | — | Alerta urgente |
+
+---
+
+## Cambios Recientes (2026-02-20)
+
+| Cambio | Razón |
+|--------|-------|
+| ❌ Eliminado `reminder:still-check` | Redundante con heartbeat cada 30 min |
+| ✅ `micro-task-5min` ahora usa Gemini | Evitar rate limit GLM-5 |
 
 ---
 
@@ -40,13 +48,13 @@ openclaw cron runs <job-id>
 
 ---
 
-## Flujo de Still Check (cada 2 horas)
+## Flujo de Still Check (Heartbeat)
 
 ```
-Cron: reminder:still-check se ejecuta
+Heartbeat cada 30 min
     ↓
-Leo: ¿Daniel ha interactuado en los últimos 30 min?
-    ↓ NO
+¿Daniel ha interactuado en los últimos 30 min?
+    ↓ NO (still)
 LEO TODO.md → ¿Hay tareas Next?
     ↓ SÍ
 ELIJO tarea ALTA → EJECUTO
@@ -60,12 +68,19 @@ REPORTO cuando Daniel vuelva
 
 ---
 
-## Notas
+## Notas Técnicas
 
-- Los cronjobs con `sessionTarget: isolated` ejecutan en sesión aislada
-- El modelo usado es GLM-5 (gratis)
-- Los reminders van al canal Telegram de Daniel
+- `sessionTarget: isolated` = ejecuta en sesión aislada
+- GLM-5 = 1 request concurrente máximo
+- Gemini = 20 requests/día
+- Micro-tarea usa Gemini para evitar conflicto con main (GLM-5)
 
 ---
 
-_Creado: 2026-02-19 - Tracking de automatizaciones_
+## Troubleshooting
+
+Ver: `memory/ts-cron-delivery-fixed.md`
+
+---
+
+_Actualizado: 2026-02-20 00:55 UTC - Cronjobs corregidos_
