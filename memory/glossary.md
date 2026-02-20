@@ -343,3 +343,33 @@ _Actualizado: 20 Feb 2026 - Añadido DeepSeek_
 ---
 
 _Actualizado: 20 Feb 2026 - Añadido Ollama_
+
+---
+
+### Compound Effect
+- **También se llama:** Efecto compuesto, mejora acumulativa
+- **No confundir con:** Micro-tarea (el efecto es el RESULTADO de las micro-tareas)
+- **Significa:** Mejoras pequeñas que se acumulan exponencialmente con el tiempo
+- **Matemática:** 12 tareas/hora × horas activas = sistema optimizado
+- **Aplicación:** 1 micro-tarea de 3 min cada 5 min
+- **Ejemplo:** "48 tareas de 3 min/día = sistema transformado en 1 semana"
+- **Links:** [REF-MICRO-3MIN-001](ref-micro-tasks-3min.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Compound Effect_
+
+---
+
+### Anchor (Google Leak)
+- **También se llama:** Texto de enlace, anchor text
+- **No confundir con:** Link (el anchor es el TEXTO del link)
+- **Significa:** Texto visible de un hipervínculo que Google usa como señal de ranking
+- **Señales:** `sourceOnsiteAnchor` (interno), `sourceOffdomainAnchor` (externo)
+- **Contexto:** `anchorMismatchDemotion` penaliza anchors no relevantes
+- **Ejemplo:** "El anchor 'mejor café' debe ir a página de café, no de zapatos"
+- **Links:** [REF-GOOGLE-ANCHOR-DEEP-001](ref-google-leak-anchor-deep.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Anchor_
