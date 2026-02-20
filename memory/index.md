@@ -176,7 +176,7 @@
 
 ---
 
-_Actualizado: 20 Feb 2026 - 20:31 UTC (Sesión extendida 20h, 73 commits)_
+_Actualizado: 20 Feb 2026 - 22:26 UTC (Sesión extendida 22h, 111 commits)_
 
 ---
 
@@ -184,24 +184,27 @@ _Actualizado: 20 Feb 2026 - 20:31 UTC (Sesión extendida 20h, 73 commits)_
 
 | Categoría | Cantidad |
 |-----------|----------|
-| **Referencias (REF)** | 35 |
-| **Runbooks (RBK)** | 5 |
+| **Referencias (REF)** | 40 |
+| **Runbooks (RBK)** | 7 |
 | **Specs (SPEC)** | 10 |
 | **Troubleshooting (TS)** | 8 |
-| **Checklists (CHK)** | 1 |
-| **Total archivos indexados** | 70+ |
+| **Checklists (CHK)** | 2 |
+| **Templates** | 3 |
+| **Índices** | 4 |
+| **Glosario** | 30 términos |
+| **Total archivos indexados** | 117 |
 
 ### Commits por Día:
 
 | Día | Commits | Archivos |
 |-----|---------|----------|
-| 2026-02-20 | 73 | 30+ |
+| 2026-02-20 | 111 | 45+ |
 | 2026-02-19 | 29 | 8 |
 | 2026-02-18 | 15 | 5 |
 
 ### Items ref-interests-real-100.md Cubiertos:
 
-15 items documentados (#17, #18, #19, #28, #29, #30, #77, #91, #92, #94, #95, #96, #97, #98, #99)
+17 items documentados: #17, #18, #19, #28, #29, #30, #77, #91, #92, #94, #95, #96, #97, #98, #99, #100
 
 ---
 
