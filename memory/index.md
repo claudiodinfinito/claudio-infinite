@@ -156,3 +156,4 @@ _Actualizado: 19 Feb 2026 - 16:15 UTC (Refactor AGENTS.md)_
 - [SPEC-N8N-PB-001](spec-n8n-pocketbase-bridge.md) — n8n ↔ PocketBase bridge: diseño de workflows y sync bidireccional — Keys: n8n, pocketbase, bridge
 - [REF-DOCKER-001](ref-docker-containers-audit.md) — Docker containers audit: 8 activos, recursos, recomendaciones — Keys: docker, audit, containers
 - [REF-MICRO-3MIN-001](ref-micro-tasks-3min.md) — Micro-tareas de 3 minutos: protocolo actualizado, descomposición, compound effect real — Keys: micro-tasks, 3min, compound
+- [REF-GOOGLE-ANCHOR-DEEP-001](ref-google-leak-anchor-deep.md) — Anchor system deep dive: señales, contexto, implicaciones SEO — Keys: google, anchor, seo, ranking
