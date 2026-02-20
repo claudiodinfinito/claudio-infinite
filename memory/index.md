@@ -9,7 +9,7 @@
 - [RBK-STARTUP-001](rbk-startup.md) — procedimiento de arranque obligatorio — Keys: startup, arranque, identity
 - [RBK-ORCH-001](rbk-subagent-orchestrator.md) — cómo spawnear, esperar, integrar subagentes — Keys: subagentes, orchestrator, prompts, gemini
 - [REF-CRONJOBS-001](ref-cronjobs-active.md) — recordatorios y automatizaciones activas — Keys: cron, automation, alerts
-- [REF-ONELINERS-001](ref-one-liners-glm5.md) — prompts one-liners óptimos para GLM-5 — Keys: one-liners, prompts, glm5, efficiency
+- [REF-TOLTEC-001](ref-toltec-wisdom.md) — sabiduría tolteca ancestral: cuatro acuerdos + nagual/tonal + búho observador — Keys: toltec, wisdom, nagual, four-agreements
 - [REF-ONELINERS-ADV-001](ref-one-liners-advanced.md) — one-liners avanzados: análisis, debugging, refactor, archivos grandes — Keys: one-liners, advanced, complex, debugging
 - [REF-ORCHESTRATION-ADV-001](ref-subagent-orchestration-advanced.md) — orquestación avanzada: decision tree, templates, integración — Keys: subagent, orchestration, templates, integration
 - [REF-ANTIPATTERNS-001](ref-anti-patterns-communication.md) — anti-patrones de comunicación: 15 errores comunes y fixes — Keys: communication, antipatterns, prompts, quality
