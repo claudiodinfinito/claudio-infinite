@@ -23,6 +23,7 @@
 - [RBK-CRON-001](rbk-cronjob-errors.md) — diagnóstico y fix de cronjobs con error: rate limit, session locked, delivery failed — Keys: cronjob, error, rate-limit, fix
 - [RBK-GIT-001](rbk-git-remote-setup.md) — configuración de repositorio remoto: origin, push -u, troubleshooting — Keys: git, remote, setup, backup
 - [RBK-PB-BACKUP-001](rbk-pocketbase-backup.md) — backup PocketBase: manual, automático, restauración, retención — Keys: pocketbase, backup, cronjob, restore
+- [RBK-DOCKER-001](rbk-docker-container-management.md) — Docker containers: comandos, monitoreo, limpieza, troubleshooting, CapRover — Keys: docker, containers, management, troubleshooting
 - [REF-TRIAGE-001](ref-troubleshooting-decision-tree.md) — decision tree: síntoma → archivo → acción — Keys: troubleshooting, decision-tree, triage, symptoms
 - [REF-CLEANUP-001](ref-cleanup-patterns.md) — patrones de limpieza: diario, semanal, mensual — Keys: cleanup, maintenance, storage, logs
 - [REF-API-TRACK-001](ref-api-usage-tracking.md) — tracking de APIs: Brave, Gemini, GLM-5, Anthropic — Keys: api, usage, tracking, limits, brave, gemini
