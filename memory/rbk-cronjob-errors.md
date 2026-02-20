@@ -87,14 +87,18 @@ tail -f /tmp/openclaw/openclaw-$(date +%Y-%m-%d).log
 
 ---
 
-## Cronjobs Actuales con Error
+## Cronjobs Actuales con Error (2026-02-20 11:36 UTC)
 
-| Job ID | Nombre | Estado | Posible Causa |
-|--------|--------|--------|---------------|
-| `53cc6fb2` | healthcheck:vps-daily | Error | Rate limit GLM-5 |
-| `3228f35b` | daily-log-update | Error | Rate limit GLM-5 |
+| Job ID | Nombre | Último run | Causa Probable |
+|--------|--------|------------|----------------|
+| `53cc6fb2-b188-427f-956a-504c1261beb2` | healthcheck:vps-daily | 6h ago | Rate limit GLM-5 |
+| `3228f35b-2e5f-4512-9105-7219b752924e` | daily-log-update | 14h ago | Rate limit GLM-5 |
 
-**Acción recomendada:** Mover a Gemini o usar systemEvent.
+**Estado:** Ambos jobs programados para correr nuevamente (healthcheck en 18h, daily-log en 10h).
+
+**Acción recomendada:**
+1. Cambiar modelo a Gemini en ambos jobs
+2. O usar `systemEvent` en lugar de `agentTurn` para alerts simples
 
 ---
 
