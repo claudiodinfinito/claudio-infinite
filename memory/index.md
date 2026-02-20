@@ -23,6 +23,7 @@
 - [REF-API-TRACK-001](ref-api-usage-tracking.md) — tracking de APIs: Brave, Gemini, GLM-5, Anthropic — Keys: api, usage, tracking, limits, brave, gemini
 - [REF-COMMIT-001](ref-commit-conventions.md) — convenciones de commits: tipos, scopes, formato — Keys: git, commit, conventions, workflow
 - [REF-ERRORS-001](ref-common-errors.md) — errores comunes y soluciones: 429, timeout, gateway, docker — Keys: errors, troubleshooting, debug, solutions
+- [REF-ENV-001](ref-environment-variables.md) — variables de entorno: ubicación, seguridad, rotación — Keys: env, secrets, config, environment
 
 ## TODO (tareas actuales)
 
