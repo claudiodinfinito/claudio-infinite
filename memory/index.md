@@ -61,6 +61,7 @@
 - [REF-KNOWLEDGE-GRAPH-001](ref-knowledge-graph.md) — knowledge graph sin embeddings: tags, relaciones, cuándo implementar — Keys: knowledge-graph, embeddings, relations, structure
 - [REF-VOICE-001](ref-voice-interface.md) — voice interface: TTS disponible, STT pendiente, casos de uso, Whisper API — Keys: voice, tts, stt, whisper, telegram
 - [REF-IMAGE-001](ref-image-analysis.md) — análisis de imágenes: OCR, descripción, diagramas, múltiples imágenes, Google Leak — Keys: image, ocr, vision, analysis
+- [REF-MEETING-001](ref-meeting-summarizer.md) — meeting summarizer: template, workflow, action items, estructura archivos — Keys: meeting, summary, transcription, action-items
 - [REF-SESSION-2026-02-20](ref-session-2026-02-20-summary.md) — resumen sesión nocturna: 50 commits, 16 archivos, logros, lecciones, próximos pasos — Keys: session, summary, nocturna, achievements
 - [REF-REPORT-001](ref-daily-report-template.md) — template de reporte diario para Daniel: estructura, ejemplo real, cuándo usar — Keys: report, template, daily, communication
 - [REF-MICRO-3MIN-001](ref-micro-tasks-3min.md) — micro-tareas 3 min: fuentes, tipos (mantenimiento/investigación/creación), reglas, anti-patrones — Keys: micro-tasks, efficiency, still
