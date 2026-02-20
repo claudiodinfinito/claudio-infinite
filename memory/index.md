@@ -18,6 +18,7 @@
 - [REF-DAY-SYNTHESIS-001](ref-day-synthesis-2026-02-19.md) — síntesis completa del día con métricas y aprendizajes — Keys: synthesis, daily, learnings, metrics
 - [CHK-OPTIMIZATION-001](chk-optimization.md) — checklist de mantenimiento autónomo — Keys: checklist, optimization, maintenance
 - [RBK-TRIAGE-001](rbk-triage.md) — loop de triage y debugging gateway — Keys: triage, debug, gateway, logs
+- [REF-TRIAGE-001](ref-troubleshooting-decision-tree.md) — decision tree: síntoma → archivo → acción — Keys: troubleshooting, decision-tree, triage, symptoms
 
 ## TODO (tareas actuales)
 
