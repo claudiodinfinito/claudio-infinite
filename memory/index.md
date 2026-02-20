@@ -53,6 +53,7 @@
 - [REF-DEEPSEEK-001](ref-deepseek-alternative.md) — DeepSeek V3.2: alternativa GLM-5, pricing $0.27/M, plan migración Abril 2026 — Keys: deepseek, alternative, pricing, migration
 - [REF-OLLAMA-001](ref-ollama-local.md) — Ollama local: gratuito, requisitos RAM, modelos 3B-7B, estado VPS actual — Keys: ollama, local, free, hardware
 - [REF-N8N-001](ref-n8n-workflows.md) — n8n workflows: patrones, PocketBase integration, best practices, proyectos pendientes — Keys: n8n, workflows, automation, pocketbase
+- [REF-SIGNAL-001](ref-signal-based-selling.md) — signal-based selling: ventas por señales, tipos, HubSpot/ClickFunnels, implementación clientes — Keys: sales, signals, hubspot, clickfunnels
 - [REF-SESSION-2026-02-20](ref-session-2026-02-20-summary.md) — resumen sesión nocturna: 50 commits, 16 archivos, logros, lecciones, próximos pasos — Keys: session, summary, nocturna, achievements
 - [REF-REPORT-001](ref-daily-report-template.md) — template de reporte diario para Daniel: estructura, ejemplo real, cuándo usar — Keys: report, template, daily, communication
 - [REF-MICRO-3MIN-001](ref-micro-tasks-3min.md) — micro-tareas 3 min: fuentes, tipos (mantenimiento/investigación/creación), reglas, anti-patrones — Keys: micro-tasks, efficiency, still
