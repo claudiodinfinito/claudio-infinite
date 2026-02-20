@@ -160,3 +160,4 @@ _Actualizado: 19 Feb 2026 - 16:15 UTC (Refactor AGENTS.md)_
 - [REF-GOOGLE-ANCHOR-DEEP-001](ref-google-leak-anchor-deep.md) — Anchor system deep dive: señales, contexto, implicaciones SEO — Keys: google, anchor, seo, ranking
 - [REF-ONELINERS-GLM5-001](ref-one-liners-glm5-optimized.md) — One-liners optimizados para GLM-5: 10 probados, patrones, anti-patrones — Keys: one-liners, glm5, prompts
 - [REF-STILL-ACTIVE-001](ref-still-vs-active.md) — Cuándo STILL vs Cuándo Daniel me habla, protocolo crítico — Keys: still, active, autonomy
+- [LESSONS-001](lecciones-de-vida.md) — Lecciones de vida: no ejecutar sin pensar, no spawnear para investigar, compromiso, dos vidas — Keys: lecciones, aprendizaje
