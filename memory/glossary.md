@@ -194,3 +194,61 @@ _Actualizado: 19 Feb 2026 - Añadido Brief_
 ---
 
 _Actualizado: 19 Feb 2026 - Añadido Micro-tarea_
+
+---
+
+### Triage
+- **También se llama:** Diagnóstico rápido, decision tree
+- **No confundir con:** Debugging profundo
+- **Significa:** Proceso de identificar problema → archivo correcto → acción inmediata
+- **Formato:** Síntoma → Archivo → Primer comando
+- **Ejemplo:** "Hice triage: gateway no responde → rbk-gateway-restart.md → systemctl restart"
+- **Links:** [REF-TRIAGE-001](ref-troubleshooting-decision-tree.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Triage_
+
+---
+
+### Rate Limit
+- **También se llama:** 429, quota exceeded, API limit
+- **No confundir con:** Timeout (es otra cosa)
+- **Significa:** Límite de requests por tiempo que impone una API
+- **GLM-5:** 1 request concurrente máximo
+- **Gemini:** 20 requests/día
+- **Brave:** 1,500/mes
+- **Ejemplo:** "GLM-5 dio 429, esperé y reintenté"
+- **Links:** [REF-LIMITS-001](ref-model-limits.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Rate Limit_
+
+---
+
+### Modal
+- **También se llama:** Modal Labs, provider GLM-5
+- **No confundir con:** Modelo (es la plataforma)
+- **Significa:** Plataforma que hostea GLM-5 gratis hasta Abril 2026
+- **Ejemplo:** "GLM-5 corre en Modal"
+- **Links:** [REF-GLM5-001](ref-glm5-issues.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Modal_
+
+---
+
+### Gemini 3 Flash
+- **También se llama:** gemini-3-flash-preview, subagente model
+- **No confundir con:** GLM-5 (modelo principal)
+- **Significa:** Modelo de Google usado para subagentes e investigación
+- **Limitación:** 20 requests/día en tier gratis
+- **Uso principal:** Subagentes cuando GLM-5 está activo (evita rate limit)
+- **Ejemplo:** "Spawneé Gemini para investigar ClawWork"
+- **Links:** [REF-MODEL-001](ref-model-comparison-pricing.md)
+
+---
+
+_Actualizado: 20 Feb 2026 - Añadido Gemini 3 Flash_
