@@ -37,6 +37,7 @@
 - [REF-API-TRACK-001](ref-api-usage-tracking.md) — tracking de APIs: Brave, Gemini, GLM-5, Anthropic — Keys: api, usage, tracking, limits, brave, gemini
 - [TRK-ANTHROPIC-001](tracking-anthropic-usage.md) — tracking presupuesto Anthropic $25: modelos, costos, estimaciones, reglas de uso — Keys: anthropic, budget, tracking, costs
 - [REF-COMMIT-001](ref-commit-conventions.md) — convenciones de commits: tipos, scopes, formato — Keys: git, commit, conventions, workflow
+- [TPL-COMMIT-001](tpl-commit-message.md) — template de commit message: tipos, scopes, ejemplos, validación — Keys: git, commit, template, conventions
 - [REF-ERRORS-001](ref-common-errors.md) — errores comunes y soluciones: 429, timeout, gateway, docker — Keys: errors, troubleshooting, debug, solutions
 - [REF-ENV-001](ref-environment-variables.md) — variables de entorno: ubicación, seguridad, rotación — Keys: env, secrets, config, environment
 

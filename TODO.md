@@ -72,7 +72,7 @@
 
 **14.** Mi startup — optimizar con cache. ✅ Prompt caching documentado.
 
-**15.** Memory files — algunos duplicados. Acción: Consolidar.
+**15.** Memory files — ✅ Template commit message creado. Acción: Consolidar duplicados.
 
 **16.** Cronjobs 9 activos — verificar que funcionan. ✅ 7 OK, 2 con error (rate limit, fix aplicado).
 
