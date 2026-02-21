@@ -19,6 +19,7 @@
 - [REF-DAY-SYNTHESIS-001](ref-day-synthesis-2026-02-19.md) — síntesis del 19 Feb: 29 commits, 8 archivos, sistema autonomía — Keys: synthesis, daily, learnings, metrics
 - [REF-DAY-SYNTHESIS-002](ref-day-synthesis-2026-02-20.md) — síntesis del 20 Feb: 21 commits, 7 archivos, sesión nocturna — Keys: synthesis, daily, 2026-02-20, overnight
 - [CHK-OPTIMIZATION-001](chk-optimization.md) — checklist de mantenimiento autónomo — Keys: checklist, optimization, maintenance
+- [CHK-ONE-MINUTE-001](chk-one-minute-coach.md) — One Minute Coach: claridad, praise, redirect aplicado a outputs — Keys: checklist, one-minute, coach, quality
 - [RBK-TRIAGE-001](rbk-triage.md) — loop de triage y debugging gateway — Keys: triage, debug, gateway, logs
 - [RBK-CRON-001](rbk-cronjob-errors.md) — diagnóstico y fix de cronjobs con error: rate limit, session locked, delivery failed — Keys: cronjob, error, rate-limit, fix
 - [RBK-CLEANUP-001](rbk-cleanup-logs-locks.md) — limpieza de logs >30 días y locks huérfanos: comandos, umbrales, cronjob semanal — Keys: cleanup, logs, locks, maintenance

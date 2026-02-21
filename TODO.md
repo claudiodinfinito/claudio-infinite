@@ -92,7 +92,7 @@
 
 **22.** Atomic Habits para agentes — ✅ implementado en micro-tareas.
 
-**23.** One Minute Coach — aplicar. Acción: Cada output.
+**23.** One Minute Coach — ✅ Checklist creado. Aplicar en cada output.
 
 **24.** Revenue Operations framework — ✅ COMPLETADO.
 
