@@ -2,9 +2,9 @@
 
 **Regla:** 1 tarea a la vez. Sin timeout en la noche.
 
-**Actualizado:** 2026-02-21, 12:01 UTC
-**Heartbeats hoy:** 8/48
-**Último trabajo:** 2026-02-21 12:01 UTC - Check sistema: sin logs antiguos, 1 lock activo (sesión actual), gateway OK
+**Actualizado:** 2026-02-21, 13:26 UTC
+**Heartbeats hoy:** 9/48
+**Último trabajo:** 2026-02-21 13:26 UTC - Check sistema: 0 logs antiguos, 2 locks activos (sesión actual), git clean, todo indexado
 
 ---
 
