@@ -68,7 +68,7 @@
 
 **12.** Logs antiguos >30 días — llenan disco. Acción: Limpiar.
 
-**13.** .lock files huérfanos — causan problemas. Acción: Detectar y eliminar.
+**13.** .lock files huérfanos — ✅ Runbook creado. Sistema verificado: 0 huérfanos.
 
 **14.** Mi startup — optimizar con cache. ✅ Prompt caching documentado.
 
