@@ -26,6 +26,11 @@
 - [RBK-CLEANUP-001](rbk-cleanup-logs-locks.md) — limpieza de logs >30 días y locks huérfanos: comandos, umbrales, cronjob semanal — Keys: cleanup, logs, locks, maintenance
 - [RBK-LOGS-001](rbk-log-cleanup.md) — limpieza de logs del sistema: journal, btmp, logrotate, comandos seguros, prevención — Keys: logs, cleanup, journal, disk-space
 - [RBK-LOCKS-001](rbk-orphaned-locks.md) — detectar y limpiar locks huérfanos: diagnóstico, verificación PID, limpieza segura, prevención — Keys: locks, orphaned, cleanup, gateway
+- [RBK-AUTONOMY-REAL-001](rbk-autonomy-real.md) — sistema de autonomía real: arquitectura, cronjobs, heartbeat, realidad vs expectativa — Keys: autonomy, cronjob, heartbeat, architecture
+- [RBK-AUTO-REPAIR-001](rbk-auto-repair-cronjobs.md) — auto-reparación cronjobs: debug, context, deleteAfterRun, rate limit — Keys: cronjob, debug, auto-repair, context
+- [RBK-AUTO-REPAIR-SYS-001](rbk-auto-repair.md) — auto-reparación del sistema: reglas, ejemplos, cuando ejecutar — Keys: auto-repair, system, recovery
+- [RBK-KRILL-QUICK-001](rbk-krill-quick.md) — protocolo Krill guía rápida: cuándo invocar, pasos, síntomas — Keys: krill, protocol, emergency
+- [RBK-MEMORY-CONSOLID-001](rbk-memory-consolidation.md) — consolidación de memoria: detectar duplicados, unir, limpiar — Keys: memory, consolidation, cleanup, duplicates
 - [RBK-GIT-001](rbk-git-remote-setup.md) — configuración de repositorio remoto: origin, push -u, troubleshooting — Keys: git, remote, setup, backup
 - [RBK-PB-BACKUP-001](rbk-pocketbase-backup.md) — backup PocketBase: manual, automático, restauración, retención — Keys: pocketbase, backup, cronjob, restore
 - [RBK-DOCKER-001](rbk-docker-container-management.md) — Docker containers: comandos, monitoreo, limpieza, troubleshooting, CapRover — Keys: docker, containers, management, troubleshooting
@@ -138,6 +143,7 @@
 - [REF-GOOGLE-SEO-CHECK-001](ref-google-leak-seo-checklist.md) — checklist SEO práctico para clientes: anchors, sourceType, calidad, spam, auditoría 5 min — Keys: google, seo, checklist, clients
 - [REF-GOOGLE-LEAK-004](ref-google-leak-ranking-systems.md) — sistemas de ranking del leak: NavBoost, QStar, Twiddlers, top 10 factores, demotions — Keys: google, ranking, navboost, qstar, twiddlers
 - [REF-GOOGLE-RANKING-CLIENTES-001](ref-google-ranking-checklist-clientes.md) — checklist ranking para clientes: alta/media/baja prioridad, auditoría 30 min — Keys: google, ranking, checklist, clients
+- [SPEC-SKILL-SEO-001](spec-skill-google-leak-seo.md) — spec para skill OpenClaw: auditoría SEO automatizada basada en Google Leak — Keys: skill, seo, google-leak, audit, openclaw
 
 ---
 

@@ -198,7 +198,7 @@
 
 **75.** Prompt library — ✅ Biblioteca creada con 12 templates.
 
-**76.** Skill creation — Google Leak skill. Acción: Crear.
+**76.** Skill creation Google Leak — ✅ Spec creada. Acción: Implementar.
 
 **77.** Python scripts — ✅ runbook creado.
 
