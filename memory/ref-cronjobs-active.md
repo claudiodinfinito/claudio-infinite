@@ -14,7 +14,7 @@ Last reviewed: 2026-02-20
 
 | ID | Nombre | Horario (Cancún) | Modelo | Propósito |
 |----|--------|------------------|--------|-----------|
-| `e54cc71f` | micro-task-5min | Cada 5 min | **Gemini** | Micro-mejoras autónomas |
+| `879cbde2` | autonomy:main-worker | Cada 5 min | **Gemini** | Micro-tareas autónomas (STILL) |
 | `53cc6fb2` | healthcheck:vps-daily | 01:00 | GLM-5 | Health VPS |
 | `f73f89dc` | backup:workspace | 01:00 | GLM-5 | Backup git |
 | `0c238999` | api-usage-check | 13:00 | GLM-5 | Verificar APIs |
