@@ -66,6 +66,7 @@
 | 2026-02-21 13:34 | Heartbeat check | ✅ Estable | Gateway OK, Brave 2/1500 (0.13%), Git clean, diario actualizado, sin cambios pendientes |
 | 2026-02-21 15:59 | Indexar archivos faltantes | ✅ Completado | 11 archivos añadidos al index: 5 runbooks + 6 referencias, index actualizado |
 | 2026-02-21 16:38 | Continuar indexing | ✅ Completado | +7 archivos más indexados, 3 restantes (diarios antiguos + duplicado), index tiene duplicados a limpiar |
+| 2026-02-21 17:04 | Deduplicar index | ✅ Completado | 3 duplicados eliminados (2026-02-18, micro-tasks, one-liners), index limpio |
 | 2026-02-21 16:33 | Verificación index completo | ✅ Completado | Todos los archivos memory/ indexados (0 pendientes), gateway OK |
 | 2026-02-21 16:28 | Index completo + cleanup | ✅ Completado | Todos los archivos indexados (0 pendientes), duplicado rbk-orphan-locks eliminado |
 | 2026-02-21 16:19 | Continuar indexando memoria | ✅ Completado | +7 archivos más indexados: diarios actualizados, specs, referencias, troubleshooting |
