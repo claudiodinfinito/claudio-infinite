@@ -4,7 +4,8 @@
 
 ---
 
-- [AUTONOMY-SESSION-001](autonomy-session-2026-02-21-summary.md) — resumen sesión autónoma 21 Feb: 2h, 15 commits, 6/6 departamentos — Keys: autonomy, session, summary, milestone
+- [AUTONOMY-SESSION-001](autonomy-session-2026-02-21-summary.md) — resumen sesión autónoma 21 Feb: 2h, 17 commits, 6/6 departamentos — Keys: autonomy, session, summary, milestone
+- [STATUS](STATUS.md) — estado actual del sistema: APIs, milestones, métricas, próximos pasos — Keys: status, system, quick-reference
 
 ## Top (lo que uso siempre)
 
