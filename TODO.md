@@ -100,7 +100,7 @@
 
 ## 💰 COSTOS
 
-**25.** $25 en Anthropic — calcular duración. Acción: Tracking real.
+**25.** $25 en Anthropic — ✅ Tracking creado. ~$24.47 restante.
 
 **26.** Claude Haiku vs Sonnet — ✅ decision tree creado.
 
