@@ -63,3 +63,4 @@
 | 2026-02-21 10:01 | Heartbeat autónomo | ✅ Estable | Gateway OK, sin .lock files, sin logs antiguos, memory indexado (134/140), sin cambios pendientes |
 | 2026-02-21 11:01 | Verificación sistema | ✅ Estable | 0 logs >30 días, 1 lock activo (sesión actual), git clean, Brave 2/1500 |
 | 2026-02-21 13:11 | Heartbeat check | ✅ Estable | Gateway running, 0 locks antiguos, 0 logs antiguos, git clean, sin alertas |
+| 2026-02-21 13:34 | Heartbeat check | ✅ Estable | Gateway OK, Brave 2/1500 (0.13%), Git clean, diario actualizado, sin cambios pendientes |

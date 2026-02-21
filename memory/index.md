@@ -224,4 +224,5 @@ _Actualizado: 20 Feb 2026 - 23:20 UTC (Sesión extendida 23h, 118 commits)_
 - [REF-STILL-ACTIVE-001](ref-still-vs-active.md) — Cuándo STILL vs Cuándo Daniel me habla, protocolo crítico — Keys: still, active, autonomy
 - [LESSONS-001](lecciones-de-vida.md) — Lecciones de vida: no ejecutar sin pensar, no spawnear para investigar, compromiso, dos vidas — Keys: lecciones, aprendizaje
 - [SPEC-REVENUE-MVP-001](spec-revenue-software-mvp.md) — MVP Revenue Software: 3 semanas, Astro+PocketBase+n8n, schema listo, 3 workflows — Keys: revenue, mvp, pyme, astro, pocketbase
+- [SPEC-DEPT-CONTENT-001](spec-dept-content.md) — Departamento Content: blog posts, social media, emails, landing pages, ads — Keys: content, department, blog, social, email
 - [REF-FREE-LLM-001](ref-free-llm-apis-no-login.md) — APIs gratis sin login: OpenRouter, Groq, Mistral, Google AI Studio, límites, configuración — Keys: free, llm, api, openrouter, groq

@@ -62,19 +62,22 @@ Si notaste que saltaste el startup → DETENTE y hazlo ahora.
 
 > **Nota:** Micro-tarea usa Gemini para evitar rate limit cuando main (GLM-5) está activo.
 
-## Si detecto STILL (sin interacción 30+ min):
+## Si detecto STILL (sin interacción 10+ min):
 
 ```
 1. LEER TODO.md → ¿Hay tareas Next?
 2. SI → Elegir PRIMERA de prioridad ALTA
 3. DECIDIR:
    - Simple → YO ejecuto (GLM-5)
-   - Compleja → SPAWNEO Gemini (ver rbk-subagent-orchestrator.md)
+   - Compleja → SPAWNEO Sonnet 4.6 (ver rbk-subagent-orchestrator.md)
 4. EJECUTAR → CREAR ARTEFACTO (MD, commit, etc.)
 5. ACTUALIZAR memory/index.md
 6. GUARDAR en memory/YYYY-MM-DD.md: "AUTÓNOMO: [qué hice]"
-7. REPORTAR cuando Daniel vuelva
+7. NO enviar spam → Solo reportar cuando Daniel vuelva
 ```
+
+**Sonnet 4.6 trabaja cada 5 min independientemente.**
+Ver: `memory/spec-autonomy-simple.md`
 
 ## Tareas Autónomas (sin permiso):
 
