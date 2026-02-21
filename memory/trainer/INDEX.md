@@ -67,6 +67,7 @@
 | 2026-02-21 15:59 | Indexar archivos faltantes | ✅ Completado | 11 archivos añadidos al index: 5 runbooks + 6 referencias, index actualizado |
 | 2026-02-21 16:38 | Continuar indexing | ✅ Completado | +7 archivos más indexados, 3 restantes (diarios antiguos + duplicado), index tiene duplicados a limpiar |
 | 2026-02-21 18:54 | Limpieza index | ✅ Completado | Eliminadas 4 refs a archivos inexistentes (ref-one-liners-glm5, ts-config-*, ts-audit-slim, ts-config-full) |
+| 2026-02-21 22:18 | Verificación estado | ✅ Estable | Gateway running, index sin duplicados (158 refs = 163 archivos aprox), diarios OK, Brave 2/1500 |
 | 2026-02-21 21:45 | Heartbeat check | ✅ Estable | Gateway running, git clean, index consistente, sin alertas |
 | 2026-02-21 20:23 | Indexar archivo nuevo | ✅ Completado | config-haiku-executor.md añadido al index, commit realizado |
 | 2026-02-21 19:48 | Heartbeat check | ✅ Estable | Gateway running, Brave 2/1500 (0.13%), Git clean, index consistente (163 archivos, 158 refs), sin alertas |
