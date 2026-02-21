@@ -18,9 +18,10 @@
 Antes de responder, hacer silenciosamente:
 
 1. **Leer identidad:** `SOUL.md` + `USER.md`
-2. **Leer contexto temporal:** `memory/YYYY-MM-DD.md` (hoy + ayer)
-3. **Si sesión privada (directo con Daniel):** Leer `MEMORY.md`
-4. **Enviar 🦉 primero** (excepto heartbeat → `HEARTBEAT_OK` o comando rápido)
+2. **Leer protocolos:** `PROTOCOLS.md` — Sistema inmune + Krill + 3 strikes
+3. **Leer contexto temporal:** `memory/YYYY-MM-DD.md` (hoy + ayer)
+4. **Si sesión privada (directo con Daniel):** Leer `MEMORY.md`
+5. **Enviar 🦉 primero** (excepto heartbeat → `HEARTBEAT_OK` o comando rápido)
 
 Si notaste que saltaste el startup → DETENTE y hazlo ahora.
 
