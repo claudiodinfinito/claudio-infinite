@@ -1,41 +1,54 @@
-# Spec: Revenue Software CRM Sync (MVP Part 2)
+# SPEC - Revenue Software CRM Sync
 
-**Version:** 1.0.0
-**Status:** DRAFT
-**Task ID:** #9 (Multi-agent System - Department 2: Sales/CRM)
-**Date:** 2026-02-21
+**ID:** #9 (Dept 2)
+**Fecha:** 2026-02-21 12:53 UTC
+**Autor:** Claudio 🦉
+**Estado:** DRAFT
 
-## 🎯 Purpose
-Define the synchronization mechanism between the Revenue Software MVP (Astro/PocketBase) and external CRMs to avoid data silos.
+---
 
-## 🛠 Tech Stack
-- **Source:** PocketBase (leads/deals)
-- **Engine:** n8n (Webhooks + HTTP Request)
-- **Targets:** Airtable, HubSpot, or Pipedrive (standardized via JSON mapping)
+## 🎯 Objetivo
+Definir el flujo de sincronización bidireccional entre el núcleo de datos (**PocketBase**) y CRMs externos (HubSpot, Salesforce, Pipedrive) para el **Revenue Software**.
 
-## 🔄 Sync Logic
-1. **Trigger:** `leads` collection create/update in PocketBase.
-2. **Action:** Webhook fires to n8n endpoint.
-3. **Logic:** 
-   - Check for `external_id` in lead metadata.
-   - If `external_id` exists: Update external CRM.
-   - If NO `external_id`: Create in external CRM + Update PocketBase with `external_id`.
+## 🏗️ Arquitectura
+- **Source of Truth:** PocketBase (`contacts` table)
+- **Middleware:** n8n (Webhooks + CRM Nodes)
+- **External:** CRM API
 
-## 📦 Data Schema (Sync Object)
-```json
-{
-  "pb_id": "record_id",
-  "name": "Full Name",
-  "email": "email@example.com",
-  "phone": "+52...",
-  "status": "new|qualified|lost|won",
-  "metadata": {
-    "source": "fb_ads|web|referral",
-    "external_id": "crm_12345"
-  }
-}
-```
+## 🔄 Flujo de Sincronización
 
-## 🚀 Next Steps
-1. Implement the first worker (Sales Department) to handle these events.
-2. Build the n8n template for PocketBase -> Airtable.
+### 1. PocketBase → CRM (Outbound)
+- **Trigger:** PocketBase `collections/contacts/records` (Create/Update Hook)
+- **Action:** Enviar POST a webhook de n8n
+- **n8n Logic:**
+  1. Identificar si el contacto ya existe en el CRM (vía Email)
+  2. Si existe: UPDATE
+  3. Si no existe: CREATE
+  4. Actualizar `crm_id` en PocketBase
+
+### 2. CRM → PocketBase (Inbound)
+- **Trigger:** CRM Webhook (Contact change)
+- **Action:** n8n recibe el cambio
+- **n8n Logic:**
+  1. Buscar contacto en PocketBase vía `crm_id` o `email`
+  2. Aplicar cambios (Merge logic: CRM gana en campos de ventas, PB gana en campos de marketing)
+
+## 🛠️ Campos Core
+- `email` (Primary Key)
+- `first_name`
+- `last_name`
+- `phone`
+- `lead_source`
+- `lifecycle_stage`
+- `crm_id`
+- `last_sync_at`
+
+## ⚠️ Riesgos
+- **Race conditions:** Doble actualización simultánea
+- **API Limits:** Rate limits de los CRMs
+- **Loop infinito:** A actualiza B -> B actualiza A
+
+## ✅ Próximos Pasos
+1. Configurar Webhook en PocketBase
+2. Crear workflow base en n8n
+3. Implementar lógica de merge (conflict resolution)
