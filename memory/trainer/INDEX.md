@@ -67,6 +67,7 @@
 | 2026-02-21 15:59 | Indexar archivos faltantes | ✅ Completado | 11 archivos añadidos al index: 5 runbooks + 6 referencias, index actualizado |
 | 2026-02-21 16:38 | Continuar indexing | ✅ Completado | +7 archivos más indexados, 3 restantes (diarios antiguos + duplicado), index tiene duplicados a limpiar |
 | 2026-02-21 18:54 | Limpieza index | ✅ Completado | Eliminadas 4 refs a archivos inexistentes (ref-one-liners-glm5, ts-config-*, ts-audit-slim, ts-config-full) |
+| 2026-02-21 23:48 | Heartbeat nocturno | ✅ Estable | Gateway running, Disco 34%, RAM 24%, sistema saludable |
 | 2026-02-21 23:18 | Heartbeat check | ✅ Estable | Gateway running, 101 commits hoy, prioridades esperan input de Daniel |
 | 2026-02-21 22:18 | Verificación estado | ✅ Estable | Gateway running, index sin duplicados (158 refs = 163 archivos aprox), diarios OK, Brave 2/1500 |
 | 2026-02-21 21:45 | Heartbeat check | ✅ Estable | Gateway running, git clean, index consistente, sin alertas |
