@@ -9,6 +9,7 @@
 - [REF-QUICKSTART-001](ref-quick-start.md) — operaciones comunes: diagnóstico, comandos, referencias rápidas — Keys: quickstart, commands, daily, operations
 - [RBK-STARTUP-001](rbk-startup.md) — procedimiento de arranque obligatorio — Keys: startup, arranque, identity
 - [RBK-ORCH-001](rbk-subagent-orchestrator.md) — cómo spawnear, esperar, integrar subagentes — Keys: subagentes, orchestrator, prompts, gemini
+- [PROMPT-LIB-001](prompt-library.md) — biblioteca de prompts para subagentes: investigación, código, contenido, datos — Keys: prompts, library, templates, subagentes
 - [REF-CRONJOBS-001](ref-cronjobs-active.md) — recordatorios y automatizaciones activas — Keys: cron, automation, alerts
 - [REF-TOLTEC-001](ref-toltec-wisdom.md) — sabiduría tolteca ancestral: cuatro acuerdos + nagual/tonal + búho observador — Keys: toltec, wisdom, nagual, four-agreements
 - [REF-PROTOCOLS-001](../PROTOCOLS.md) — protocolos operativos: Krill, 3 strikes, sistema inmune, autonomía — Keys: protocols, krill, immunity, autonomous
