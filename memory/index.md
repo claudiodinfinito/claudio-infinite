@@ -267,4 +267,8 @@ _Actualizado: 20 Feb 2026 - 23:20 UTC (Sesión extendida 23h, 118 commits)_
 - [REF-MODAL-COST-001](ref-modal-glm5-cost-analysis.md) — análisis costo Modal GLM-5: pricing, uso real, alternativas — Keys: modal, glm5, cost, analysis
 - [REF-STATUS-FRUSTRATIONS-001](status-frustrations-solved.md) — frustraciones resueltas: problemas superados, soluciones — Keys: status, frustrations, solved
 - [REF-AUTONOMY-SESSION-001](autonomy-session-2026-02-21-summary.md) — resumen sesión autónoma 21 Feb: logros, decisiones — Keys: autonomy, session, summary
+- [REF-MODAL-GLM5-001](ref-modal-glm5-cost-analysis.md) — GLM-5 en Modal.com: costos, free tier, análisis — Keys: modal, glm5, cost, free-tier
+- [REF-STATUS-FRUSTRATIONS-001](status-frustrations-solved.md) — solución a frustraciones de Daniel: qué se arregló — Keys: status, frustrations, solved
+- [REF-SESSION-END-001](SESSION-END.md) — resumen sesión 20 Feb: 24h, 120 commits — Keys: session, summary, 2026-02-20
+- [REF-AUTO-SESSION-001](autonomy-session-2026-02-21-summary.md) — sesión autónoma 21 Feb: 2h, 13 commits, Gemini — Keys: autonomy, session, summary, gemini
 - [TS-CRON-TIMEOUT-001](ts-cron-gateway-timeout.md) — cronjob gateway timeout: diagnóstico, causa, fix — Keys: cron, timeout, gateway, debug
