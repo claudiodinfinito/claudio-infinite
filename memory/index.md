@@ -131,6 +131,7 @@
 - [REF-GOOGLE-LEAK-SOURCE-001](ref-google-leak-v020-source-analysis.md) — código fuente v0.2.0: 2,590 archivos, Anchors, AbuseIAm, Quality, People API — Keys: google, source-code, anchors, quality
 - [REF-GOOGLE-ANCHORS-SEO-001](ref-google-anchors-seo-guide.md) — guía SEO de Anchors: 19 señales de ranking, sourceType, weight, locality, bucket — Keys: google, seo, anchors, ranking
 - [REF-GOOGLE-SEO-CHECK-001](ref-google-leak-seo-checklist.md) — checklist SEO práctico para clientes: anchors, sourceType, calidad, spam, auditoría 5 min — Keys: google, seo, checklist, clients
+- [REF-GOOGLE-LEAK-004](ref-google-leak-ranking-systems.md) — sistemas de ranking del leak: NavBoost, QStar, Twiddlers, top 10 factores, demotions — Keys: google, ranking, navboost, qstar, twiddlers
 
 ---
 
