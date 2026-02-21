@@ -217,6 +217,8 @@ _Actualizado: 20 Feb 2026 - 23:20 UTC (Sesión extendida 23h, 118 commits)_
 
 - [SPEC-N8N-PB-001](spec-n8n-pocketbase-bridge.md) — n8n ↔ PocketBase bridge: diseño de workflows y sync bidireccional — Keys: n8n, pocketbase, bridge
 - [SPEC-N8N-PB-SYNC-001](spec-n8n-pocketbase-sync.md) — Sync bidireccional Airtable ↔ PocketBase: arquitectura, webhooks, workflows n8n, mapeo campos, conflictos — Keys: n8n, pocketbase, airtable, sync, bidirectional
+- [WF-LEAD-CAPTURE-001](../workflows/n8n-lead-capture.json) — n8n workflow: capturar leads → PocketBase → Telegram, listo para importar — Keys: n8n, workflow, lead-capture, pocketbase, telegram
+- [WF-README-001](../workflows/README.md) — instrucciones importar workflows n8n, credenciales, testing — Keys: n8n, workflows, import, setup
 - [REF-DOCKER-001](ref-docker-containers-audit.md) — Docker containers audit: 8 activos, recursos, recomendaciones — Keys: docker, audit, containers
 - [REF-MICRO-3MIN-001](ref-micro-tasks-3min.md) — Micro-tareas de 3 minutos: protocolo actualizado, descomposición, compound effect real — Keys: micro-tasks, 3min, compound
 - [REF-GOOGLE-ANCHOR-DEEP-001](ref-google-leak-anchor-deep.md) — Anchor system deep dive: señales, contexto, implicaciones SEO — Keys: google, anchor, seo, ranking
