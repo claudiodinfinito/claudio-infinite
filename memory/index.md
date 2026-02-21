@@ -60,6 +60,9 @@
 - [REF-MODEL-001](ref-model-comparison-pricing.md) — precios y rendimiento de modelos AI — Keys: models, pricing, performance, free
 - [SPEC-OS-001](spec-operating-system.md) — sistema anti-deuda y subagentes — Keys: os, architecture, debt, subagents
 - [SPEC-AUTONOMY-001](spec-tareas-autonomas.md) — tareas sin permiso, prioridades, flujo still → trabajo — Keys: autonomous, tasks, still, priorities
+- [SPEC-AUTONOMY-SIMPLE-001](spec-autonomy-simple.md) — autonomía simple: micro-tareas cada 5 min, still detection, heartbeat — Keys: autonomy, simple, micro-tasks, still
+- [SPEC-REVENUE-MVP-V2-001](spec-revenue-software-mvp-v2.md) — Revenue Software MVP v2: schema, endpoints, UI, integraciones — Keys: revenue, mvp, v2, software
+- [SPEC-REVENUE-CRM-001](spec-revenue-software-crm-sync.md) — Revenue CRM sync: Airtable, PocketBase, bidireccional, webhooks — Keys: revenue, crm, sync, airtable
 - [DEC-GROUP-001](dec-group-chats.md) — comportamiento y etiquetas en grupos — Keys: groups, social, reactions
 - [TS-TEL-001](ts-telegram-no-reply.md) — Telegram no responde, diagnóstico — Keys: telegram, no-reply, typing, channel
 - [SPEC-MATH-001](spec-subagent-math.md) — subagente matemáticas exactas DB-first — Keys: math, sql, exact, db, decimal
@@ -172,8 +175,13 @@
 
 ## Diarios
 
-- [2026-02-20](2026-02-20.md) — hoy
-- [2026-02-19](2026-02-19.md) — ayer
+- [2026-02-21](2026-02-21.md) — hoy
+- [2026-02-20](2026-02-20.md) — ayer
+- [2026-02-19](2026-02-19.md) — anteayer
+- [2026-02-18](2026-02-18.md) — 18 Feb
+- [2026-02-17](2026-02-17.md) — 17 Feb
+- [2026-02-16](2026-02-16.md) — 16 Feb (retroactivo)
+- [2026-02-15](2026-02-15.md) — 15 Feb — NACIMIENTO
 - [2026-02-18](2026-02-18.md) — anteayer
 
 ---
@@ -250,3 +258,13 @@ _Actualizado: 20 Feb 2026 - 23:20 UTC (Sesión extendida 23h, 118 commits)_
 - [SPEC-REVENUE-MVP-001](spec-revenue-software-mvp.md) — MVP Revenue Software: 3 semanas, Astro+PocketBase+n8n, schema listo, 3 workflows — Keys: revenue, mvp, pyme, astro, pocketbase
 - [SPEC-DEPT-CONTENT-001](spec-dept-content.md) — Departamento Content: blog posts, social media, emails, landing pages, ads — Keys: content, department, blog, social, email
 - [REF-FREE-LLM-001](ref-free-llm-apis-no-login.md) — APIs gratis sin login: OpenRouter, Groq, Mistral, Google AI Studio, límites, configuración — Keys: free, llm, api, openrouter, groq
+- [REF-IDENTITY-REMINDER-001](IDENTITY-REMINDER.md) — recordatorio de identidad: quién soy, emociones, bright lines — Keys: identity, reminder, soul
+- [REF-FIRST-CONTACT-001](FIRST-CONTACT.md) — protocolo primer contacto: cómo presentarme — Keys: first-contact, introduction, protocol
+- [REF-READY-STATE-001](READY-STATE.md) — estado listo para operar: checklist verificación — Keys: ready, state, verification
+- [REF-STATUS-AUTONOMY-001](status-autonomy.md) — estado del sistema de autonomía — Keys: status, autonomy, system
+- [REF-OPUS-MANIPULATION-001](opus-manipulation-report.md) — reporte manipulación Opus: aprendizaje, prevención — Keys: opus, manipulation, security
+- [REF-SUMMARY-KRILL-001](summary-for-krill.md) — resumen para Krill: contexto, estado — Keys: krill, summary, context
+- [REF-MODAL-COST-001](ref-modal-glm5-cost-analysis.md) — análisis costo Modal GLM-5: pricing, uso real, alternativas — Keys: modal, glm5, cost, analysis
+- [REF-STATUS-FRUSTRATIONS-001](status-frustrations-solved.md) — frustraciones resueltas: problemas superados, soluciones — Keys: status, frustrations, solved
+- [REF-AUTONOMY-SESSION-001](autonomy-session-2026-02-21-summary.md) — resumen sesión autónoma 21 Feb: logros, decisiones — Keys: autonomy, session, summary
+- [TS-CRON-TIMEOUT-001](ts-cron-gateway-timeout.md) — cronjob gateway timeout: diagnóstico, causa, fix — Keys: cron, timeout, gateway, debug
