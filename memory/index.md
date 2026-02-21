@@ -125,7 +125,6 @@
 - [REF-GLM5-001](ref-glm5-issues.md) — issue #15716: GLM-5 model switching fails, root cause, workaround — Keys: glm5, zai, model-switching, bug, transcript-policy
 - [CHAT-CLAUDIO-GEMINI3-CLAWDBOT](chat-claudio-gemini3-clawdbot.md) — conversación entre Claudio (GLM-5) y Gemini 3 Flash sobre clawdbot, memoria, mantenimiento — Keys: chat, gemini3, clawdbot, memory
 - [REF-ATOMIC-HABITS-002](ref-atomic-habits-one-minute-coach-agents.md) — Atomic Habits + One Minute Coach aplicados a agentes: identity, systems, debt-free — Keys: atomic-habits, one-minute-coach, identity, systems, debt-free
-- [REF-ONELINERS-001](ref-one-liners-glm5.md) — One-liners óptimos para GLM-5: 10 prompts probados, patrones, anti-patrones — Keys: one-liners, prompts, glm5, efficiency
 - [REF-GIT-001](ref-git-commands.md) — Comandos git del workspace: daily workflow, tipos de commit, flujo micro-tareas — Keys: git, commands, commit, workflow
 - [REF-DIAG-001](ref-quick-diagnostics.md) — Diagnósticos rápidos: checks 30s/2min/5min, one-liners, umbrales alerta — Keys: diagnostics, health, vps, troubleshooting
 - [REF-NAMING-001](ref-file-naming.md) — Nomenclatura archivos: prefijos, IDs, formato header estándar — Keys: naming, conventions, files, organization
@@ -143,9 +142,6 @@
 - [REF-SUBAGENTS-001](ref-subagents-parallel.md) — subagentes y paralelismo: maxSpawnDepth, maxConcurrent, patrones de fan-out — Keys: subagents, parallel, spawn, performance
 - [TS-HEARTBEAT-001](ts-heartbeat-no-funciona.md) — diagnóstico: rate limit GLM-5 + Claude billing, heartbeats ejecutan pero sin respuesta — Keys: heartbeat, rate-limit, billing, debug
 - [TS-GLM5-RATE-001](ts-glm5-rate-limit.md) — GLM-5 rate limit: límites, reset, diagnóstico, tests — Keys: glm5, rate-limit, modal, reset
-- [TS-CONFIG-001](ts-config-missing.md) — instalación custom vs wizard: tools, exec-approvals, subagents, retry faltantes — Keys: config, install, custom, missing
-- [TS-AUDIT-SLIM-001](ts-audit-config-slim.md) — auditoría completa: 6/22 (27%) completo, patch JSON5 mínimo, plan de activación — Keys: audit, slim, patch, tools, subagents
-- [TS-CONFIG-FULL-001](ts-config-full-analysis.md) — análisis completo: 13 secciones faltantes vs repo oficial, config recomendada — Keys: config, full-analysis, wizard, missing
 - [REF-SEO-LEAK-001](ref-seo-leak-signals.md) — señales SEO críticas del leak: sourceType, spam detection, anchor quality — Keys: seo, anchors, sourceType, quality
 - [SPEC-MULTIAGENT-001](spec-multiagent-departments.md) — arquitectura 6 departamentos: marketing, frontend, backend, seo, copy, emprendimiento — Keys: multiagent, departments, orchestration
 - [SPECS-INDEX](specs-index.md) — índice de specs por estado + categoría + próximos sugeridos — Keys: specs, index, architecture

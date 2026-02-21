@@ -66,6 +66,7 @@
 | 2026-02-21 13:34 | Heartbeat check | ✅ Estable | Gateway OK, Brave 2/1500 (0.13%), Git clean, diario actualizado, sin cambios pendientes |
 | 2026-02-21 15:59 | Indexar archivos faltantes | ✅ Completado | 11 archivos añadidos al index: 5 runbooks + 6 referencias, index actualizado |
 | 2026-02-21 16:38 | Continuar indexing | ✅ Completado | +7 archivos más indexados, 3 restantes (diarios antiguos + duplicado), index tiene duplicados a limpiar |
+| 2026-02-21 18:54 | Limpieza index | ✅ Completado | Eliminadas 4 refs a archivos inexistentes (ref-one-liners-glm5, ts-config-*, ts-audit-slim, ts-config-full) |
 | 2026-02-21 18:08 | Heartbeat verificación | ✅ Estable | Gateway running, Git clean, index sin duplicados, 163 archivos memory, tareas pendientes esperan input Daniel |
 | 2026-02-21 17:46 | Verificación index completo | ✅ Completado | Todos los archivos de memory/ indexados (161 archivos, 184+ refs), +1 heartbeat log añadido |
 | 2026-02-21 17:36 | Verificación sistema | ✅ Estable | Gateway running, 2 locks (sesión actual), 0 logs antiguos, index verificado sin duplicados de archivos, todo limpio |
