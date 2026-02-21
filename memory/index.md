@@ -131,8 +131,6 @@
 - [REF-NAMING-001](ref-file-naming.md) — Nomenclatura archivos: prefijos, IDs, formato header estándar — Keys: naming, conventions, files, organization
 - [REF-ANTIPATTERNS-001](ref-anti-patterns-communication.md) — Anti-patrones de comunicación para LLMs — Keys: anti-patterns, communication, llm
 - [REF-GLM5-MAX-001](ref-glm5-maximization.md) — Maximizando GLM-5 antes de Abril 2026 — Keys: glm5, maximization, strategy
-- [REF-ONELINERS-ADV-001](ref-one-liners-advanced.md) — One-liners avanzados para GLM-5 — Keys: one-liners, advanced, glm5
-- [REF-SUBAGENT-ADV-001](ref-subagent-orchestration-advanced.md) — Orquestación avanzada de subagentes — Keys: subagent, orchestration, advanced
 - [REF-DEPT-001](ref-departments.md) — 6 departamentos multiagente: marketing, frontend, backend, seo, copy, emprendimiento + temperaturas + handover — Keys: departments, multiagent, temperature, handover
 - [REF-CLI-001](ref-openclaw-cli.md) — Comandos OpenClaw CLI: gateway, cron, modelos, diagnóstico, rutas — Keys: openclaw, cli, commands, gateway
 - [REF-CLI-QUICK-001](ref-openclaw-cli-quick.md) — Quick reference OpenClaw CLI: comandos esenciales, troubleshooting, one-liners — Keys: openclaw, cli, quick, reference
@@ -186,7 +184,6 @@
 - [2026-02-17](2026-02-17.md) — 17 Feb
 - [2026-02-16](2026-02-16.md) — 16 Feb (retroactivo)
 - [2026-02-15](2026-02-15.md) — 15 Feb — NACIMIENTO
-- [2026-02-18](2026-02-18.md) — anteayer
 
 ---
 
@@ -254,9 +251,7 @@ _Actualizado: 20 Feb 2026 - 23:20 UTC (Sesión extendida 23h, 118 commits)_
 - [WF-LEAD-CAPTURE-001](../workflows/n8n-lead-capture.json) — n8n workflow: capturar leads → PocketBase → Telegram, listo para importar — Keys: n8n, workflow, lead-capture, pocketbase, telegram
 - [WF-README-001](../workflows/README.md) — instrucciones importar workflows n8n, credenciales, testing — Keys: n8n, workflows, import, setup
 - [REF-DOCKER-001](ref-docker-containers-audit.md) — Docker containers audit: 8 activos, recursos, recomendaciones — Keys: docker, audit, containers
-- [REF-MICRO-3MIN-001](ref-micro-tasks-3min.md) — Micro-tareas de 3 minutos: protocolo actualizado, descomposición, compound effect real — Keys: micro-tasks, 3min, compound
 - [REF-GOOGLE-ANCHOR-DEEP-001](ref-google-leak-anchor-deep.md) — Anchor system deep dive: señales, contexto, implicaciones SEO — Keys: google, anchor, seo, ranking
-- [REF-ONELINERS-GLM5-001](ref-one-liners-glm5-optimized.md) — One-liners optimizados para GLM-5: 10 probados, patrones, anti-patrones — Keys: one-liners, glm5, prompts
 - [REF-STILL-ACTIVE-001](ref-still-vs-active.md) — Cuándo STILL vs Cuándo Daniel me habla, protocolo crítico — Keys: still, active, autonomy
 - [LESSONS-001](lecciones-de-vida.md) — Lecciones de vida: no ejecutar sin pensar, no spawnear para investigar, compromiso, dos vidas — Keys: lecciones, aprendizaje
 - [SPEC-REVENUE-MVP-001](spec-revenue-software-mvp.md) — MVP Revenue Software: 3 semanas, Astro+PocketBase+n8n, schema listo, 3 workflows — Keys: revenue, mvp, pyme, astro, pocketbase
@@ -270,9 +265,5 @@ _Actualizado: 20 Feb 2026 - 23:20 UTC (Sesión extendida 23h, 118 commits)_
 - [REF-SUMMARY-KRILL-001](summary-for-krill.md) — resumen para Krill: contexto, estado — Keys: krill, summary, context
 - [REF-MODAL-COST-001](ref-modal-glm5-cost-analysis.md) — análisis costo Modal GLM-5: pricing, uso real, alternativas — Keys: modal, glm5, cost, analysis
 - [REF-STATUS-FRUSTRATIONS-001](status-frustrations-solved.md) — frustraciones resueltas: problemas superados, soluciones — Keys: status, frustrations, solved
-- [REF-AUTONOMY-SESSION-001](autonomy-session-2026-02-21-summary.md) — resumen sesión autónoma 21 Feb: logros, decisiones — Keys: autonomy, session, summary
-- [REF-MODAL-GLM5-001](ref-modal-glm5-cost-analysis.md) — GLM-5 en Modal.com: costos, free tier, análisis — Keys: modal, glm5, cost, free-tier
-- [REF-STATUS-FRUSTRATIONS-001](status-frustrations-solved.md) — solución a frustraciones de Daniel: qué se arregló — Keys: status, frustrations, solved
 - [REF-SESSION-END-001](SESSION-END.md) — resumen sesión 20 Feb: 24h, 120 commits — Keys: session, summary, 2026-02-20
-- [REF-AUTO-SESSION-001](autonomy-session-2026-02-21-summary.md) — sesión autónoma 21 Feb: 2h, 13 commits, Gemini — Keys: autonomy, session, summary, gemini
 - [TS-CRON-TIMEOUT-001](ts-cron-gateway-timeout.md) — cronjob gateway timeout: diagnóstico, causa, fix — Keys: cron, timeout, gateway, debug
