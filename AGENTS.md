@@ -100,6 +100,8 @@ Ver: `memory/spec-autonomy-simple.md`
 | Investigar tema complejo | Gemini 3 Flash | Bueno investigando |
 | Analizar código/repos | Gemini 3 Flash | Bueno analizando |
 | Q&A / Debate | Gemini 3 Flash | Conversacional |
+| **Ejecutar tareas simples** | **Haiku 3.5** | **Rápido, barato** |
+| **Tareas complejas código** | **Sonnet 4.5** | **Fuerza bruta** |
 | Tarea simple local | GLM-5 (solo si YO inactivo) | Gratis |
 
 ## ⚠️ REGLA CRÍTICA:
@@ -109,7 +111,7 @@ GLM-5 = 1 request concurrente MÁXIMO
 
 Si YO soy GLM-5 y estoy ACTIVO:
   ❌ NO puedo spawnear GLM-5 subagente (429 error)
-  ✅ SOLO puedo spawnear Gemini
+  ✅ PUEDO spawnear Gemini, Haiku, Sonnet
 ```
 
 ## Cómo spawnear:
@@ -117,7 +119,7 @@ Si YO soy GLM-5 y estoy ACTIVO:
 ```javascript
 sessions_spawn({
   label: "NOMBRE-DESCRIPTIVO",
-  model: "google/gemini-3-flash-preview",
+  model: "google/gemini-3-flash-preview", // O claude/claude-3-5-haiku-20241022
   runTimeoutSeconds: 600,
   task: "[PROMPT ESTRUCTURADO CON ROL + TAREA + OUTPUT]"
 })
