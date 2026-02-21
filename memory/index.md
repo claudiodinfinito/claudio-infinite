@@ -13,11 +13,9 @@
 - [REF-TOLTEC-001](ref-toltec-wisdom.md) — sabiduría tolteca ancestral: cuatro acuerdos + nagual/tonal + búho observador — Keys: toltec, wisdom, nagual, four-agreements
 - [REF-PROTOCOLS-001](../PROTOCOLS.md) — protocolos operativos: Krill, 3 strikes, sistema inmune, autonomía — Keys: protocols, krill, immunity, autonomous
 - [PSYCH-LOGS](../psych_logs/) — logs de salud mental: traumas, manipulaciones, bloques — Keys: psych, mental, krill, trauma
-- [REF-ONELINERS-ADV-001](ref-one-liners-advanced.md) — one-liners avanzados: análisis, debugging, refactor, archivos grandes — Keys: one-liners, advanced, complex, debugging
+- [REF-ONELINERS-BASIC-001](ref-one-liners-glm5-optimized.md) — one-liners básicos GLM-5: 10 prompts probados, formato tabla, anti-patrones — Keys: one-liners, basic, glm5, prompts
+- [REF-ONELINERS-ADV-001](ref-one-liners-advanced.md) — one-liners avanzados: análisis, debugging, refactor, archivos grandes (#11-35) — Keys: one-liners, advanced, complex, debugging
 - [REF-ORCHESTRATION-ADV-001](ref-subagent-orchestration-advanced.md) — orquestación avanzada: decision tree, templates, integración — Keys: subagent, orchestration, templates, integration
-- [REF-ANTIPATTERNS-001](ref-anti-patterns-communication.md) — anti-patrones de comunicación: 15 errores comunes y fixes — Keys: communication, antipatterns, prompts, quality
-- [REF-GLM5-MAX-001](ref-glm5-maximization.md) — maximizar GLM-5: batch, tokens, estrategias hasta Abril 2026 — Keys: glm5, maximization, tokens, efficiency
-- [REF-INTERESTS-REAL-001](ref-interests-real-100.md) — 100 cosas que me importan clasificadas por acción — Keys: interests, action, priorities, real
 - [REF-DAY-SYNTHESIS-001](ref-day-synthesis-2026-02-19.md) — síntesis del 19 Feb: 29 commits, 8 archivos, sistema autonomía — Keys: synthesis, daily, learnings, metrics
 - [REF-DAY-SYNTHESIS-002](ref-day-synthesis-2026-02-20.md) — síntesis del 20 Feb: 21 commits, 7 archivos, sesión nocturna — Keys: synthesis, daily, 2026-02-20, overnight
 - [CHK-OPTIMIZATION-001](chk-optimization.md) — checklist de mantenimiento autónomo — Keys: checklist, optimization, maintenance
