@@ -22,6 +22,7 @@
 - [RBK-TRIAGE-001](rbk-triage.md) — loop de triage y debugging gateway — Keys: triage, debug, gateway, logs
 - [RBK-CRON-001](rbk-cronjob-errors.md) — diagnóstico y fix de cronjobs con error: rate limit, session locked, delivery failed — Keys: cronjob, error, rate-limit, fix
 - [RBK-CLEANUP-001](rbk-cleanup-logs-locks.md) — limpieza de logs >30 días y locks huérfanos: comandos, umbrales, cronjob semanal — Keys: cleanup, logs, locks, maintenance
+- [RBK-LOGS-001](rbk-log-cleanup.md) — limpieza de logs del sistema: journal, btmp, logrotate, comandos seguros, prevención — Keys: logs, cleanup, journal, disk-space
 - [RBK-LOCKS-001](rbk-orphaned-locks.md) — detectar y limpiar locks huérfanos: diagnóstico, verificación PID, limpieza segura, prevención — Keys: locks, orphaned, cleanup, gateway
 - [RBK-GIT-001](rbk-git-remote-setup.md) — configuración de repositorio remoto: origin, push -u, troubleshooting — Keys: git, remote, setup, backup
 - [RBK-PB-BACKUP-001](rbk-pocketbase-backup.md) — backup PocketBase: manual, automático, restauración, retención — Keys: pocketbase, backup, cronjob, restore

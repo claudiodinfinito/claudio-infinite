@@ -66,7 +66,7 @@
 
 **11.** Docker 8 containers — ✅ auditado. 8 activos, saludables.
 
-**12.** Logs antiguos >30 días — llenan disco. Acción: Limpiar.
+**12.** Logs antiguos >30 días — ✅ Runbook creado. Sistema verificado: 0 logs antiguos.
 
 **13.** .lock files huérfanos — ✅ Runbook creado. Sistema verificado: 0 huérfanos.
 
