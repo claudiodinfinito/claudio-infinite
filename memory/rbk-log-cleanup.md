@@ -1,229 +1,104 @@
-# Runbook: Limpieza de Logs del Sistema
+# Runbook: Limpieza de Logs Antiguos
 
 ID: RBK-LOGS-001
 Status: active
-Created: 2026-02-21 15:30 UTC
-Keys: logs, cleanup, maintenance, disk-space
+Created: 2026-02-21 15:35 UTC
+Keys: logs, cleanup, maintenance, storage, journalctl
 
 ---
 
 ## TL;DR
 
-Limpiar logs del sistema de forma segura para liberar espacio en disco.
+Los logs acumulados pueden llenar el disco. Este runbook define cómo limpiar logs del sistema y de OpenClaw de forma segura.
 
 ---
 
-## Estado Actual (2026-02-21)
+## Diagnóstico de Espacio
 
-| Ubicación | Tamaño | Tipo |
-|-----------|--------|------|
-| `/var/log/journal` | 1.2G | Systemd journal (NO tocar directamente) |
-| `/var/log/btmp` | 124M | Failed login attempts (puede limpiar) |
-| `/var/log/auth.log.*` | 80M | Auth logs (rotación automática) |
-| `/var/log/syslog.*` | 39M | Syslog (rotación automática) |
-| `/var/log/kern.log.*` | 11M | Kernel logs (rotación automática) |
-| `/tmp/openclaw/` | 34M | OpenClaw logs (rotación automática) |
-| **Total logs** | ~1.5G | |
-
-**Logs >30 días:** 0 encontrados ✅
-
----
-
-## Qué Limpiar con Seguridad
-
-### ✅ SEGURO (limpiar)
-
-| Log | Comando | Espacio liberado |
-|-----|---------|------------------|
-| `btmp` (failed logins) | `> /var/log/btmp` | ~124M |
-| `wtmp` (login records) | `> /var/log/wtmp` | Variable |
-
-### ⚠️ CON PRECAUCIÓN (usar herramientas)
-
-| Log | Herramienta | Comando |
-|-----|-------------|---------|
-| Journal | `journalctl` | `journalctl --vacuum-time=7d` |
-| Syslog | `logrotate` | `logrotate -f /etc/logrotate.conf` |
-| Apt logs | `apt` | `apt clean` |
-
-### ❌ NO TOCAR
-
-| Log | Razón |
-|-----|-------|
-| `/var/log/syslog` | Sistema activo |
-| `/var/log/auth.log` | Sistema activo |
-| `/var/log/kern.log` | Sistema activo |
-| `/var/log/journal/*` | Usar journalctl |
-
----
-
-## Comandos de Limpieza
-
-### 1. Limpiar btmp (failed logins) - 124M
-
+### 1. Ver uso general de /var/log
 ```bash
-# Verificar tamaño actual
-du -sh /var/log/btmp
-
-# Limpiar (preservar archivo)
-> /var/log/btmp
-
-# Verificar
-du -sh /var/log/btmp
+du -sh /var/log/* 2>/dev/null | sort -h
 ```
 
-### 2. Limpiar journal (>7 días)
-
+### 2. Ver uso de journald
 ```bash
-# Ver tamaño actual
-journalctl --disk-usage
-
-# Limpiar logs >7 días
-sudo journalctl --vacuum-time=7d
-
-# Alternativa: limitar a 500M
-sudo journalctl --vacuum-size=500M
-
-# Verificar
 journalctl --disk-usage
 ```
 
-### 3. Forzar rotación de logs
+### 3. Ver logs de OpenClaw
+```bash
+du -sh /tmp/openclaw
+```
+
+---
+
+## Procedimiento de Limpieza
+
+### 1. Limpiar Journald (Logs del Sistema)
+Mantener solo los últimos 7 días o 500MB.
 
 ```bash
-# Verificar configuración
-cat /etc/logrotate.conf | head -20
+# Por tiempo
+journalctl --vacuum-time=7d
 
-# Forzar rotación
-sudo logrotate -f /etc/logrotate.conf
-
-# Verificar archivos rotados
-ls -lah /var/log/*.gz 2>/dev/null | head -10
+# Por tamaño
+journalctl --vacuum-size=500M
 ```
 
-### 4. Limpiar apt cache
+### 2. Rotar logs de OpenClaw
+OpenClaw guarda logs diarios en `/tmp/openclaw/openclaw-YYYY-MM-DD.log`.
+
+**Regla:** Mantener últimos 14 días.
 
 ```bash
-# Ver tamaño
-du -sh /var/cache/apt/archives
-
-# Limpiar
-sudo apt clean
-
-# Verificar
-du -sh /var/cache/apt/archives
+# Buscar y borrar logs de OpenClaw de más de 14 días
+find /tmp/openclaw -name "openclaw-*.log" -type f -mtime +14 -delete
 ```
 
----
-
-## Verificación de Logs >30 días
+### 3. Limpiar btmp y wtmp (Opcional)
+`btmp` registra intentos fallidos de login. En un VPS esto crece rápido por bots.
 
 ```bash
-# Buscar logs antiguos
-find /var/log /tmp/openclaw -name "*.log" -type f -mtime +30 2>/dev/null
-
-# Si hay resultados, ver tamaño total
-find /var/log /tmp/openclaw -name "*.log" -type f -mtime +30 2>/dev/null | xargs du -ch 2>/dev/null | tail -1
+# Vaciar btmp (intentos fallidos)
+cat /dev/null > /var/log/btmp
 ```
 
 ---
 
-## Cronjob Mensual
+## Verificación Post-Limpieza
 
-**Agregar a crontab -e:**
+| Métrica | Target |
+|---------|--------|
+| `/var/log/journal` | < 500MB |
+| `/tmp/openclaw` | < 50MB |
+| Disco libre | > 20% |
+
+---
+
+## Automatización
+
+### Cronjob sugerido
+Ejecutar semanalmente (Domingo 03:00).
 
 ```bash
-# Limpiar journal cada 1ero del mes a las 3 AM
-0 3 1 * * /usr/bin/journalctl --vacuum-time=30d 2>/dev/null
-
-# Limpiar btmp cada domingo a las 3 AM
-0 3 * * 0 /bin/bash -c '> /var/log/btmp' 2>/dev/null
+0 3 * * 0 journalctl --vacuum-time=7d && find /tmp/openclaw -name "openclaw-*.log" -type f -mtime +14 -delete
 ```
 
 ---
 
-## Espacio Esperado a Liberar
+## Estado del Sistema (2026-02-21)
 
-| Acción | Espacio |
-|--------|---------|
-| Limpiar btmp | ~124M |
-| Journal vacuum 7d | ~500M-800M |
-| apt clean | ~50M |
-| **Total potencial** | ~700M-1G |
-
----
-
-## Síntomas de Logs Llenando Disco
-
-- Disco >80% usado
-- Errores de "No space left on device"
-- Logs en `/var/log` > 5GB
-- Journal > 2GB
-
----
-
-## Flujo de Limpieza
-
-```
-1. Verificar espacio: df -h
-   ↓
-2. Identificar logs grandes: du -sh /var/log/*
-   ↓
-3. Limpiar seguros: btmp, journal vacuum
-   ↓
-4. Verificar: df -h
-   ↓
-5. Documentar en daily log
-```
-
----
-
-## Logs de OpenClaw
-
-```bash
-# Ver logs actuales
-ls -lah /tmp/openclaw/*.log 2>/dev/null
-
-# OpenClaw rota automáticamente por día
-# Logs antiguos se eliminan automáticamente
-
-# Ver uso total
-du -sh /tmp/openclaw/
-```
-
-**Rotación automática:** OpenClaw crea logs con fecha y elimina antiguos.
-
----
-
-## Prevención
-
-1. **Configurar journal limits:**
-   ```bash
-   # Editar /etc/systemd/journald.conf
-   SystemMaxUse=500M
-   MaxRetentionSec=30day
-   ```
-
-2. **Logrotate configurado:**
-   ```bash
-   # Verificar que logrotate corre
-   systemctl status logrotate.timer
-   ```
-
-3. **Monitorear espacio:**
-   ```bash
-   # Agregar a health check
-   df -h / | awk 'NR==2 {print $5}' | sed 's/%//'
-   ```
+- `/var/log/journal`: 1.2G (⚠️ Requiere limpieza)
+- `/var/log/btmp`: 124M (⚠️ Alto tráfico de bots)
+- `/tmp/openclaw`: 34M (✅ OK)
 
 ---
 
 ## Referencias
 
-- `memory/rbk-cleanup-logs-locks.md` — Limpieza general
-- `memory/rbk-orphaned-locks.md` — Locks huérfanos
-- `HEARTBEAT.md` — Health checks automáticos
+- `memory/rbk-cleanup-logs-locks.md` — Guía general de mantenimiento.
+- `memory/ref-vps-commands-cheatsheet.md` — Comandos de sistema.
 
 ---
 
-_Actualizado: 2026-02-21 15:30 UTC - 0 logs antiguos, espacio estable_
+_Actualizado: 2026-02-21 15:35 UTC_
