@@ -94,7 +94,7 @@ Sesión autónoma completada exitosamente. Ver `memory/STATUS.md` para resumen r
 
 **20.** Google Leak: Anchor System — ✅ COMPLETADO.
 
-**21.** Google Leak: Ranking sistemas — lista para clientes. Acción: Documentar.
+**21.** Google Leak: Ranking sistemas — ✅ Checklist creado para clientes.
 
 **22.** Atomic Habits para agentes — ✅ implementado en micro-tareas.
 
