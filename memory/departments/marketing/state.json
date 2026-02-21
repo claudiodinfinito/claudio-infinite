@@ -1,0 +1,35 @@
+{
+  "department": "MARKETING",
+  "temperature": 0.5,
+  "status": "active",
+  "tasks_completed": 0,
+  "artifacts_created": 0,
+  "last_run": null,
+  "brief_version": "1.0",
+  "priority_queue": [
+    {
+      "id": 1,
+      "task": "Implementar RevOps en primer cliente",
+      "status": "pending",
+      "depends_on": ["client_selection"]
+    },
+    {
+      "id": 2,
+      "task": "Configurar signal tracking",
+      "status": "pending",
+      "depends_on": []
+    },
+    {
+      "id": 3,
+      "task": "Crear n8n nurture workflow",
+      "status": "pending",
+      "depends_on": []
+    },
+    {
+      "id": 4,
+      "task": "Diseñar A/B test framework",
+      "status": "pending",
+      "depends_on": []
+    }
+  ]
+}
