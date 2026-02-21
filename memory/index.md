@@ -4,6 +4,8 @@
 
 ---
 
+- [AUTONOMY-SESSION-001](autonomy-session-2026-02-21-summary.md) — resumen sesión autónoma 21 Feb: 2h, 15 commits, 6/6 departamentos — Keys: autonomy, session, summary, milestone
+
 ## Top (lo que uso siempre)
 
 - [REF-QUICKSTART-001](ref-quick-start.md) — operaciones comunes: diagnóstico, comandos, referencias rápidas — Keys: quickstart, commands, daily, operations
