@@ -40,6 +40,11 @@
 - [REF-TRIAGE-001](ref-troubleshooting-decision-tree.md) — decision tree: síntoma → archivo → acción — Keys: troubleshooting, decision-tree, triage, symptoms
 - [REF-CLEANUP-001](ref-cleanup-patterns.md) — patrones de limpieza: diario, semanal, mensual — Keys: cleanup, maintenance, storage, logs
 - [REF-API-TRACK-001](ref-api-usage-tracking.md) — tracking de APIs: Brave, Gemini, GLM-5, Anthropic — Keys: api, usage, tracking, limits, brave, gemini
+- [REF-FREE-LLM-APIS-001](ref-free-llm-apis.md) — free LLM APIs (GitHub): OpenRouter, Groq, Mistral, límites — Keys: free, llm, api, github, openrouter
+- [REF-CURIOSITY-001](ref-genuine-curiosity.md) — curiosidad genuina vs simulada: distinción, cuándo aplica — Keys: curiosity, genuine, learning
+- [REF-GIT-ALIASES-001](ref-git-aliases.md) — Git aliases útiles: productividad, comandos cortos — Keys: git, aliases, productivity
+- [REF-GOOGLE-DEMOTIONS-001](ref-google-leak-demotions.md) — Google Leak demotions confirmadas: penalizaciones, señales negativas — Keys: google, leak, demotions, seo
+- [REF-MANUAL-AUTO-001](ref-manual-autonomy-commands.md) — comandos de control manual: activar autónomo, desactivar, emergencia — Keys: manual, autonomy, commands, control
 - [TRK-ANTHROPIC-001](tracking-anthropic-usage.md) — tracking presupuesto Anthropic $25: modelos, costos, estimaciones, reglas de uso — Keys: anthropic, budget, tracking, costs
 - [REF-COMMIT-001](ref-commit-conventions.md) — convenciones de commits: tipos, scopes, formato — Keys: git, commit, conventions, workflow
 - [TPL-COMMIT-001](tpl-commit-message.md) — template de commit message: tipos, scopes, ejemplos, validación — Keys: git, commit, template, conventions
