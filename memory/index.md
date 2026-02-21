@@ -8,6 +8,7 @@
 
 - [REF-QUICKSTART-001](ref-quick-start.md) — operaciones comunes: diagnóstico, comandos, referencias rápidas — Keys: quickstart, commands, daily, operations
 - [RBK-STARTUP-001](rbk-startup.md) — procedimiento de arranque obligatorio — Keys: startup, arranque, identity
+- [CHK-STARTUP-001](chk-daily-startup.md) — checklist de arranque diario: identidad, protocolos, contexto temporal — Keys: startup, checklist, daily, identity
 - [RBK-ORCH-001](rbk-subagent-orchestrator.md) — cómo spawnear, esperar, integrar subagentes — Keys: subagentes, orchestrator, prompts, gemini
 - [PROMPT-LIB-001](prompt-library.md) — biblioteca de prompts para subagentes: investigación, código, contenido, datos — Keys: prompts, library, templates, subagentes
 - [REF-CRONJOBS-001](ref-cronjobs-active.md) — recordatorios y automatizaciones activas — Keys: cron, automation, alerts

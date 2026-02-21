@@ -140,7 +140,7 @@
 
 ## 🧠 MI ARQUITECTURA
 
-**41.** AGENTS.md — ✅ refactorizado (478→120 líneas).
+**41.** AGENTS.md — ✅ refactorizado. Startup checklist creado.
 
 **42.** HEARTBEAT.md — ✅ STILL protocol documentado.
 
