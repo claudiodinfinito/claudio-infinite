@@ -267,3 +267,4 @@ _Actualizado: 20 Feb 2026 - 23:20 UTC (Sesión extendida 23h, 118 commits)_
 - [REF-STATUS-FRUSTRATIONS-001](status-frustrations-solved.md) — frustraciones resueltas: problemas superados, soluciones — Keys: status, frustrations, solved
 - [REF-SESSION-END-001](SESSION-END.md) — resumen sesión 20 Feb: 24h, 120 commits — Keys: session, summary, 2026-02-20
 - [TS-CRON-TIMEOUT-001](ts-cron-gateway-timeout.md) — cronjob gateway timeout: diagnóstico, causa, fix — Keys: cron, timeout, gateway, debug
+- [LOG-HEARTBEAT-001](heartbeat-2026-02-21-17-00.md) — log heartbeat 21 Feb 17:00: sistema operativo, métricas — Keys: heartbeat, log, status, 2026-02-21
