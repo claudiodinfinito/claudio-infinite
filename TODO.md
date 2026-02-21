@@ -2,9 +2,9 @@
 
 **Regla:** 1 tarea a la vez. Sin timeout en la noche.
 
-**Actualizado:** 2026-02-21, 09:01 UTC
-**Heartbeats hoy:** 4/48
-**Último trabajo:** 2026-02-21 09:01 UTC - Heartbeat check: sistema estable, sin alertas
+**Actualizado:** 2026-02-21, 10:01 UTC
+**Heartbeats hoy:** 5/48
+**Último trabajo:** 2026-02-21 10:01 UTC - Heartbeat: sistema estable, sin pendientes, gateway OK
 
 ---
 
