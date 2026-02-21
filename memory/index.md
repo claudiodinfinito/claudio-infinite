@@ -61,6 +61,7 @@
 - [REF-MODEL-SELECT-001](ref-model-selection-decision-tree.md) — decision tree para elegir modelo: por tarea, por costo, límites, plan B GLM-5 — Keys: models, decision-tree, selection, cost
 - [REF-DEEPSEEK-001](ref-deepseek-alternative.md) — DeepSeek V3.2: alternativa GLM-5, pricing $0.27/M, plan migración Abril 2026 — Keys: deepseek, alternative, pricing, migration
 - [REF-OLLAMA-001](ref-ollama-local.md) — Ollama local: gratuito, requisitos RAM, modelos 3B-7B, estado VPS actual — Keys: ollama, local, free, hardware
+- [REF-REDIS-001](ref-redis-caching.md) — Redis caching: setup Docker, comandos, TTL, estrategias, monitoreo — Keys: redis, caching, performance, docker
 - [REF-N8N-001](ref-n8n-workflows.md) — n8n workflows: patrones, PocketBase integration, best practices, proyectos pendientes — Keys: n8n, workflows, automation, pocketbase
 - [REF-SIGNAL-001](ref-signal-based-selling.md) — signal-based selling: ventas por señales, tipos, HubSpot/ClickFunnels, implementación clientes — Keys: sales, signals, hubspot, clickfunnels
 - [REF-MIDU-ASTRO-001](ref-midudev-astro.md) — MiduDev Astro: curso, Astro 5 features, estructura, cuándo usar — Keys: astro, midudev, frontend, tutorial
