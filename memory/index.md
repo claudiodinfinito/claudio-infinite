@@ -21,6 +21,7 @@
 - [CHK-OPTIMIZATION-001](chk-optimization.md) — checklist de mantenimiento autónomo — Keys: checklist, optimization, maintenance
 - [RBK-TRIAGE-001](rbk-triage.md) — loop de triage y debugging gateway — Keys: triage, debug, gateway, logs
 - [RBK-CRON-001](rbk-cronjob-errors.md) — diagnóstico y fix de cronjobs con error: rate limit, session locked, delivery failed — Keys: cronjob, error, rate-limit, fix
+- [RBK-CLEANUP-001](rbk-cleanup-logs-locks.md) — limpieza de logs >30 días y locks huérfanos: comandos, umbrales, cronjob semanal — Keys: cleanup, logs, locks, maintenance
 - [RBK-GIT-001](rbk-git-remote-setup.md) — configuración de repositorio remoto: origin, push -u, troubleshooting — Keys: git, remote, setup, backup
 - [RBK-PB-BACKUP-001](rbk-pocketbase-backup.md) — backup PocketBase: manual, automático, restauración, retención — Keys: pocketbase, backup, cronjob, restore
 - [RBK-DOCKER-001](rbk-docker-container-management.md) — Docker containers: comandos, monitoreo, limpieza, troubleshooting, CapRover — Keys: docker, containers, management, troubleshooting
