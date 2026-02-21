@@ -144,6 +144,7 @@
 | [BACKEND](departments/backend/index.md) | APIs, Docker, VPS | 0.3 | Pending |
 | [SEO](departments/seo/INDEX.md) | Keywords, technical | 0.4 | **Active + Google Leak** |
 | [CONTENT](departments/content/index.md) | Blog, social, email, ads | 0.6 | **Active** |
+| [ANALYTICS](departments/analytics/index.md) | Reports, KPIs, dashboards | 0.3 | **Active** |
 | [EMPRENDIMIENTO](departments/emprendimiento/index.md) | Business, strategy | 0.5 | Pending |
 
 ---
