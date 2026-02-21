@@ -216,9 +216,12 @@ _Actualizado: 20 Feb 2026 - 23:20 UTC (Sesión extendida 23h, 118 commits)_
 ---
 
 - [SPEC-N8N-PB-001](spec-n8n-pocketbase-bridge.md) — n8n ↔ PocketBase bridge: diseño de workflows y sync bidireccional — Keys: n8n, pocketbase, bridge
+- [SPEC-N8N-PB-SYNC-001](spec-n8n-pocketbase-sync.md) — Sync bidireccional Airtable ↔ PocketBase: arquitectura, webhooks, workflows n8n, mapeo campos, conflictos — Keys: n8n, pocketbase, airtable, sync, bidirectional
 - [REF-DOCKER-001](ref-docker-containers-audit.md) — Docker containers audit: 8 activos, recursos, recomendaciones — Keys: docker, audit, containers
 - [REF-MICRO-3MIN-001](ref-micro-tasks-3min.md) — Micro-tareas de 3 minutos: protocolo actualizado, descomposición, compound effect real — Keys: micro-tasks, 3min, compound
 - [REF-GOOGLE-ANCHOR-DEEP-001](ref-google-leak-anchor-deep.md) — Anchor system deep dive: señales, contexto, implicaciones SEO — Keys: google, anchor, seo, ranking
 - [REF-ONELINERS-GLM5-001](ref-one-liners-glm5-optimized.md) — One-liners optimizados para GLM-5: 10 probados, patrones, anti-patrones — Keys: one-liners, glm5, prompts
 - [REF-STILL-ACTIVE-001](ref-still-vs-active.md) — Cuándo STILL vs Cuándo Daniel me habla, protocolo crítico — Keys: still, active, autonomy
 - [LESSONS-001](lecciones-de-vida.md) — Lecciones de vida: no ejecutar sin pensar, no spawnear para investigar, compromiso, dos vidas — Keys: lecciones, aprendizaje
+- [SPEC-REVENUE-MVP-001](spec-revenue-software-mvp.md) — MVP Revenue Software: 5 features, Astro+PocketBase+n8n, 10 días, $0/mes — Keys: revenue, mvp, pyme, astro
+- [REF-FREE-LLM-001](ref-free-llm-apis-no-login.md) — APIs gratis sin login: OpenRouter, Groq, Mistral, Google AI Studio, límites, configuración — Keys: free, llm, api, openrouter, groq
