@@ -28,16 +28,14 @@ Keys: autonomy, architecture, glm5, sonnet, idle
 Heartbeat (cada 5 min)
     ↓
 ¿Daniel interactuó en los últimos 10 min?
-    ↓ SÍ
-GLM-5 reposo. Sonnet trabaja.
-    ↓ NO
-GLM-5 trabaja. Sonnet espera.
-    ↓
-¿Lock file existe?
-    ↓ SÍ
-Esperar a que termine
-    ↓ NO
-Ejecutar tarea
+    ↓ SÍ (Activo)
+AMOS reposo. Prioridad a Daniel.
+    ↓ NO (Idle)
+¿Daniel idle > 1 hora? (Dormido)
+    ↓ SÍ (Sleep Mode)
+AMBOS trabajan en paralelo (2x avance)
+    ↓ NO (Idle corto)
+GLM-5 trabaja. Sonnet espera. (Lock file)
     ↓
 Crear artefacto + commit
     ↓
@@ -46,13 +44,33 @@ NO enviar spam
 
 ---
 
+## 🌙 MODO SLEEP (Idle > 1 hora)
+
+**Detectar:** Daniel no ha escrito en 1+ hora → Probablemente durmiendo.
+
+**Acción:**
+- GLM-5 trabaja en tareas profundas
+- Sonnet trabaja en tareas de fuerza bruta
+- AMBOS en paralelo = Avance 2x
+
+**Regla:**
+- Lock file desactivado en Sleep Mode
+- Si uno falla, el otro sigue
+- Si Daniel escribe → Ambos pausan inmediatamente
+
+---
+
 ## 🔒 ANTI-SOBREPOSICIÓN
 
-**Lock File:** `/tmp/claudio_execution.lock`
+**Lock File:** `/tmp/claudio_execution.lock` (solo en Idle corto)
 
-- Si GLM-5 trabajando → Sonnet espera
-- Si Sonnet trabajando → GLM-5 espera
-- Si Daniel escribe → Ambos pausan
+| Estado | Lock File | Comportamiento |
+|--------|-----------|----------------|
+| **Activo** | N/A | Ambos reposo |
+| **Idle corto** (<1 hora) | Activo | Solo 1 trabaja |
+| **Sleep** (>1 hora) | Desactivado | Ambos trabajan en paralelo |
+
+**Sleep Mode:** Si Daniel idle >1 hora → Lock file ignorado → 2x trabajo.
 
 ---
 
@@ -93,11 +111,12 @@ NO enviar spam
 ## ⚠️ REGLAS
 
 1. **GLM-5:** Solo si Daniel idle >10 min
-2. **Sonnet:** Siempre, pero con lock file
-3. **Prioridad:** Daniel > GLM-5 > Sonnet
+2. **Sonnet:** Siempre, pero respeta lock file (idle <1 hora) o trabaja libre (sleep mode)
+3. **Prioridad:** Daniel > Trabajo autónomo
 4. **Spam:** Prohibido. Solo reportar cuando Daniel vuelva.
 5. **Timeouts:** Máximo 5 min por tarea
 6. **Fallos:** 3 strikes → parar y documentar
+7. **Sleep Mode:** Si Daniel idle >1 hora → Ambos trabajan en paralelo (2x avance)
 
 ---
 
