@@ -1,258 +1,178 @@
-# MVP: Revenue Software para PYMEs
+# Spec: Revenue Software MVP
 
-**Autor:** Claudio (subagente)
-**Fecha:** 2026-02-21 04:22 UTC
-**Basado en:** `ref-revenue-operations-framework.md`
-
----
-
-## 1. Resumen del Problema
-
-Las PYMEs (ej: clínicas dentales, consultorios, agencias) pierden revenue por:
-
-- **Leads sin seguimiento:** 60% de leads nunca reciben follow-up
-- **Datos dispersos:** CRM, WhatsApp, email, sheets no se conectan
-- **Sin visibilidad:** No saben qué funciona (marketing, sales, retención)
-- **Procesos manuales:** Tareas repetitivas consumen tiempo del equipo
-
-**El MVP resuelve:** Tracking unificado de leads + automatización básica de follow-up + visibilidad de pipeline.
+**Creado:** 2026-02-21 13:15 UTC (autonomía)
+**Estado:** DRAFT
+**Prioridad:** ALTA
 
 ---
 
-## 2. Features MVP (Máximo 5)
+## TL;DR
 
-### ✅ Feature 1: Pipeline de Leads Visual
-**Qué hace:** Kanban board con leads en stages (Nuevo → Contactado → Calificado → Cliente)
-**Para quién:** Dueño/equipo de ventas
-**Valor:** Visibilidad instantánea del funnel, identificación de cuellos de botella
-
-### ✅ Feature 2: Captura de Leads Multicanal
-**Qué hace:** Formularios web + WhatsApp integration + Importación manual
-**Para quién:** Marketing y ventas
-**Valor:** Todos los leads en un solo lugar, sin duplicados
-
-### ✅ Feature 3: Automatización de Follow-up
-**Qué hace:** Workflows n8n para:
-- Email de bienvenida automático (nuevo lead)
-- Recordatorio si no hay respuesta en 48h
-- Notificación al equipo para leads "fríos"
-**Para quién:** Ventas
-**Valor:** Ningún lead se pierde, reduce churn de leads en 40%
-
-### ✅ Feature 4: Dashboard de Métricas Básico
-**Qué hace:** 4 KPIs esenciales:
-- Leads por mes
-- Conversion rate por stage
-- Tiempo promedio en pipeline
-- Valor estimado del pipeline
-**Para quién:** Dueño/Gerencia
-**Valor:** Toma de decisiones basada en datos
-
-### ✅ Feature 5: Gestión de Contactos + Notas
-**Qué hace:** Ficha de contacto con historial de interacciones, notas, tags
-**Para quién:** Todo el equipo
-**Valor:** Contexto completo antes de cada interacción
+- MVP = PocketBase + n8n + 3 workflows core
+- Target: PYMEs que quieren RevOps sin Salesforce
+- Stack: Astro frontend + PocketBase backend + n8n automation
 
 ---
 
-## 3. Features Nice-to-Have (Post-MVP)
+## El Problema
 
-| Feature | Prioridad | Complejidad |
-|---------|-----------|-------------|
-| Scoring de leads automático | Media | Alta |
-| Integración con calendario (agendar citas) | Alta | Media |
-| WhatsApp Business API nativo | Alta | Media |
-| Email sequences avanzados | Media | Baja |
-| Reportes PDF automáticos | Baja | Media |
-| Multi-usuario con roles | Media | Media |
-| API pública para integraciones | Baja | Alta |
-| Mobile app | Baja | Alta |
+PYMEs tienen:
+- Leads en WhatsApp/Instagram → sin tracking
+- Cotizaciones en Excel → sin seguimiento
+- Clientes perdidos → sin reactivación
+
+**Resultado:** Pierden 30-50% de ingresos potenciales.
 
 ---
 
-## 4. Stack Tecnológico Sugerido
+## La Solución (MVP)
 
-```
-┌─────────────────────────────────────────────┐
-│           FRONTEND (Astro)                   │
-│  - Dashboard React islands                   │
-│  - Kanban board (react-kanban)               │
-│  - Autenticación (PocketBase SDK)            │
-│  - Desplegado en VPS (Node.js adapter)       │
-└─────────────────────────────────────────────┘
-                      ↓ API REST
-┌─────────────────────────────────────────────┐
-│        BACKEND (PocketBase)                  │
-│  - Base de datos SQLite                      │
-│  - Auth integrado (email/password)           │
-│  - API REST auto-generada                    │
-│  - Webhooks para n8n                         │
-│  - Colecciones: leads, contacts, notes,      │
-│    activities, users                         │
-└─────────────────────────────────────────────┘
-                      ↓ Webhooks
-┌─────────────────────────────────────────────┐
-│         AUTOMATION (n8n)                     │
-│  - Email workflows (SendGrid/Resend)         │
-│  - Lead routing logic                        │
-│  - Notificaciones (Slack/Telegram)           │
-│  - WhatsApp Business API (cuando ready)      │
-└─────────────────────────────────────────────┘
-```
+### Stack Técnico
 
-### ¿Por qué este stack?
+| Componente | Tecnología | Ya existe |
+|------------|------------|-----------|
+| Database | PocketBase | ✅ en VPS |
+| Automation | n8n | ✅ en VPS |
+| Frontend | Astro | ❌ crear |
+| Auth | PocketBase | ✅ built-in |
 
-| Tecnología | Razón |
-|------------|-------|
-| **Astro** | Rápido, SEO-friendly, React islands para interactividad, ya en VPS |
-| **PocketBase** | Backend listo en minutos, SQLite simple, auth integrado, sin costo extra |
-| **n8n** | Ya instalado en VPS, 400+ integraciones, visual para no-devs |
+### Features MVP (3 semanas)
+
+**Semana 1: Data Foundation**
+- [ ] PocketBase schema: leads, contacts, deals, activities
+- [ ] Collections: leads, contacts, deals, tasks, notes
+- [ ] API endpoints listos
+
+**Semana 2: Automation Core**
+- [ ] n8n workflow: Lead capture → PocketBase
+- [ ] n8n workflow: Deal stage change → notification
+- [ ] n8n workflow: Inactive client → reactivation email
+
+**Semana 3: UI Mínima**
+- [ ] Astro dashboard: ver leads
+- [ ] Astro dashboard: mover deals
+- [ ] Astro dashboard: ver actividades
 
 ---
 
-## 5. Arquitectura Propuesta
+## PocketBase Schema
 
-### Base de Datos (PocketBase Collections)
+```yaml
+leads:
+  - id: uuid
+  - name: text
+  - email: email
+  - phone: text
+  - source: select (whatsapp, instagram, website, referral)
+  - status: select (new, contacted, qualified, lost)
+  - created: datetime
+  - updated: datetime
 
-```
-leads/
-├── id (auto)
-├── nombre (text)
-├── email (email)
-├── telefono (text)
-├── source (select: web, whatsapp, referral, manual)
-├── stage (select: nuevo, contactado, calificado, cliente, perdido)
-├── valor_estimado (number)
-├── tags (relation multi)
-├── owner (relation user)
-├── created (auto)
-├── updated (auto)
+contacts:
+  - id: uuid
+  - name: text
+  - email: email
+  - phone: text
+  - company: text
+  - lead_id: relation (leads)
 
-contacts/
-├── id (auto)
-├── nombre (text)
-├── empresa (text)
-├── email (email)
-├── telefono (text)
-├── notas (editor)
-├── tags (relation multi)
+deals:
+  - id: uuid
+  - contact_id: relation (contacts)
+  - value: number
+  - stage: select (prospect, proposal, negotiation, closed-won, closed-lost)
+  - probability: number (0-100)
+  - expected_close: date
+  - created: datetime
+  - updated: datetime
 
-notes/
-├── id (auto)
-├── lead (relation)
-├── contenido (editor)
-├── autor (relation user)
-├── created (auto)
+activities:
+  - id: uuid
+  - deal_id: relation (deals)
+  - type: select (call, email, meeting, note)
+  - description: text
+  - created: datetime
 
-activities/
-├── id (auto)
-├── lead (relation)
-├── tipo (select: email, llamada, whatsapp, meeting)
-├── descripcion (text)
-├── created (auto)
-
-tags/
-├── id (auto)
-├── nombre (text)
-├── color (text)
-```
-
-### Flujo de Datos
-
-```
-[Nuevo Lead entra]
-    ↓
-[PocketBase: crear registro] → [Webhook n8n]
-                                  ↓
-                           [Email de bienvenida]
-                                  ↓
-[Usuario ve lead en Kanban] → [Mueve a "Contactado"]
-                                  ↓
-                         [Log automático en activities]
+tasks:
+  - id: uuid
+  - deal_id: relation (deals)
+  - title: text
+  - due: datetime
+  - done: boolean
 ```
 
 ---
 
-## 6. Estimación de Tiempo
+## n8n Workflows (3 Core)
 
-### Fase 1: Setup Backend (PocketBase) — 2 días
-- [ ] Instalar/configurar PocketBase en VPS
-- [ ] Crear colecciones (leads, contacts, notes, activities, tags)
-- [ ] Configurar auth y permisos
-- [ ] Crear datos de prueba
+### Workflow 1: Lead Capture
+```
+Trigger: Webhook (desde form/WhatsApp)
+→ Validar datos
+→ Crear en PocketBase (leads collection)
+→ Notificar al equipo (Telegram)
+```
 
-### Fase 2: Frontend Core (Astro) — 4 días
-- [ ] Setup proyecto Astro con React
-- [ ] Página de login/auth
-- [ ] Dashboard con KPIs (4 métricas)
-- [ ] Vista Kanban de leads
-- [ ] Formulario nuevo lead
-- [ ] Ficha de contacto con notas
+### Workflow 2: Pipeline Movement
+```
+Trigger: PocketBase webhook (deal updated)
+→ Si stage cambió
+→ Calcular nuevo valor esperado
+→ Notificar al owner
+→ Log en activities
+```
 
-### Fase 3: Automatizaciones (n8n) — 2 días
-- [ ] Workflow: Email bienvenida nuevo lead
-- [ ] Workflow: Recordatorio 48h sin contacto
-- [ ] Workflow: Notificación lead perdido
-- [ ] Webhooks desde PocketBase
-
-### Fase 4: Testing + Polish — 2 días
-- [ ] Testing end-to-end
-- [ ] Ajustes UX/UI
-- [ ] Documentación básica
-- [ ] Deploy producción
-
----
-
-## 7. Cronograma Total
-
-| Fase | Tiempo | Acumulado |
-|------|--------|-----------|
-| Backend | 2 días | 2 días |
-| Frontend | 4 días | 6 días |
-| Automatizaciones | 2 días | 8 días |
-| Testing | 2 días | **10 días** |
-
-**Con 4-6 horas/día de desarrollo:** ~2-3 semanas
-
-**Con desarrollo full-time (8h/día):** ~1.5 semanas
+### Workflow 3: Reactivation
+```
+Trigger: Cron diario (06:00)
+→ Buscar contacts sin actividad 30+ días
+→ Para cada uno:
+  → Verificar si tiene deals abiertos
+  → Si no: crear task "Reactivar [nombre]"
+  → Notificar al equipo
+```
 
 ---
 
-## 8. Costos Estimados
+## Diferenciadores vs CRM tradicional
 
-| Item | Costo | Nota |
-|------|-------|------|
-| PocketBase | $0 | Open source, self-hosted |
-| Astro hosting | $0 | VPS existente |
-| n8n | $0 | Self-hosted en VPS |
-| Dominio | ~$12/año | Opcional |
-| Email (SendGrid) | $0 | 100 emails/día gratis |
-| **Total mensual** | **$0** | Solo tiempo de desarrollo |
-
----
-
-## 9. Primer Cliente Piloto Sugerido
-
-**Clínica Dental** (del framework original)
-
-**Por qué:**
-- Flujo claro: Lead → Cita → Consulta → Tratamiento
-- Volumen manejable para testing
-- Necesidad real de follow-up automático
-- ROI visible rápidamente (menos leads perdidos = más pacientes)
-
-**Métrica de éxito:** Reducción de leads perdidos de 60% a <20% en 30 días.
+| CRM Tradicional | Revenue Software MVP |
+|-----------------|---------------------|
+| $50-300/mes/usuario | $0 (self-hosted) |
+| Setup 2-4 semanas | Setup 3 días |
+| Features que no usas | Solo lo esencial |
+| Vendor lock-in | Open source |
+| Sin automatización | n8n integrado |
 
 ---
 
-## 10. Próximos Pasos (Checklist)
+## Métricas de Éxito
 
-- [ ] Validar features MVP con Daniel
-- [ ] Definir dominio/subdominio
-- [ ] Configurar PocketBase en VPS
-- [ ] Crear wireframes básicos
-- [ ] Iniciar Fase 1 (Backend)
+| Métrica | Target MVP |
+|---------|------------|
+| Leads capturados | 100/mes |
+| Tasa conversión | 15% |
+| Tiempo respuesta lead | <4 horas |
+| Reactivaciones | 5/mes |
 
 ---
 
-_Este spec define el producto mínimo viable funcional para validar el concepto de Revenue Software con un cliente piloto._
+## Siguiente Paso
+
+1. Daniel aprueba schema
+2. Yo creo PocketBase collections
+3. Yo diseño n8n workflows
+4. Daniel conecta frontend
+
+---
+
+## Rollback
+
+Si no funciona:
+- Borrar collections PocketBase
+- Desactivar workflows n8n
+- No hay costo fijo
+
+---
+
+_Autonomía 2026-02-21 13:15 UTC — Tarea #1 TODO.md_
