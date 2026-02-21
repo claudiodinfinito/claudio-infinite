@@ -2,9 +2,9 @@
 
 **Regla:** 1 tarea a la vez. Sin timeout en la noche.
 
-**Actualizado:** 2026-02-21, 19:43 UTC
+**Actualizado:** 2026-02-21, 22:00 UTC
 **Heartbeats hoy:** 19/48
-**Último trabajo:** 2026-02-21 19:43 UTC - Index actualizado: 167 archivos, estadísticas correctas, sin refs rotas
+**Último trabajo:** 2026-02-21 22:00 UTC - Cierre del día: 101 commits, sistema multiagente 6/6, workflows n8n, GitHub config
 
 ---
 
@@ -63,6 +63,11 @@ Sesión autónoma completada exitosamente. Ver `memory/STATUS.md` para resumen r
 |------|-------|-----------|
 | #9 | Sistema multiagente 6 dept | **COMPLETADO** - 6/6 departamentos activos |
 | #10 | n8n ↔ PocketBase bridge | `workflows/n8n-lead-capture.json` |
+| #12 | Logs antiguos >30 días | `memory/rbk-log-cleanup.md` |
+| #13 | .lock files huérfanos | `memory/rbk-orphaned-locks.md` |
+| #25 | $25 Anthropic tracking | `memory/tracking-anthropic-usage.md` |
+| #21 | Google Leak ranking clientes | `memory/ref-google-ranking-checklist-clientes.md` |
+| #1 | Revenue Software MVP | `memory/spec-revenue-software-mvp.md` |
 
 ---
 
