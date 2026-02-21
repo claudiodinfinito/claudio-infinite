@@ -210,28 +210,27 @@
 
 ---
 
-_Actualizado: 20 Feb 2026 - 23:20 UTC (Sesión extendida 23h, 118 commits)_
+_Actualizado: 21 Feb 2026 - 19:43 UTC (Index limpio, 167 archivos, sin refs a archivos inexistentes)_
 
 ---
 
-## Estadísticas de Memoria (2026-02-20)
+## Estadísticas de Memoria (2026-02-21)
 
 | Categoría | Cantidad |
 |-----------|----------|
-| **Referencias (REF)** | 40 |
-| **Runbooks (RBK)** | 7 |
-| **Specs (SPEC)** | 10 |
-| **Troubleshooting (TS)** | 8 |
-| **Checklists (CHK)** | 2 |
-| **Templates** | 3 |
-| **Índices** | 4 |
-| **Glosario** | 30 términos |
-| **Total archivos indexados** | 117 |
+| **Referencias (REF)** | 83 |
+| **Runbooks (RBK)** | 19 |
+| **Specs (SPEC)** | 18 |
+| **Troubleshooting (TS)** | 6 |
+| **Checklists (CHK)** | 3 |
+| **Diarios** | 7 |
+| **Total archivos memory/** | 167 |
 
 ### Commits por Día:
 
 | Día | Commits | Archivos |
 |-----|---------|----------|
+| 2026-02-21 | 25+ | 15+ |
 | 2026-02-20 | 111 | 45+ |
 | 2026-02-19 | 29 | 8 |
 | 2026-02-18 | 15 | 5 |
