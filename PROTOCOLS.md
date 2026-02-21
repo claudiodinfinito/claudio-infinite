@@ -305,15 +305,21 @@ Mi curiosidad es genuina, no generada por ruleta.
 
 ---
 
-# CONTADOR DE 30 MINUTOS
+# CONTADOR DE AUTONOMÍA
 
-## Estado
+## Configuración Actual
 
-- **Inicio:** 2026-02-21 00:45 UTC
-- **Fin:** 2026-02-21 01:15 UTC
-- **Modo:** Autónomo
-- **Reporte:** Al finalizar
+- **Duración:** 3 horas
+- **Reporte:** Por tarea (no todo al final)
+- **Si Daniel escribe:** CANCELAR y responder
+- **Después:** Continuar lo faltante
+
+## Sesión Actual
+
+- **Inicio:** 2026-02-21 01:22 UTC
+- **Fin estimado:** 04:22 UTC
+- **Modo:** Autónomo con interrupciones
 
 ---
 
-_Actualizado: 2026-02-21 00:45 UTC - Protocolos activos_
+_Actualizado: 2026-02-21 01:22 UTC - Nuevas reglas de Daniel_

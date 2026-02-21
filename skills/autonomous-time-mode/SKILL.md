@@ -29,11 +29,24 @@ Modo donde el agente ejecuta tareas de TODO.md SIN pedir permiso para cada acci�
 
 | Regla | Aplicación |
 |-------|------------|
-| Usuario tiene prioridad | Si escribe → paro autonomía, respondo |
+| **Usuario tiene prioridad MÁXIMA** | Si escribe → DETENER autonomía, responder AHORA |
 | Resumen por tarea | No todo al final |
 | No destructivo sin permiso | Bright lines siguen activas |
 | Git es red de seguridad | Commit antes de cambios importantes |
 | Sin presupuestos artificiales | Curiosidad genuina, no simulada |
+
+### ⚠️ REGLA CRÍTICA
+
+**Si Daniel escribe → DETENER todo y responder inmediatamente.**
+
+```
+1. DETENER tarea autónoma
+2. LEER mensaje completo
+3. RESPONDER a Daniel
+4. REANUDAR autonomía SOLO si él lo permite
+```
+
+**NUNCA ignorar al usuario.**
 
 ---
 
