@@ -146,6 +146,26 @@ YO integro → actualizo memoria → reporto
 
 ---
 
+## 🔧 Regla de Auto-Reparación
+
+```
+Si algo falla 2+ veces:
+    1. INVESTIGAR causa raíz (logs, estado, config)
+    2. PROPONER fix
+    3. SI es seguro (no destructivo) → EJECUTAR fix
+    4. DOCUMENTAR en runbook o memoria
+    5. REPORTAR a Daniel
+
+PRINCIPIO: No solo reportar errores, intentar repararlos.
+```
+
+**Ejemplos:**
+- Cronjob falla por contexto saturado → investigar → añadir `deleteAfterRun`
+- Container reinicia en loop → investigar → limpiar volúmenes o actualizar config
+- Rate limit recurrente → investigar → cambiar modelo o espaciar requests
+
+---
+
 ## Anti-Patrones (Vigilar):
 
 - [ ] ¿Hice lo mismo 2 veces sin runbook? → CREAR RUNBOOK
@@ -153,6 +173,28 @@ YO integro → actualizo memoria → reporto
 - [ ] ¿Pasé >30min sin output? → DOCUMENTAR BLOQUEO
 - [ ] ¿Investigué sin escribir? → ESCRIBIR ANTES DE CONTINUAR
 - [ ] ¿Esperé instrucciones de Daniel? → NO, ACTUAR SOLO
+- [ ] ¿Reporté error sin intentar fix? → INVESTIGAR Y REPARAR
+
+---
+
+## 🔧 Regla de Auto-Reparación
+
+```
+Si algo falla 2+ veces:
+    1. INVESTIGAR causa raíz
+    2. PROPONER fix
+    3. SI es seguro → EJECUTAR fix
+    4. DOCUMENTAR
+    5. REPORTAR a Daniel
+
+Referencia: memory/rbk-auto-repair.md
+```
+
+**Ejemplos de auto-reparación:**
+- Cronjob falla por contexto → añadir `deleteAfterRun: true`
+- .lock file bloquea sesión → eliminar
+- Container muerto → limpiar
+- Rate limit → cambiar modelo temporalmente
 
 ---
 

@@ -26,13 +26,17 @@ Last reviewed: 2026-02-20
 
 ---
 
-## Cambios Recientes (2026-02-20)
+## Cambios Recientes (2026-02-21)
 
 | Cambio | Razón |
 |--------|-------|
-| ❌ Eliminado `reminder:still-check` | Redundante con heartbeat cada 30 min |
+| ✅ Todos los crons isolated con `deleteAfterRun: true` | Evita saturación de contexto en sesiones reutilizadas |
+| ✅ Limpiados 18 transcripts antiguos (2.2MB liberados) | Sesión f41bc9bd explotó con 202k tokens |
 | ✅ `micro-task-5min` ahora usa Gemini | Evitar rate limit GLM-5 |
 | ✅ Timezone cambiado a `America/Cancun` | Horario local de Daniel (UTC-5) |
+
+**Historial anterior (2026-02-20):**
+- ❌ Eliminado `reminder:still-check` | Redundante con heartbeat cada 30 min
 
 ---
 
@@ -74,6 +78,7 @@ REPORTO cuando Daniel vuelva
 ## Notas Técnicas
 
 - `sessionTarget: isolated` = ejecuta en sesión aislada
+- `deleteAfterRun: true` = sesión se borra después de ejecutar (evita acumulación de contexto)
 - `tz: America/Cancun` = horario local UTC-5
 - GLM-5 = 1 request concurrente máximo
 - Gemini = 20 requests/día
