@@ -140,11 +140,11 @@
 | Dept | Focus | Temperature | Status |
 |------|-------|-------------|--------|
 | [MARKETING](departments/marketing/index.md) | Revenue ops, funnels | 0.5 | Active |
-| [FRONTEND](departments/frontend/index.md) | Astro, UI/UX | 0.4 | Active |
-| [BACKEND](departments/backend/index.md) | APIs, Docker, VPS | 0.3 | Active |
+| [FRONTEND](departments/frontend/index.md) | Astro, UI/UX | 0.4 | Pending |
+| [BACKEND](departments/backend/index.md) | APIs, Docker, VPS | 0.3 | Pending |
 | [SEO](departments/seo/INDEX.md) | Keywords, technical | 0.4 | **Active + Google Leak** |
-| [COPY](departments/copy/index.md) | Copywriting, persuasion | 0.6 | Active |
-| [EMPRENDIMIENTO](departments/emprendimiento/index.md) | Business, strategy | 0.5 | Active |
+| [CONTENT](departments/content/index.md) | Blog, social, email, ads | 0.6 | **Active** |
+| [EMPRENDIMIENTO](departments/emprendimiento/index.md) | Business, strategy | 0.5 | Pending |
 
 ---
 
