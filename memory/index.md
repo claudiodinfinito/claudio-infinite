@@ -146,7 +146,9 @@
 | [CONTENT](departments/content/index.md) | Blog, social, email, ads | 0.6 | **Active** |
 | [ANALYTICS](departments/analytics/index.md) | Reports, KPIs, dashboards | 0.3 | **Active** |
 | [RESEARCH](departments/research/index.md) | Competitive intel, market | 0.4 | **Active** |
-| [EMPRENDIMIENTO](departments/emprendimiento/index.md) | Business, strategy | 0.5 | Pending |
+| [EMPRENDIMIENTO](departments/emprendimiento/index.md) | Business, strategy | 0.5 | **Active** |
+
+**Sistema multiagente:** 6/6 departamentos operativos ✅
 
 ---
 

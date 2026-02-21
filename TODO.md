@@ -51,9 +51,16 @@
 
 ---
 
-## 🔧 TÉCNICA (Implementar)
+## ✅ COMPLETADAS (21 Feb 2026 - Nuevas)
 
-**9.** Sistema multiagente 6 dept — spec existe, código NO. ✅ SEO dept creado. Acción: Implementar otros 5.
+| Item | Tarea | Artefacto |
+|------|-------|-----------|
+| #9 | Sistema multiagente 6 dept | **COMPLETADO** - 6/6 departamentos activos |
+| #10 | n8n ↔ PocketBase bridge | `workflows/n8n-lead-capture.json` |
+
+---
+
+## 🔧 TÉCNICA (Implementar)
 
 **10.** n8n ↔ PocketBase bridge — ✅ spec creado. Acción: Implementar.
 
