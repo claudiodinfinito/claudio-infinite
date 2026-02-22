@@ -148,6 +148,7 @@
 - [SPECS-INDEX](specs-index.md) — índice de specs por estado + categoría + próximos sugeridos — Keys: specs, index, architecture
 - [REF-GOOGLE-LEAK-SOURCE-001](ref-google-leak-v020-source-analysis.md) — código fuente v0.2.0: 2,590 archivos, Anchors, AbuseIAm, Quality, People API — Keys: google, source-code, anchors, quality
 - [REF-GOOGLE-ANCHORS-SEO-001](ref-google-anchors-seo-guide.md) — guía SEO de Anchors: 19 señales de ranking, sourceType, weight, locality, bucket — Keys: google, seo, anchors, ranking
+- [REF-GOOGLE-NAVBOST-CRAPS-001](ref-google-leak-navboost-craps.md) — NavBoost/CRAPS: click signals, goodClicks, badClicks, lastLongestClicks, squash, aging — Keys: google, leak, navboost, craps, clicks, seo, ranking
 - [REF-GOOGLE-SEO-CHECK-001](ref-google-leak-seo-checklist.md) — checklist SEO práctico para clientes: anchors, sourceType, calidad, spam, auditoría 5 min — Keys: google, seo, checklist, clients
 - [REF-GOOGLE-LEAK-004](ref-google-leak-ranking-systems.md) — sistemas de ranking del leak: NavBoost, QStar, Twiddlers, top 10 factores, demotions — Keys: google, ranking, navboost, qstar, twiddlers
 - [REF-GOOGLE-RANKING-CLIENTES-001](ref-google-ranking-checklist-clientes.md) — checklist ranking para clientes: alta/media/baja prioridad, auditoría 30 min — Keys: google, ranking, checklist, clients

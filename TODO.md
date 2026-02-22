@@ -41,7 +41,7 @@ Sesión autónoma completada exitosamente. Ver `memory/STATUS.md` para resumen r
 
 **1.** Revenue Software — framework existe, implementación NO. Acción: Definir MVP.
 
-**2.** Google Leak 2,590 archivos — analicé superficie, NO profundidad. Acción: Profundizar en 1 sistema. ⚠️ Parcial: Anchor System documentado.
+**2.** Google Leak 2,590 archivos — analicé superficie, NO profundidad. Acción: Profundizar en 1 sistema. ✅ Anchor System + NavBoost/CRAPS documentados.
 
 **3.** Git sin remote — mi código en limbo. Acción: Esperar URL de Daniel.
 
