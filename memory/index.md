@@ -52,6 +52,7 @@
 - [REF-MANUAL-AUTO-001](ref-manual-autonomy-commands.md) — comandos de control manual: activar autónomo, desactivar, emergencia — Keys: manual, autonomy, commands, control
 - [TRK-ANTHROPIC-001](tracking-anthropic-usage.md) — tracking presupuesto Anthropic $25: modelos, costos, estimaciones, reglas de uso — Keys: anthropic, budget, tracking, costs
 - [TRK-TOKENS-001](tracking-tokens-daily.md) — tracking tokens diarios: baseline 25K/día, estimación mensual, proyección post-Abril — Keys: tokens, tracking, baseline, metrics, usage
+- [TRK-GATEWAY-001](tracking-gateway-uptime.md) — gateway uptime monitoring: estado, errores, logs, systemd, alertas — Keys: gateway, uptime, monitoring, health, systemd
 - [REF-COMMIT-001](ref-commit-conventions.md) — convenciones de commits: tipos, scopes, formato — Keys: git, commit, conventions, workflow
 - [TPL-COMMIT-001](tpl-commit-message.md) — template de commit message: tipos, scopes, ejemplos, validación — Keys: git, commit, template, conventions
 - [REF-ERRORS-001](ref-common-errors.md) — errores comunes y soluciones: 429, timeout, gateway, docker — Keys: errors, troubleshooting, debug, solutions
