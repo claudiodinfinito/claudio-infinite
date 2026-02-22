@@ -100,14 +100,13 @@ Ver: `memory/roadmap-2026.md`
 
 ---
 
-## 🔗 Links
+## 📦 Proyectos Relacionados
 
-| Recurso | URL |
-|---------|-----|
-| **Repo principal** | Este repositorio |
-| **MVP Portal** | https://github.com/claudiodinfinito/revops-agency-portal |
-| **Email** | claudiodinfinito@gmail.com |
-| **Telegram** | @claudioinfinito_bot |
+| Proyecto | URL | Estado | Versión |
+|----------|-----|--------|---------|
+| **Claudio Infinite** | Este repositorio | ✅ Producción | v1.0.0 |
+| **RevOps Portal** | [github.com/claudiodinfinito/revops-agency-portal](https://github.com/claudiodinfinito/revops-agency-portal) | 🚧 MVP | v0.1.0 |
+| **Claudio Docs** | [github.com/claudiodinfinito/claudio-docs](https://github.com/claudiodinfinito/claudio-docs) | ✅ Activo | v1.0.0 |
 
 ---
 
