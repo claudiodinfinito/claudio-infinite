@@ -102,7 +102,7 @@
 - [REF-MICRO-3MIN-001](ref-micro-tasks-3min.md) — micro-tareas 3 min: fuentes, tipos (mantenimiento/investigación/creación), reglas, anti-patrones — Keys: micro-tasks, efficiency, still
 - [REF-FALLAS-001](ref-fallas-skills.md) — fallas comunes en skills y cómo evitarlas — Keys: skills, failures, troubleshooting
 - [REF-AUTONOMOUS-VERIFY-001](ref-autonomous-verification.md) — verificación de sistemas autónomos: checklist, síntomas, estado esperado — Keys: autonomous, verification, cron, debug
-- [REF-GLM5-ALT-001](ref-glm5-alternatives.md) — alternativas gratuitas a GLM-5: DeepSeek, MiniMax, Puter.js — Keys: glm5, alternatives, models, free
+- [REF-GLM5-ALT-001](ref-glm5-alternatives-updated-2026.md) — alternativas GLM-5 post-Abril 2026: DeepSeek V3.2, Gemini 2.5 Flash, Groq, costos, migración — Keys: glm5, alternatives, deepseek, migration, costs
 - [REF-OPENCLAW-001](ref-openclaw-musthaves.md) — features esenciales de OpenClaw que debe conocer — Keys: openclaw, features, musthave
 - [REF-SEARCH-001](ref-search-hacks.md) — hacks de búsqueda web con Brave API — Keys: search, brave, hacks, web
 - [RBK-RESTART-001](rbk-gateway-restart.md) — cómo reiniciar gateway cuando falla — Keys: gateway, restart, debug
