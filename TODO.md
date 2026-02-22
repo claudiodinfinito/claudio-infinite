@@ -173,9 +173,7 @@ Sesión autónoma completada exitosamente. Ver `memory/STATUS.md` para resumen r
 
 ---
 
-## 📊 MÉTRICAS
-
-**51.** Tokens usados — baseline diario. Acción: Trackear.
+**51.** Tokens usados — ✅ Baseline creado en `tracking-tokens-daily.md`. ~25K/día estimado.
 
 **52.** Commits hoy — ✅ 14 commits (sesión autónoma).
 
