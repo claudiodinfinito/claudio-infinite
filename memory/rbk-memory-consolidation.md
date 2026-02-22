@@ -86,6 +86,7 @@ git add -A && git commit -m "consolidate: elimino duplicado X, mantengo Y"
 
 | Fecha | Eliminado | Mantenido | Razón |
 |-------|-----------|-----------|-------|
+| 2026-02-22 | `ref-glm5-alternatives.md` | `ref-glm5-alternatives-updated-2026.md` | Duplicado, versión actualizada tiene más info |
 | 2026-02-21 | `ref-one-liners-glm5.md` | `ref-one-liners-glm5-optimized.md` | Duplicado, mejor formato en optimized |
 
 ---
