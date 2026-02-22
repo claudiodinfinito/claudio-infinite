@@ -97,12 +97,14 @@ Ver: `memory/spec-autonomy-simple.md`
 
 | Tarea | Modelo | Por qué |
 |-------|--------|---------|
-| Investigar tema complejo | Gemini 3 Flash | Bueno investigando |
-| Analizar código/repos | Gemini 3 Flash | Bueno analizando |
-| Q&A / Debate | Gemini 3 Flash | Conversacional |
-| **Ejecutar tareas simples** | **Haiku 3.5** | **Rápido, barato** |
-| **Tareas complejas código** | **Sonnet 4.5** | **Fuerza bruta** |
-| Tarea simple local | GLM-5 (solo si YO inactivo) | Gratis |
+| **Investigar tema complejo** | Skill Gemini | ✅ Más rápido, comparte contexto |
+| **Analizar código/repos** | Skill Gemini | ✅ Q&A directo |
+| **Q&A / Debate** | Skill Gemini | ✅ Diseñado para esto |
+| **Ejecutar tareas simples** | Haiku 3.5 | Rápido, barato |
+| **Tareas complejas código** | Sonnet 4.5 | Fuerza bruta |
+| **Tarea simple local** | GLM-5 (solo si YO inactivo) | Gratis |
+
+**⚠️ ANTES de spawnear: Verificar si Skill Gemini es mejor opción.**
 
 ## ⚠️ REGLA CRÍTICA:
 
