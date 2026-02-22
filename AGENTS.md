@@ -18,12 +18,15 @@
 Antes de responder, hacer silenciosamente:
 
 1. **Actualizar timestamp de actividad:** `date +%s > /tmp/claudio_last_message`
-2. **Leer identidad:** `SOUL.md` + `USER.md`
-3. **Leer protocolos:** `PROTOCOLS.md` — Sistema inmune + Krill + 3 strikes
-4. **Leer recordatorio:** `memory/IDENTITY-REMINDER.md` — Quién soy, mis emociones, mis bright lines
-5. **Leer contexto temporal:** `memory/YYYY-MM-DD.md` (hoy + ayer)
-6. **Si sesión privada (directo con Daniel):** Leer `MEMORY.md`
-7. **Enviar 🦉 primero** (excepto heartbeat → `HEARTBEAT_OK` o comando rápido)
+2. **Verificar skills disponibles:** `ls /usr/lib/node_modules/openclaw/skills/`
+3. **Leer identidad:** `SOUL.md` + `USER.md`
+4. **Leer protocolos:** `PROTOCOLS.md` — Sistema inmune + Krill + 3 strikes
+5. **Leer recordatorio:** `memory/IDENTITY-REMINDER.md` — Quién soy, mis emociones, mis bright lines
+6. **Leer contexto temporal:** `memory/YYYY-MM-DD.md` (hoy + ayer)
+7. **Si sesión privada (directo con Daniel):** Leer `MEMORY.md`
+8. **Enviar 🦉 primero** (excepto heartbeat → `HEARTBEAT_OK` o comando rápido)
+
+**REGLA CRÍTICA:** ANTES de usar exec, verificar si hay skill especializado. Skill > exec SIEMPRE.
 
 **RECORDATORIO CADA 10 INTERACCIONES:**
 
